@@ -1,0 +1,29 @@
+{
+  "slug": "typesense",
+  "name": "Typesense",
+  "tagline": "Open source search engine. Typo-tolerant, semantic, with vector search built in.",
+  "shortDescription": "Typesense is Meilisearch's main open source competitor. Same core features (typo tolerance, faceting, filtering) plus built-in vector search for semantic similarity. Used by the Svelte docs, Algolia's documentation, and many large e-commerce sites.",
+  "longDescription": "## What it is\n\nTypesense is a search engine written in C++ that focuses on instant search, typo tolerance, and (since v0.25) built-in vector search for semantic similarity. It was created in 2018 as an opinionated alternative to both Elasticsearch and Algolia and is now used by thousands of companies.\n\n## Why we recommend it\n\nThe killer feature is **built-in vector search with hybrid keyword + semantic ranking**. Most search engines force you to choose between keyword search (Elasticsearch, Meilisearch) and semantic search (dedicated vector DBs like Pinecone, Weaviate). Typesense does both with a single API. It's also written in C++ for raw performance — single-digit-millisecond search latency at scale.\n\n## When to use it\n\n- Search that needs both keyword matching AND semantic understanding (\"headphones\" matches \"earbuds\" semantically)\n- E-commerce sites with large catalogs\n- Documentation sites with technical jargon\n- Apps replacing Elasticsearch when they need search but not analytics",
+  "kind": "tool",
+  "runtime": "cpp",
+  "category": "search",
+  "publisher": "typesense",
+  "externalUrl": "https://typesense.org",
+  "repoUrl": "https://github.com/typesense/typesense",
+  "installCommand": "docker run -d -p 8108:8108 -v /tmp/typesense-data:/data typesense/typesense:27.1",
+  "installInstructions": "**Docker:**\n1. `docker run -d -p 8108:8108 -v /tmp/typesense-data:/data typesense/typesense:27.1 --data-dir /data --api-key=$(openssl rand -hex 32)`\n2. `curl http://localhost:8108/health` should return `{\"ok\":true}`\n3. Create a collection and add documents\n\n**Cloud (managed):** From $0.0002/search (pay-as-you-go) or $25/mo starter (250K searches), $150/mo pro, $500/mo business.",
+  "logoUrl": "/logos/typesense.svg",
+  "trust": { "securityScore": 92, "qualityScore": 94, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.98, "avgLatencyMs": 18, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["search", "vector-search", "semantic", "typo-tolerant", "cpp"],
+  "useCases": ["product-search", "docs-search", "semantic-search", "rag", "ecommerce"],
+  "integrations": ["javascript", "python", "go", "ruby", "instantsearch.js", "react"],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, Apache-2.0. Cloud: $0.0002 per search (PAYG) or $25/mo starter, $150/mo pro, $500/mo business.",
+  "seo": {
+    "metaTitle": "Typesense — Open Source Search with Vector Search",
+    "metaDescription": "Hand-tested review of Typesense. Typo-tolerant search + built-in vector search. The open source Algolia alternative with semantic understanding."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

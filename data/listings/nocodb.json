@@ -1,0 +1,29 @@
+{
+  "slug": "nocodb",
+  "name": "NocoDB",
+  "tagline": "Open source Airtable alternative. Turn any SQL database into a smart spreadsheet.",
+  "shortDescription": "NocoDB is the open source Airtable. Spreadsheet views on top of any database (Postgres, MySQL, SQLite, MariaDB), with form views, gallery views, kanban views, calendar views, automations, and API access. 50K+ GitHub stars and 100K+ users worldwide.",
+  "longDescription": "## What it is\n\nNocoDB turns a SQL database into a smart spreadsheet. You point it at an existing Postgres or MySQL database (or it creates one for you) and you get Airtable-style grid, form, gallery, kanban, and calendar views of your data. You also get automations, webhooks, and a REST + GraphQL API.\n\n## Why we recommend it\n\nAirtable is wonderful until you hit its 50K record per base limit and $20/user/mo pricing. NocoDB has no record limit and is free self-hosted. The interface is similar enough that your team can transition without retraining. And because the data lives in your own SQL database, you can query it with anything (psql, Metabase, Apache Superset) and never get locked in.\n\n## When to use it\n\n- Internal team databases (project tracking, content calendars, CRM)\n- Replacing Airtable when you hit the per-base record limit or the per-seat pricing\n- Companies that want a no-code UI on top of their existing SQL database\n- Ops teams that need to build internal tools without writing a React app",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "project-management",
+  "publisher": "n8n",
+  "externalUrl": "https://nocodb.com",
+  "repoUrl": "https://github.com/nocodb/nocodb",
+  "installCommand": "docker run -d --name nocodb -p 8080:8080 -v nocodb_data:/usr/app/data nocodb/nocodb:latest",
+  "installInstructions": "**Docker:**\n1. `docker run -d --name nocodb -p 8080:8080 -v nocodb_data:/usr/app/data nocodb/nocodb:latest`\n2. Open `http://localhost:8080` and create your first admin account\n3. Create a project (it will provision a SQLite DB by default, or connect to Postgres/MySQL)\n4. Create your first table — NocoDB introspects it and creates views automatically\n\n**Cloud (managed):** Free for 1 user, $10/mo for up to 10 users, custom for larger teams.",
+  "logoUrl": "/logos/nocodb.svg",
+  "trust": { "securityScore": 89, "qualityScore": 92, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.90, "avgLatencyMs": 240, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["airtable-alternative", "no-code", "spreadsheet", "database-ui", "self-hosted"],
+  "useCases": ["internal-tools", "crm", "project-tracking", "ops", "no-code"],
+  "integrations": ["postgres", "mysql", "sqlite", "webhooks", "rest-api", "zapier"],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, AGPL. Cloud Free: 1 user. Starter: $10/mo (10 users). Team: custom.",
+  "seo": {
+    "metaTitle": "NocoDB — Open Source Airtable Alternative",
+    "metaDescription": "Hand-tested review of NocoDB. The open source Airtable. Spreadsheet views on any SQL database, with forms, kanban, automations, and no record limits."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

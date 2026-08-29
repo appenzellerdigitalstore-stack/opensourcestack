@@ -1,0 +1,35 @@
+{
+  "slug": "supabase",
+  "name": "Supabase",
+  "tagline": "Open source Firebase alternative. Postgres, auth, storage, realtime.",
+  "shortDescription": "The most popular open source Firebase alternative. Hosted Postgres with row-level security, GoTrue auth, S3-compatible storage, edge functions, and realtime subscriptions. You can self-host in 30 minutes or use the managed cloud.",
+  "longDescription": "## What it is\n\nSupabase wraps a Postgres database with a suite of developer-friendly services: authentication (email, OAuth, magic links, MFA), file storage (S3-compatible), edge functions (Deno-based), realtime (Postgres changes streamed over WebSocket), and a generated REST + GraphQL API. It is the closest 1:1 open source analog to Firebase.\n\n## Why we recommend it\n\nThe Postgres foundation is the killer feature. Unlike Firebase (a proprietary document store), every row in Supabase is a real SQL row you can query, join, back up, and migrate. Row-level security policies let you write authz in SQL, not middleware. And when you outgrow the managed tier, you can `docker compose up` the entire stack on your own server in under an hour.\n\n## When to use it\n\n- Building a BaaS-style backend without vendor lock-in\n- Replacing Firebase on a new project\n- Adding auth, storage, and realtime to an existing Postgres app\n- Startups that want a 6-month runway to validate before paying for the managed tier",
+  "kind": "platform",
+  "runtime": "multi",
+  "category": "databases",
+  "publisher": "supabase",
+  "externalUrl": "https://supabase.com",
+  "repoUrl": "https://github.com/supabase/supabase",
+  "installCommand": "npx create-supabase-app@latest my-app",
+  "installInstructions": "**Option 1 — managed (easiest):** Sign up at https://supabase.com and create a project. Free tier includes 500MB database, 1GB storage, 50K monthly active users.\n\n**Option 2 — self-host:**\n1. Install Docker and Docker Compose\n2. `git clone https://github.com/supabase/supabase`\n3. `cd supabase/docker && cp .env.example .env`\n4. `docker compose up -d`\n5. Studio is available at `http://localhost:54323`",
+  "logoUrl": "/logos/supabase.svg",
+  "trust": {
+    "securityScore": 94,
+    "qualityScore": 96,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": { "up": true, "uptimePct30d": 99.96, "avgLatencyMs": 110, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["postgres", "baas", "auth", "storage", "realtime", "rls"],
+  "useCases": ["backend", "mvp", "auth", "realtime-apps", "startup"],
+  "integrations": ["postgres", "row-level-security", "rest-api", "graphql", "websocket"],
+  "pricing": "freemium",
+  "pricingDetails": "Free tier: 500MB DB, 1GB storage, 50K MAU. Pro: $25/mo (8GB DB, 100GB storage, 100K MAU). Team: $599/mo. Self-hosted: free, you pay for hosting.",
+  "seo": {
+    "metaTitle": "Supabase — Open Source Firebase Alternative",
+    "metaDescription": "Hand-tested review of Supabase. Postgres + auth + storage + realtime. The open source Firebase alternative you can self-host."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

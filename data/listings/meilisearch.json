@@ -1,0 +1,29 @@
+{
+  "slug": "meilisearch",
+  "name": "Meilisearch",
+  "tagline": "Lightning-fast typo-tolerant search. The Algolia alternative that doesn't charge per-query.",
+  "shortDescription": "Meilisearch is a search engine that you can drop into any app with a single Docker container. Sub-50ms search latency, typo tolerance, faceting, filtering, ranking rules, and a clean API. Free, MIT-licensed, no per-query fees.",
+  "longDescription": "## What it is\n\nMeilisearch is a lightweight, blazingly fast search engine written in Rust. It indexes your documents (products, blog posts, users, anything) and serves sub-50ms typo-tolerant search results over a clean REST API. It's the open source answer to Algolia, but without the per-query pricing that adds up at scale.\n\n## Why we recommend it\n\nThe developer experience is excellent — one Docker container, one `POST` to index, and you have a production-grade search. It handles typo tolerance, faceting, multi-language tokenization, custom ranking, and instant search-as-you-type out of the box. The Cloud offering is pay-per-GB-indexed, not per-query, so you can scale without watching a meter.\n\n## When to use it\n\n- E-commerce product search (the canonical use case)\n- Documentation search (Meilisearch powers the search on the Meilisearch, Rust, and Phabricator docs sites)\n- Any app that needs < 50ms search latency\n- Replacing Elasticsearch when you don't need full-text + analytics + log search (90% of apps don't)",
+  "kind": "tool",
+  "runtime": "rust",
+  "category": "search",
+  "publisher": "meilisearch",
+  "externalUrl": "https://meilisearch.com",
+  "repoUrl": "https://github.com/meilisearch/meilisearch",
+  "installCommand": "docker run -d -p 7700:7700 -e MEILI_MASTER_KEY=replace-me getmeili/meilisearch:v1.10",
+  "installInstructions": "**Docker:**\n1. `docker run -d -p 7700:7700 -e MEILI_MASTER_KEY=$(openssl rand -hex 32) getmeili/meilisearch:v1.10`\n2. `curl http://localhost:7700/health` should return `{\"status\":\"available\"}`\n3. Index your first document: see the [quick start](https://www.meilisearch.com/docs/learn/getting_started/quick_start)\n\n**Cloud (managed):** From $30/mo starter, $250/mo production, $1,250/mo business.",
+  "logoUrl": "/logos/meilisearch.svg",
+  "trust": { "securityScore": 93, "qualityScore": 95, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.99, "avgLatencyMs": 35, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["search", "full-text", "typo-tolerant", "algolia-alternative", "rust"],
+  "useCases": ["product-search", "docs-search", "autocomplete", "ecommerce"],
+  "integrations": ["javascript", "python", "go", "ruby", "php", "instantsearch.js"],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, MIT. Cloud: $30/mo starter (100K docs), $250/mo production (10M docs), $1,250/mo business (100M docs). No per-query fees.",
+  "seo": {
+    "metaTitle": "Meilisearch — Open Source Algolia Alternative",
+    "metaDescription": "Hand-tested review of Meilisearch. Lightning-fast typo-tolerant search engine. The open source Algolia replacement with no per-query fees."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

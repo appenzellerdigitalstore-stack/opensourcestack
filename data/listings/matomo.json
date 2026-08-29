@@ -1,0 +1,35 @@
+{
+  "slug": "matomo",
+  "name": "Matomo",
+  "tagline": "The full-featured Google Analytics replacement. 100% data ownership.",
+  "shortDescription": "Matomo is the most feature-complete open source analytics platform. Heatmaps, session recordings, funnels, A/B testing, e-commerce tracking, custom reports, and 100% data ownership. Self-hosted in PHP/MySQL.",
+  "longDescription": "## What it is\n\nMatomo (formerly Piwik) is the world's most popular open source web analytics platform. It was created in 2007 as a privacy-respecting alternative to Google Analytics and now powers analytics for 1.4+ million websites in 230+ countries.\n\n## Why we recommend it\n\nIf you want every feature Google Analytics has and you want to own the data, Matomo is the answer. Heatmaps, session recordings, A/B testing, e-commerce revenue attribution, custom dimensions, raw data export, API access — it's all there, all open source, and you can self-host it on a $5/mo VPS.\n\n## When to use it\n\n- Compliance-sensitive industries (healthcare, finance, EU public sector)\n- E-commerce sites that need full conversion attribution\n- Any team that wants the power of GA without the privacy tradeoffs\n- Sites that need heatmaps and session recordings as part of the analytics stack",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "analytics",
+  "publisher": "matomo",
+  "externalUrl": "https://matomo.org",
+  "repoUrl": "https://github.com/matomo-org/matomo",
+  "installCommand": "wget https://builds.matomo.org/matomo.zip && unzip matomo.zip",
+  "installInstructions": "**Self-host:**\n1. Requires PHP 7.4+ and MySQL/MariaDB\n2. `wget https://builds.matomo.org/matomo.zip && unzip matomo.zip`\n3. Serve the directory with nginx or Apache\n4. Open in browser, follow the 5-minute installer\n5. Add the tracking code to your site\n\n**Managed (easier):** Matomo Cloud from €19/mo (100K pageviews). Includes all premium plugins.",
+  "logoUrl": "/logos/matomo.svg",
+  "trust": {
+    "securityScore": 93,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": { "up": true, "uptimePct30d": 99.95, "avgLatencyMs": 45, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["analytics", "privacy", "heatmaps", "session-recording", "ecommerce"],
+  "useCases": ["web-analytics", "ecommerce", "compliance", "enterprise", "heatmaps"],
+  "integrations": ["mysql", "postgresql", "tag-manager", "woocommerce", "magento"],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, GPL-licensed. Cloud: €19/mo starter (100K pageviews), €69/mo growth, €129/mo business. Premium plugins (Heatmaps, SessionRecording, A/B Testing) €99-€399/yr each.",
+  "seo": {
+    "metaTitle": "Matomo — Open Source Google Analytics Replacement",
+    "metaDescription": "Hand-tested review of Matomo. The most feature-complete open source web analytics. Heatmaps, session recording, e-commerce tracking, 100% data ownership."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

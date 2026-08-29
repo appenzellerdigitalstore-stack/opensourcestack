@@ -1,0 +1,29 @@
+{
+  "slug": "calcom",
+  "name": "Cal.com",
+  "tagline": "Open source scheduling infrastructure. The Calendly alternative you can self-host.",
+  "shortDescription": "Cal.com is the open source Calendly. Scheduling links, calendar sync (Google, Outlook, iCloud), video conferencing (Zoom, Google Meet, Daily), payments via Stripe, team scheduling, round-robin, and 100+ integrations. Self-hostable in Docker.",
+  "longDescription": "## What it is\n\nCal.com is a scheduling platform that lets you share a link, get booked, and let your calendar handle the rest. It started as a Calendly clone in 2021 and has since grown into a complete scheduling infrastructure used by 200K+ users, with features Calendly still charges extra for (team scheduling, payments, workflows).\n\n## Why we recommend it\n\nIt's the most-loved open source scheduling tool because it has every feature Calendly has and a few Calendly doesn't (white-label self-hosting, custom workflows, native Stripe integration, advanced routing). The free Cloud tier is generous; the self-hosted Docker image is one container; the paid tiers are 50–70% cheaper than Calendly's per-seat pricing.\n\n## When to use it\n\n- Individuals who are tired of paying Calendly $8–$16/user/mo\n- Teams that need round-robin, collective, or pool scheduling (Calendly charges extra)\n- SaaS apps that want to embed scheduling (Cal.com has a robust API + embed SDK)\n- Companies that want to white-label scheduling (self-host, replace the Cal.com brand with yours)",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "automation",
+  "publisher": "calcom",
+  "externalUrl": "https://cal.com",
+  "repoUrl": "https://github.com/calcom/cal.com",
+  "installCommand": "git clone https://github.com/calcom/cal.com.git && cd cal.com && yarn install",
+  "installInstructions": "**Self-host (most flexibility):**\n1. `git clone https://github.com/calcom/cal.com.git`\n2. `cd cal.com && yarn install`\n3. Follow the [self-hosting guide](https://cal.com/docs/self-hosting) (requires Postgres, Redis, and a calendar OAuth app)\n\n**One-click on Railway / Render / DigitalOcean:** Search \"Cal.com\" in the marketplace.\n\n**Cloud (easiest):** Free tier (1 connected calendar, unlimited bookings). Teams: $15/user/mo. Enterprise: custom.",
+  "logoUrl": "/logos/calcom.svg",
+  "trust": { "securityScore": 92, "qualityScore": 94, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.95, "avgLatencyMs": 180, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["scheduling", "calendly-alternative", "self-hosted", "white-label", "stripe"],
+  "useCases": ["personal-scheduling", "team-scheduling", "saas-embed", "white-label"],
+  "integrations": ["google-calendar", "outlook", "apple-icloud", "zoom", "google-meet", "stripe", "100+"],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, AGPL. Cloud Free: 1 calendar, unlimited bookings. Teams: $15/user/mo. Enterprise: custom.",
+  "seo": {
+    "metaTitle": "Cal.com — Open Source Calendly Alternative",
+    "metaDescription": "Hand-tested review of Cal.com. Open source scheduling infrastructure. Calendly with self-hosting, white-label, Stripe payments, and 50% lower per-seat pricing."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

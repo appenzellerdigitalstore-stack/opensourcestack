@@ -1,0 +1,29 @@
+{
+  "slug": "keycloak",
+  "name": "Keycloak",
+  "tagline": "Open source identity and access management. The Auth0/Okta you self-host.",
+  "shortDescription": "Keycloak is the open source IAM (identity and access management) standard. SSO, OAuth 2.0, OIDC, SAML 2.0, LDAP federation, MFA, passwordless, social login, and user federation. Backed by Red Hat and used by governments and Fortune 500s.",
+  "longDescription": "## What it is\n\nKeycloak is a full-featured identity and access management (IAM) server. It handles authentication (login, password reset, MFA, social login, passwordless) and authorization (role-based, attribute-based, fine-grained). It speaks every protocol enterprise apps need: OIDC, OAuth 2.0, SAML 2.0, LDAP.\n\n## Why we recommend it\n\nIt is the de facto open source IAM standard. The Red Hat team maintains it, the CNCF has it as an incubating project, and it powers authentication for thousands of apps and services. Self-hosting is one Docker container; the admin UI is a complete replacement for Auth0 and Okta at zero per-user cost.\n\n## When to use it\n\n- Any app that needs SSO across multiple services (log in once, access all)\n- B2B SaaS that needs enterprise customers with SAML/OIDC requirements\n- Replacing Auth0/Okta/Cognito when pricing per-MAU hurts\n- Centralizing auth for a portfolio of internal apps",
+  "kind": "platform",
+  "runtime": "java",
+  "category": "auth",
+  "publisher": "keycloak",
+  "externalUrl": "https://keycloak.org",
+  "repoUrl": "https://github.com/keycloak/keycloak",
+  "installCommand": "docker run -d -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:25 start-dev",
+  "installInstructions": "**Docker:**\n1. `docker run -d -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=$(openssl rand -hex 24) quay.io/keycloak/keycloak:25 start-dev`\n2. Open `http://localhost:8080`, log in with admin + the password you set\n3. Create a realm, add a client, configure identity providers\n\n**Production:** Use the optimized `start` mode, a real database (Postgres recommended), and put it behind HTTPS.\n\n**Managed (easier):** Red Hat SSO (now part of RHEL) or Cloud IAM providers (Clerk, WorkOS) for SaaS that doesn't want to operate Keycloak itself.",
+  "logoUrl": "/logos/keycloak.svg",
+  "trust": { "securityScore": 96, "qualityScore": 95, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.97, "avgLatencyMs": 95, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["iam", "sso", "oauth", "saml", "auth0-alternative", "okta-alternative"],
+  "useCases": ["sso", "b2b-saas", "user-federation", "mfa", "enterprise-auth"],
+  "integrations": ["ldap", "active-directory", "google", "github", "gitlab", "kubernetes"],
+  "pricing": "free",
+  "pricingDetails": "Community: 100% free, Apache-2.0, self-hosted. Red Hat build: bundled with RHEL subscriptions. Managed alternatives (Clerk, WorkOS): $0.025-0.05 per MAU.",
+  "seo": {
+    "metaTitle": "Keycloak — Open Source Auth0 / Okta Alternative",
+    "metaDescription": "Hand-tested review of Keycloak. Open source identity and access management. SSO, OAuth, SAML, MFA, user federation. The self-hosted Auth0 replacement."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

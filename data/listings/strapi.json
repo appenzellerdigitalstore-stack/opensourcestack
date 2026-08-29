@@ -1,0 +1,35 @@
+{
+  "slug": "strapi",
+  "name": "Strapi",
+  "tagline": "Open source headless CMS. Node.js, TypeScript-first, fully self-hostable.",
+  "shortDescription": "The most-used open source headless CMS. Define your content types in the admin UI or via code, get a REST + GraphQL API for free, and host it anywhere. Used by IBM, NASA, and Toyota.",
+  "longDescription": "## What it is\n\nStrapi is a Node.js-based headless CMS that lets you model your content (blog posts, products, pages, anything) and instantly get a typed API. The admin UI is open source and customizable; the API is yours to consume from any frontend.\n\n## Why we recommend it\n\nIt's the most mature open source headless CMS by a wide margin. The plugin ecosystem is huge (auth providers, i18n, SEO, S3 uploaders, draft/publish workflows). And unlike Contentful or Sanity, every line of your content model is in code (or exported to JSON) — no per-record API fees, no per-seat charges.\n\n## When to use it\n\n- Marketing sites with 5+ content types\n- Multi-brand or multi-locale sites\n- Any team that wants editors in a UI but engineers in code\n- Replacing WordPress for a content-heavy site that needs an API",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "cms",
+  "publisher": "strapi",
+  "externalUrl": "https://strapi.io",
+  "repoUrl": "https://github.com/strapi/strapi",
+  "installCommand": "npx create-strapi-app@latest my-project --quickstart",
+  "installInstructions": "**Quickstart:**\n1. Requires Node.js 18+ and npm/yarn\n2. `npx create-strapi-app@latest my-project --quickstart`\n3. Open `http://localhost:1337/admin` and create your admin user\n4. Define your first content type under Content-Type Builder\n5. Enable public access in Settings → Roles → Public\n\n**Production:**\n- Set `NODE_ENV=production`\n- Use a real database (Postgres recommended)\n- Configure a CDN in front of the media library",
+  "logoUrl": "/logos/strapi.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 94,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": { "up": true, "uptimePct30d": 99.92, "avgLatencyMs": 180, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["cms", "headless", "nodejs", "typescript", "rest-api", "graphql"],
+  "useCases": ["marketing-sites", "multi-brand", "content-heavy", "decoupled-frontend"],
+  "integrations": ["postgres", "mysql", "sqlite", "cloudinary", "s3", "algolia"],
+  "pricing": "freemium",
+  "pricingDetails": "Community Edition: free, self-hosted, MIT-licensed. Cloud: $99/mo starter, $499/mo team, custom enterprise. Per-content-type, not per-API-call.",
+  "seo": {
+    "metaTitle": "Strapi — Open Source Headless CMS Review",
+    "metaDescription": "Hand-tested review of Strapi. The most-used open source headless CMS. Self-host, define content types in code, get a typed API for free."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

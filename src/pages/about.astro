@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About — How We Curate" description="How OpenSourceStack picks, tests, and scores every project. Our editorial process, scoring rubric, and what we don't do.">
+  <div class="container-page max-w-3xl py-16 prose-mdx">
+    <h1>About OpenSourceStack</h1>
+    <p class="text-lg text-ink-300 leading-relaxed">
+      OpenSourceStack is a hand-curated directory of open source alternatives to popular SaaS. We exist because the existing options are either bloated aggregators (alternativeto.net) or have stale content (switching.software). There's a real need for an opinionated, well-maintained list of OSS that actually works in production.
+    </p>
+
+    <h2>The problem</h2>
+    <p>
+      When you're trying to leave a SaaS vendor, you usually Google "open source alternative to [X]" and get a listicle from 2018 with three entries, two of which have been abandoned. Alternativeto.net has every user-submitted alternative since 2009, but no editorial judgment and no quality signal. GitHub's awesome-* lists are the closest thing to a curated resource, but they're frozen in time and not searchable by category.
+    </p>
+    <p>
+      We built OpenSourceStack because we kept needing the same list ourselves. Every time we wanted to recommend an alternative to a client, we had to do the same research. So we did it once, properly, and put it on a website.
+    </p>
+
+    <h2>Our process</h2>
+    <p>Every project in this directory goes through the same four-step process before it's listed:</p>
+    <ol>
+      <li><strong>Discovered.</strong> Either by the team (we read release notes, watch GitHub, monitor Hacker News), submitted via email by a maintainer, or surfaced by a community member.</li>
+      <li><strong>Self-hosted.</strong> We run the install command in a clean environment with the recommended setup. If it doesn't work in 30 minutes, it doesn't ship.</li>
+      <li><strong>Tested.</strong> We exercise the core use cases. For databases, we run real queries. For chat platforms, we send real messages. For analytics tools, we install the tracking pixel and verify the dashboard.</li>
+      <li><strong>Reviewed.</strong> We write a hand-typed description of what it does, what it's good for, and where it falls down. The score is set by the reviewer, not auto-generated.</li>
+    </ol>
+
+    <h2>Our scoring</h2>
+    <p>Two scores, 0–100 each:</p>
+    <ul>
+      <li><strong>Security Score</strong> — is this safe to run with real data? Considers the project's security track record (CVEs, response time), the maturity of the auth model, default network exposure, and how actively vulnerabilities are patched. 90+ means we'd run it in production with sensitive data. Below 75 is "use with caution, sandbox it."</li>
+      <li><strong>Quality Score</strong> — is this good? Documentation completeness, error handling, performance under load, the quality of the failure modes, the activity level of the maintainers. A 95+ project is something you'd happily use for years. A 60 works but you'll curse it weekly.</li>
+    </ul>
+
+    <h2>What we don't do</h2>
+    <ul>
+      <li><strong>No pay-to-play.</strong> Featured placement is editor-decided, not auctioned. Sponsors get a badge and that's it — they don't get to game search ranking.</li>
+      <li><strong>No user accounts.</strong> We don't have logins, comments, or user reviews. The directory is editorial, not crowd-sourced.</li>
+      <li><strong>No user tracking.</strong> We use Cloudflare Web Analytics (no cookies, no personal data). That's it.</li>
+      <li><strong>No auto-approve.</strong> Every project is reviewed by a human before it appears.</li>
+    </ul>
+
+    <h2>What we charge</h2>
+    <p>The directory is free to browse. We make money in three ways:</p>
+    <ol>
+      <li><strong>Google AdSense</strong> — auto-ads on listing pages. Privacy-friendly, no paywall.</li>
+      <li><strong>Sponsored listings</strong> — $49/mo gets a "Verified" badge, $199/mo gets "Featured" placement. The projects are still editorially scored. Payment via PayPal.</li>
+      <li><strong>Donations</strong> — a small "Support us" link. Optional, no perks.</li>
+    </ol>
+    <p>That's it. No premium tier, no "Pro" features, no "unlock the full list" nonsense.</p>
+
+    <h2>Get in touch</h2>
+    <p>
+      Submit a project: <a href="/contact">contact form</a>.<br />
+      Sponsor a listing: <a href="/sponsor">sponsorship tiers</a>.<br />
+      Report a problem: <a href="https://github.com/appenzellerdigitalstore-stack/opensourcestack/issues" target="_blank" rel="noopener">open an issue on GitHub</a>.
+    </p>
+  </div>
+</Layout>

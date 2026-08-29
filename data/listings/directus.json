@@ -1,0 +1,29 @@
+{
+  "slug": "directus",
+  "name": "Directus",
+  "tagline": "Open source headless CMS + data platform. Instant admin panel on any SQL database.",
+  "shortDescription": "Directus wraps any existing SQL database (Postgres, MySQL, SQLite, Oracle, MS SQL) with a no-code admin panel, a GraphQL/REST API, and a real-time data layer. It doesn't own your data — it lives in your existing database. Perfect for ops dashboards, internal tools, and headless content.",
+  "longDescription": "## What it is\n\nDirectus is a data platform that sits on top of any SQL database. It introspects your schema, generates an admin panel, a REST API, and a GraphQL API, and gives you real-time subscriptions over WebSocket. Unlike other headless CMSes, you own the database schema — Directus never modifies it without your permission.\n\n## Why we recommend it\n\nIt is the only open source tool that works with your existing database. If you already have a Postgres or MySQL instance with your schema, Directus can wrap it in an admin UI and API in 5 minutes. It is also the cleanest path to building internal tools — you point it at your DB, it gives you a CRUD interface for free.\n\n## When to use it\n\n- Building internal admin tools on top of an existing database\n- Companies that want a headless CMS but already have a SQL schema they care about\n- Ops dashboards (Directus + a charting library = a free Retool)\n- Multi-team data platforms where different teams need different views of the same DB",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "cms",
+  "publisher": "directus",
+  "externalUrl": "https://directus.io",
+  "repoUrl": "https://github.com/directus/directus",
+  "installCommand": "npx create-directus-project@latest my-project",
+  "installInstructions": "**npx (easiest):**\n1. `npx create-directus-project@latest my-project`\n2. Follow the prompts (database, admin user)\n3. `cd my-project && npx directus start`\n4. Open `http://localhost:8055` and log in\n\n**Docker:**\n1. `docker run -d -p 8055:8055 -e KEY=replace-me -e SECRET=replace-me directus/directus:11`\n\n**Cloud (managed):** Free for 1 user, $25/mo Pro, $99/mo Business, custom Enterprise.",
+  "logoUrl": "/logos/directus.svg",
+  "trust": { "securityScore": 91, "qualityScore": 95, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.93, "avgLatencyMs": 195, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["headless-cms", "data-platform", "admin-panel", "internal-tools", "rest-api", "graphql"],
+  "useCases": ["internal-tools", "headless-cms", "ops-dashboards", "data-platforms"],
+  "integrations": ["postgres", "mysql", "sqlite", "oracle", "mssql", "rest", "graphql", "websocket"],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, GPLv3. Cloud Free: 1 user. Pro: $25/mo. Business: $99/mo. Enterprise: custom.",
+  "seo": {
+    "metaTitle": "Directus — Open Source Headless CMS + Data Platform",
+    "metaDescription": "Hand-tested review of Directus. Open source data platform that wraps any SQL database with an admin panel and API. Perfect for internal tools and ops dashboards."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

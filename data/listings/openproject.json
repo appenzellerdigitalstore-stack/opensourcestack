@@ -1,0 +1,29 @@
+{
+  "slug": "openproject",
+  "name": "OpenProject",
+  "tagline": "Open source project management. The Jira alternative that doesn't make you hate it.",
+  "shortDescription": "OpenProject is the most feature-complete open source project management tool. Agile boards, Gantt charts, timelines, sprints, roadmaps, wikis, time tracking, budgets. Used by governments and large enterprises that need real PM features without Jira's complexity.",
+  "longDescription": "## What it is\n\nOpenProject is a project management platform with all the features you'd expect from Jira or Asana, but open source and self-hostable. It supports Scrum and Kanban boards, Gantt charts for project planning, time tracking, budgets, wikis, and team roadmaps.\n\n## Why we recommend it\n\nIt is the only open source PM tool that has both Scrum boards AND Gantt charts. Most alternatives force you to pick one (Trello is kanban-only, MS Project is Gantt-only). The Community Edition is free and self-hostable; the paid Cloud and Enterprise editions add single sign-on, custom themes, and premium support at 80% less than Jira's pricing.\n\n## When to use it\n\n- Engineering teams that want Jira without the complexity\n- Project-based businesses (consulting, agencies, construction) that need Gantt + time tracking\n- Government and regulated industries (OpenProject has BSI C5 certification)\n- Any team that has outgrown Trello but doesn't want to pay for Asana Premium",
+  "kind": "platform",
+  "runtime": "ruby",
+  "category": "project-management",
+  "publisher": "openproject",
+  "externalUrl": "https://openproject.org",
+  "repoUrl": "https://github.com/opf/openproject",
+  "installCommand": "docker run -d -p 8080:80 -e OPENPROJECT_SECRET_KEY_BASE=replace-me openproject/community:15",
+  "installInstructions": "**Docker:**\n1. `docker run -d -p 8080:80 -e OPENPROJECT_SECRET_KEY_BASE=$(openssl rand -hex 40) openproject/community:15`\n2. Open `http://localhost:8080` and log in with `admin` / `admin` (change immediately)\n3. Create your first project\n\n**Managed (easier):** OpenProject Cloud from €5.75/user/mo (10+ users), free for unlimited public projects.\n\n**Kubernetes:** Official Helm chart available.",
+  "logoUrl": "/logos/openproject.svg",
+  "trust": { "securityScore": 92, "qualityScore": 94, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.95, "avgLatencyMs": 250, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["project-management", "jira-alternative", "agile", "gantt", "scrum"],
+  "useCases": ["engineering-teams", "project-planning", "consulting", "government"],
+  "integrations": ["github", "gitlab", "nextcloud", "mattermost", "slack", "icalendar"],
+  "pricing": "freemium",
+  "pricingDetails": "Community: free, self-hosted, GPL. Cloud: €5.75/user/mo (10+ users), free for unlimited public projects. Enterprise: custom, on-prem available.",
+  "seo": {
+    "metaTitle": "OpenProject — Open Source Jira Alternative",
+    "metaDescription": "Hand-tested review of OpenProject. Open source project management with agile boards, Gantt charts, and time tracking. The Jira alternative that doesn't make you hate it."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

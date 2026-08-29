@@ -1,0 +1,35 @@
+{
+  "slug": "ghost",
+  "name": "Ghost",
+  "tagline": "Open source publishing platform. The professional alternative to Substack and Medium.",
+  "shortDescription": "Ghost powers some of the world's largest publications (The Verge, Trello, Duolingo, etc.). It's a Node.js CMS purpose-built for newsletters, memberships, and paid content. MIT-licensed and self-hostable.",
+  "longDescription": "## What it is\n\nGhost is a modern publishing platform built for professional creators and publishers. It handles the entire workflow: writing in a beautiful editor, distributing via newsletter (with built-in email delivery), and monetizing via memberships and paid subscriptions.\n\n## Why we recommend it\n\nIt is the only open source platform that does the entire newsletter-to-paid-pipeline out of the box. No need to glue together ConvertKit + Memberful + Substack — Ghost handles all three. Self-hosting is trivial (one `ghost` npm package, one CLI command), and the managed Ghost(Pro) option starts at $9/mo with no per-newsletter-subscriber fees.\n\n## When to use it\n\n- Newsletters with 1k+ subscribers (where Substack/ConvertKit start charging meaningfully)\n- Paid membership sites\n- Indie publications and journalism\n- Personal blogs that need to look professional without WordPress",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "cms",
+  "publisher": "ghost",
+  "externalUrl": "https://ghost.org",
+  "repoUrl": "https://github.com/TryGhost/Ghost",
+  "installCommand": "npm install ghost-cli -g && ghost install local",
+  "installInstructions": "**Self-host:**\n1. Requires Node 18+, MySQL 8, and a reverse proxy (nginx or Caddy)\n2. `npm install -g ghost-cli`\n3. `mkdir my-site && cd my-site`\n4. `ghost install local` (uses sqlite for local dev)\n5. `ghost install` (production, uses MySQL)\n6. The admin is at `yourdomain.com/ghost/`\n\n**Managed (easier):** Sign up at https://ghost.org, connect your domain, start writing. $9/mo Starter, $25/mo Creator, $199/mo Team.",
+  "logoUrl": "/logos/ghost.svg",
+  "trust": {
+    "securityScore": 92,
+    "qualityScore": 96,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": { "up": true, "uptimePct30d": 99.97, "avgLatencyMs": 220, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["cms", "newsletter", "memberships", "publishing", "nodejs"],
+  "useCases": ["newsletters", "paid-content", "blogs", "membership-sites", "indie-publishing"],
+  "integrations": ["stripe", "mailgun", "sendgrid", "zapier", "disqus"],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, you pay hosting. Ghost(Pro): $9/mo starter (up to 100 members), $25/mo creator (1,000 members), $199/mo team (10,000 members).",
+  "seo": {
+    "metaTitle": "Ghost — Open Source Publishing Platform Review",
+    "metaDescription": "Hand-tested review of Ghost. The professional open source alternative to Substack. Newsletters, memberships, paid content, all in one."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "mautic",
+  "name": "Mautic",
+  "tagline": "Open source marketing automation. The HubSpot alternative that owns your data.",
+  "shortDescription": "Mautic is the world's largest open source marketing automation platform. Email campaigns, drip workflows, landing pages, forms, lead scoring, contact segmentation, and multi-channel campaigns. 200K+ marketers use it. Self-hostable PHP/MySQL.",
+  "longDescription": "## What it is\n\nMautic is a marketing automation platform with all the features HubSpot and ActiveCampaign offer: email marketing, drip campaigns, landing pages, forms, lead scoring, contact segmentation, and visual workflow builders. It is open source under the GPL and self-hostable.\n\n## Why we recommend it\n\nIf you have more than 10K contacts and you're tired of Mailchimp or HubSpot per-contact pricing, Mautic is the answer. The self-hosted Community Edition is free; the paid tiers add premium plugins (multi-channel, advanced reporting, priority support) at flat pricing. Your contact data, email sending reputation, and customer journey logic all live on your infrastructure.\n\n## When to use it\n\n- E-commerce sites that need sophisticated drip campaigns\n- B2B companies with long sales cycles (lead scoring + nurture workflows)\n- Anyone who has hit Mailchimp's contact limit and doesn't want to pay $500+/mo\n- Marketing teams that want to own their data (no third-party tracking)",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "email-marketing",
+  "publisher": "mautic",
+  "externalUrl": "https://mautic.org",
+  "repoUrl": "https://github.com/mautic/mautic",
+  "installCommand": "docker run -d --name mautic -p 8080:80 -v mautic_data:/var/www/html mautic/mautic:latest",
+  "installInstructions": "**Docker:**\n1. `docker run -d --name mautic -p 8080:80 -v mautic_data:/var/www/html mautic/mautic:latest`\n2. Open `http://localhost:8080` and follow the installer\n3. Configure your SMTP (Amazon SES, SendGrid, Postmark, or your own)\n4. Build your first campaign\n\n**Managed (easier):** Mautic Cloud from $99/mo (Essentials) to $499/mo (Enterprise).",
+  "logoUrl": "/logos/mautic.svg",
+  "trust": { "securityScore": 90, "qualityScore": 91, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.90, "avgLatencyMs": 320, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["marketing-automation", "email-marketing", "hubspot-alternative", "lead-scoring", "drip-campaigns"],
+  "useCases": ["email-marketing", "lead-nurture", "ecommerce", "b2b", "newsletters"],
+  "integrations": ["smtp", "amazon-ses", "sendgrid", "salesforce", "hubspot", "zapier"],
+  "pricing": "freemium",
+  "pricingDetails": "Community: free, self-hosted, GPL. Cloud Essentials: $99/mo. Cloud Pro: $299/mo. Cloud Enterprise: $499/mo.",
+  "seo": {
+    "metaTitle": "Mautic — Open Source HubSpot Alternative",
+    "metaDescription": "Hand-tested review of Mautic. Open source marketing automation. Email campaigns, drip workflows, lead scoring. The HubSpot alternative without per-contact fees."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

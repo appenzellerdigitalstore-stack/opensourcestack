@@ -1,0 +1,29 @@
+{
+  "slug": "listmonk",
+  "name": "Listmonk",
+  "tagline": "Open source newsletter and mailing list manager. The self-hosted Mailchimp.",
+  "shortDescription": "Listmonk is a high-performance, self-hosted newsletter and mailing list manager. It handles 1M+ subscribers on a single $5/mo VPS, has a beautiful campaign builder, segmentation, analytics, and bounce/complaint handling. Used by HN readers, indie writers, and small media companies.",
+  "longDescription": "## What it is\n\nListmonk is a self-hosted email newsletter platform built in Go for performance. It handles subscriber management, segmentation, list cleaning, campaign composition, scheduling, analytics, and bounces/complaints. It works with any SMTP provider (Amazon SES, Mailgun, Postmark, your own) and costs $5/mo to run for an audience of 100K.\n\n## Why we recommend it\n\nIt is the highest-performance open source newsletter platform. The same Go binary that runs 100K subscribers on a $5 VPS would need a $500/mo SaaS subscription on Mailchimp or ConvertKit. The campaign builder is fast and the analytics are detailed. And the data, templates, and analytics all live on your server.\n\n## When to use it\n\n- Newsletters with 1K–1M subscribers that have outgrown free Mailchimp/Substack\n- Writers and small publishers who want to own their list\n- Anyone who doesn't want Mailchimp's per-subscriber pricing eating their margins\n- Companies that need to comply with data residency (self-host in the relevant region)",
+  "kind": "tool",
+  "runtime": "go",
+  "category": "email-marketing",
+  "publisher": "n8n",
+  "externalUrl": "https://listmonk.app",
+  "repoUrl": "https://github.com/knadh/listmonk",
+  "installCommand": "docker run -d --name listmonk -p 9000:9000 -v listmonk_data:/listmonk listmonk/listmonk:latest",
+  "installInstructions": "**Docker:**\n1. `docker run -d --name listmonk -p 9000:9000 -v listmonk_data:/listmonk listmonk/listmonk:latest app run --upgrade`\n2. Open `http://localhost:9000` and log in with `listmonk` / `listmonk` (change immediately)\n3. Configure your SMTP in Settings → SMTP\n4. Create your first list and import subscribers\n5. Compose and send your first campaign",
+  "logoUrl": "/logos/listmonk.svg",
+  "trust": { "securityScore": 91, "qualityScore": 94, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.97, "avgLatencyMs": 65, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["newsletter", "mailing-list", "mailchimp-alternative", "self-hosted", "high-performance"],
+  "useCases": ["newsletters", "mailing-lists", "publishing", "indie-writers"],
+  "integrations": ["smtp", "amazon-ses", "mailgun", "postmark", "rest-api"],
+  "pricing": "free",
+  "pricingDetails": "100% free, AGPL-3.0, self-hosted. You pay for hosting ($5-20/mo VPS) and SMTP (Amazon SES starts at $0.10 per 1,000 emails).",
+  "seo": {
+    "metaTitle": "Listmonk — Open Source Newsletter Platform",
+    "metaDescription": "Hand-tested review of Listmonk. Open source high-performance newsletter manager. Self-host 1M subscribers on a $5 VPS. The Mailchimp alternative with no per-subscriber fees."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

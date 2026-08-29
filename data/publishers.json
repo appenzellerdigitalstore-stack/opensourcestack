@@ -1,0 +1,18 @@
+[
+  { "slug": "supabase", "name": "Supabase", "websiteUrl": "https://supabase.com", "githubHandle": "supabase", "isVerified": true },
+  { "slug": "strapi", "name": "Strapi", "websiteUrl": "https://strapi.io", "githubHandle": "strapi", "isVerified": true },
+  { "slug": "ghost", "name": "Ghost Foundation", "websiteUrl": "https://ghost.org", "githubHandle": "TryGhost", "isVerified": true },
+  { "slug": "plausible", "name": "Plausible Insights", "websiteUrl": "https://plausible.io", "githubHandle": "plausible", "isVerified": true },
+  { "slug": "matomo", "name": "Matomo", "websiteUrl": "https://matomo.org", "githubHandle": "matomo-org", "isVerified": true },
+  { "slug": "rocket-chat", "name": "Rocket.Chat", "websiteUrl": "https://rocket.chat", "githubHandle": "RocketChat", "isVerified": true },
+  { "slug": "mattermost", "name": "Mattermost", "websiteUrl": "https://mattermost.com", "githubHandle": "mattermost", "isVerified": true },
+  { "slug": "openproject", "name": "OpenProject", "websiteUrl": "https://openproject.org", "githubHandle": "opf", "isVerified": true },
+  { "slug": "meilisearch", "name": "Meilisearch", "websiteUrl": "https://meilisearch.com", "githubHandle": "meilisearch", "isVerified": true },
+  { "slug": "typesense", "name": "Typesense", "websiteUrl": "https://typesense.org", "githubHandle": "typesense", "isVerified": true },
+  { "slug": "nextcloud", "name": "Nextcloud", "websiteUrl": "https://nextcloud.com", "githubHandle": "nextcloud", "isVerified": true },
+  { "slug": "keycloak", "name": "Keycloak (CNCF)", "websiteUrl": "https://keycloak.org", "githubHandle": "keycloak", "isVerified": true },
+  { "slug": "mautic", "name": "Mautic", "websiteUrl": "https://mautic.org", "githubHandle": "mautic", "isVerified": true },
+  { "slug": "n8n", "name": "n8n", "websiteUrl": "https://n8n.io", "githubHandle": "n8n-io", "isVerified": true },
+  { "slug": "appwrite", "name": "Appwrite", "websiteUrl": "https://appwrite.io", "githubHandle": "appwrite", "isVerified": true },
+  { "slug": "calcom", "name": "Cal.com", "websiteUrl": "https://cal.com", "githubHandle": "calcom", "isVerified": true }
+]

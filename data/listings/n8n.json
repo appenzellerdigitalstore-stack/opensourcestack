@@ -1,0 +1,29 @@
+{
+  "slug": "n8n",
+  "name": "n8n",
+  "tagline": "Workflow automation. Zapier with code, AI, and no per-task fees.",
+  "shortDescription": "n8n is a workflow automation tool that combines visual flow-building with the ability to write custom JavaScript/Python at any node. 400+ integrations, AI workflows, self-hostable. Used by 70K+ teams including Vodafone, Fiverr, and Delivery Hero.",
+  "longDescription": "## What it is\n\nn8n is a workflow automation platform. The visual editor lets you wire together 400+ integrations (Slack, Stripe, Postgres, OpenAI, etc.) into flows that trigger on events, schedule, or webhooks. Where it differs from Zapier and Make: at any step you can drop into JavaScript or Python and write real code.\n\n## Why we recommend it\n\nIt is the workflow tool for technical teams. The per-execution pricing is dramatically cheaper than Zapier (n8n Cloud is $20/mo for 2,500 executions vs. Zapier's $599/mo for the same). And self-hosted n8n is unlimited executions. The AI features (LangChain integration, vector store nodes) are first-class, not bolt-ons.\n\n## When to use it\n\n- Replacing Zapier or Make when the bill gets scary\n- Internal tools that need real code at certain steps (not just drag-and-drop)\n- AI workflows (RAG pipelines, multi-agent orchestration, content generation)\n- Companies that want to own their automation infrastructure",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "automation",
+  "publisher": "n8n",
+  "externalUrl": "https://n8n.io",
+  "repoUrl": "https://github.com/n8n-io/n8n",
+  "installCommand": "docker run -d --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n n8nio/n8n",
+  "installInstructions": "**Docker:**\n1. `docker run -d --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n n8nio/n8n`\n2. Open `http://localhost:5678` and create your account\n3. Build your first flow from a template or from scratch\n\n**Cloud (easier):** Starter free, Pro $20/mo (2,500 executions), Enterprise custom.\n\n**npm:** `npx n8n` (requires Node 18+).",
+  "logoUrl": "/logos/n8n.svg",
+  "trust": { "securityScore": 92, "qualityScore": 95, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.95, "avgLatencyMs": 250, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["automation", "workflow", "zapier-alternative", "ai", "self-hosted", "no-code"],
+  "useCases": ["workflow-automation", "ai-pipelines", "integrations", "internal-tools"],
+  "integrations": ["400+", "openai", "anthropic", "slack", "github", "postgres", "webhooks"],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, sustainable-use license. Cloud Starter: free. Pro: $20/mo (2,500 executions). Enterprise: custom. Per-execution, not per-task.",
+  "seo": {
+    "metaTitle": "n8n — Open Source Zapier Alternative",
+    "metaDescription": "Hand-tested review of n8n. Open source workflow automation with code, AI, and no per-task fees. The Zapier replacement for technical teams."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

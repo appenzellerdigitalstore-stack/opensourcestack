@@ -1,0 +1,29 @@
+{
+  "slug": "nextcloud",
+  "name": "Nextcloud",
+  "tagline": "Self-hosted file sync, share, and collaboration. The Dropbox + Google Workspace alternative.",
+  "shortDescription": "Nextcloud is the most popular open source file sync and collaboration platform. Files, photos, documents, calendars, contacts, video calls, email — all on your own server, all under your control. Used by the German federal government, Siemens, and 400K+ users worldwide.",
+  "longDescription": "## What it is\n\nNextcloud is a self-hosted productivity platform. It started as a Dropbox clone and has grown into a full Google Workspace alternative: file sync, share, and collaboration, plus calendar, contacts, email, video calls (Nextcloud Talk), and an app ecosystem with 200+ first- and third-party apps.\n\n## Why we recommend it\n\nIt is the only open source platform that covers the full Google Workspace surface. Self-host it on a $10/mo VPS for your family, or scale to thousands of users with enterprise support. The data stays on hardware you control, and you can integrate it with your existing AD/LDAP/SSO.\n\n## When to use it\n\n- Privacy-conscious families and individuals (drop the Dropbox subscription)\n- Companies that need to comply with data residency (self-host in EU/US/APAC)\n- Teams replacing Google Workspace or Microsoft 365\n- Education and research (Nextcloud is popular at universities)",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "storage",
+  "publisher": "nextcloud",
+  "externalUrl": "https://nextcloud.com",
+  "repoUrl": "https://github.com/nextcloud/server",
+  "installCommand": "docker run -d --name nextcloud -p 8080:80 -v nextcloud_data:/var/www/html nextcloud:29",
+  "installInstructions": "**Docker (easiest):**\n1. `docker run -d --name nextcloud -p 8080:80 -v nextcloud_data:/var/www/html nextcloud:29`\n2. Open `http://localhost:8080` and create your admin account\n3. For production, use a real database (Postgres or MariaDB) and HTTPS\n\n**Snap (Ubuntu, even easier):**\n1. `sudo snap install nextcloud`\n2. Visit `https://your-server-ip` and follow the setup\n\n**Managed (easiest):** Nextcloud Hub from €7.50/user/mo. Self-host is free; you pay for hosting.",
+  "logoUrl": "/logos/nextcloud.svg",
+  "trust": { "securityScore": 91, "qualityScore": 93, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.92, "avgLatencyMs": 180, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["file-sync", "collaboration", "dropbox-alternative", "self-hosted", "privacy"],
+  "useCases": ["family-cloud", "company-files", "compliance", "replace-google-workspace"],
+  "integrations": ["ldap", "saml", "office365", "onlyoffice", "collabora", "200+ apps"],
+  "pricing": "freemium",
+  "pricingDetails": "Community: free, self-hosted, AGPL. Nextcloud Hub Standard: €7.50/user/mo. Hub Enterprise: custom. Self-hosting is free; you pay for hosting.",
+  "seo": {
+    "metaTitle": "Nextcloud — Self-Hosted Dropbox + Google Workspace",
+    "metaDescription": "Hand-tested review of Nextcloud. Self-hosted file sync, calendar, contacts, video calls. The open source Dropbox + Workspace alternative."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

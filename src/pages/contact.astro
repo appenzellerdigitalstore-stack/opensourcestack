@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+const subject = Astro.url.searchParams.get('subject') || '';
+const subjectLabels: Record<string, string> = {
+  'verified-sponsorship': 'Verified sponsorship inquiry',
+  'featured-sponsorship': 'Featured sponsorship inquiry',
+  'sponsor-sponsorship': 'Sponsor tier inquiry',
+};
+const defaultSubject = subjectLabels[subject] || 'General inquiry';
+---
+
+<Layout title="Contact" description="Get in touch with the OpenSourceStack team. Submit a project, report an issue, or ask about sponsorship.">
+  <div class="container-page max-w-2xl py-16">
+    <h1 class="text-4xl font-bold mb-4">Get in touch</h1>
+    <p class="text-lg text-ink-300 leading-relaxed mb-8">
+      We read every email. Most get a reply within 48 hours. Submitting a project? Include the install command, license, and what makes it stand out.
+    </p>
+    <div class="card p-6 mb-8">
+      <h2 class="text-lg font-semibold mb-3">Direct email</h2>
+      <ul class="text-sm space-y-2 font-mono">
+        <li class="flex items-center gap-3"><span class="text-ink-500 w-32">Project submission</span><a href="mailto:submit@opensourcestack.ink" class="text-brand-400 hover:text-brand-300">submit@opensourcestack.ink</a></li>
+        <li class="flex items-center gap-3"><span class="text-ink-500 w-32">Sponsorship</span><a href="mailto:sponsor@opensourcestack.ink" class="text-brand-400 hover:text-brand-300">sponsor@opensourcestack.ink</a></li>
+        <li class="flex items-center gap-3"><span class="text-ink-500 w-32">Bug / issue</span><a href="https://github.com/appenzellerdigitalstore-stack/opensourcestack/issues" target="_blank" rel="noopener" class="text-brand-400 hover:text-brand-300">Open a GitHub issue →</a></li>
+        <li class="flex items-center gap-3"><span class="text-ink-500 w-32">Everything else</span><a href="mailto:hello@opensourcestack.ink" class="text-brand-400 hover:text-brand-300">hello@opensourcestack.ink</a></li>
+      </ul>
+    </div>
+    <div class="card p-6">
+      <h2 class="text-lg font-semibold mb-3">Quick contact form</h2>
+      <p class="text-sm text-ink-400 mb-4">This opens your email client with a pre-filled message. No data is sent to our server.</p>
+      <form id="contact-form" class="space-y-4" onsubmit="event.preventDefault(); window.location.href = this.action + '?subject=' + encodeURIComponent(this.subject.value) + '&body=' + encodeURIComponent('Name: ' + this.name.value + '\n\nEmail: ' + this.email.value + '\n\nMessage:\n' + this.message.value);">
+        <input type="hidden" name="_to" value="hello@opensourcestack.ink" />
+        <div>
+          <label class="block text-sm font-medium text-ink-200 mb-1.5">Subject</label>
+          <input type="text" name="subject" value={defaultSubject} required class="w-full rounded-md bg-ink-900/80 ring-1 ring-inset ring-ink-800 focus:ring-brand-500 px-3 py-2 text-sm text-ink-100 outline-none" />
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div><label class="block text-sm font-medium text-ink-200 mb-1.5">Your name</label><input type="text" name="name" required class="w-full rounded-md bg-ink-900/80 ring-1 ring-inset ring-ink-800 focus:ring-brand-500 px-3 py-2 text-sm text-ink-100 outline-none" /></div>
+          <div><label class="block text-sm font-medium text-ink-200 mb-1.5">Your email</label><input type="email" name="email" required class="w-full rounded-md bg-ink-900/80 ring-1 ring-inset ring-ink-800 focus:ring-brand-500 px-3 py-2 text-sm text-ink-100 outline-none" /></div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-ink-200 mb-1.5">Message</label>
+          <textarea name="message" rows="5" required class="w-full rounded-md bg-ink-900/80 ring-1 ring-inset ring-ink-800 focus:ring-brand-500 px-3 py-2 text-sm text-ink-100 outline-none"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-full">Open in email client →</button>
+      </form>
+    </div>
+  </div>
+</Layout>

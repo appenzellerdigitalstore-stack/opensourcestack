@@ -1,0 +1,29 @@
+{
+  "slug": "rocket-chat",
+  "name": "Rocket.Chat",
+  "tagline": "Open source team chat. The self-hosted Slack alternative.",
+  "shortDescription": "Rocket.Chat is a full-featured team chat platform you can self-host. Channels, threads, DMs, voice, video, file sharing, integrations, bots, omnichannel customer support. Used by the US Navy, the Brazilian Air Force, and 12M+ users worldwide.",
+  "longDescription": "## What it is\n\nRocket.Chat is a team communication platform with all the features you'd expect from Slack or Teams: public and private channels, threads, DMs, voice and video calls, screen sharing, file uploads, search, integrations with 200+ tools, and an omnichannel customer support module.\n\n## Why we recommend it\n\nIt's the most feature-complete open source chat platform. The free community edition has nearly everything Slack has. The enterprise edition adds compliance features (audit logs, GDPR tools, SAML). And unlike Slack, you can self-host the whole thing on a $20/mo VPS.\n\n## When to use it\n\n- Teams that need Slack-like features but want to own the data\n- Organizations in regulated industries (healthcare, finance, government)\n- Companies that want a chat platform integrated with their existing tools\n- Customer support teams that need omnichannel (email, SMS, WhatsApp, Telegram in one inbox)",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "communication",
+  "publisher": "rocket-chat",
+  "externalUrl": "https://rocket.chat",
+  "repoUrl": "https://github.com/RocketChat/Rocket.Chat",
+  "installCommand": "docker run -d --name rocketchat -p 3000:3000 rocket.chat:7",
+  "installInstructions": "**Docker (easiest):**\n1. `docker run -d --name rocketchat -p 3000:3000 rocket.chat:7`\n2. Open `http://localhost:3000` and create your admin account\n3. Configure email + your domain in Settings\n\n**Production:** Use the official Kubernetes Helm chart or the managed Rocket.Chat Cloud (from $2/user/mo, free for up to 25 users).",
+  "logoUrl": "/logos/rocket-chat.svg",
+  "trust": { "securityScore": 90, "qualityScore": 93, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.94, "avgLatencyMs": 220, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["chat", "team-communication", "self-hosted", "slack-alternative", "omnichannel"],
+  "useCases": ["internal-chat", "customer-support", "devops", "compliance"],
+  "integrations": ["slack-import", "github", "jira", "mattermost-bridge", "200+"],
+  "pricing": "freemium",
+  "pricingDetails": "Community: free, self-hosted. Standard Cloud: $2.50/user/mo. Pro: $5.50/user/mo. Enterprise: custom.",
+  "seo": {
+    "metaTitle": "Rocket.Chat — Open Source Slack Alternative",
+    "metaDescription": "Hand-tested review of Rocket.Chat. The most feature-complete open source team chat. Channels, video, integrations, omnichannel support."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

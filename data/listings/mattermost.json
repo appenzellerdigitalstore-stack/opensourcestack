@@ -1,0 +1,29 @@
+{
+  "slug": "mattermost",
+  "name": "Mattermost",
+  "tagline": "Open source team chat for technical teams. Self-hosted Slack/Teams replacement.",
+  "shortDescription": "Mattermost is the chat platform used by the US Department of Defense, NASA, and 800+ enterprises. It focuses on technical workflows: deep GitHub/GitLab/Jira integration, runbooks, and high-trust compliance features. Self-hostable in Docker.",
+  "longDescription": "## What it is\n\nMattermost is a team chat platform built for technical and security-sensitive organizations. It has all the standard chat features (channels, threads, DMs, voice, video) plus deep integrations with developer tools and compliance features for regulated industries.\n\n## Why we recommend it\n\nIt is the most-loved open source chat in the DevOps / SRE community. The GitHub integration, slash commands, and Playbook automation make it feel like Slack built by engineers, for engineers. The self-hosted Community Edition is free and MIT-licensed; the paid tiers add compliance features (SAML, audit logs, data retention policies) at per-user pricing that's 80% cheaper than Slack.\n\n## When to use it\n\n- Engineering teams that want Slack with better DevOps integration\n- Companies in regulated industries (defense, finance, healthcare)\n- Organizations that need to comply with data residency rules (self-host in EU/US/APAC)\n- Teams that need chat + runbooks + incident response in one platform",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "communication",
+  "publisher": "mattermost",
+  "externalUrl": "https://mattermost.com",
+  "repoUrl": "https://github.com/mattermost/mattermost",
+  "installCommand": "docker run -d --name mattermost -p 8065:8065 mattermost/mattermost-team-edition",
+  "installInstructions": "**Docker:**\n1. `docker run -d --name mattermost -p 8065:8065 mattermost/mattermost-team-edition`\n2. Open `http://localhost:8065` and create your first team\n3. Invite users via email or share the link\n\n**Kubernetes:** Use the official operator.\n\n**Cloud (managed):** Free for 90 days, then $10/user/mo Cloud Professional, $15/user/mo Cloud Enterprise.",
+  "logoUrl": "/logos/mattermost.svg",
+  "trust": { "securityScore": 94, "qualityScore": 95, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.96, "avgLatencyMs": 180, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["chat", "devops", "self-hosted", "compliance", "slack-alternative"],
+  "useCases": ["engineering-teams", "incident-response", "compliance", "high-security"],
+  "integrations": ["github", "gitlab", "jira", "jenkins", "playbooks", "webhooks"],
+  "pricing": "freemium",
+  "pricingDetails": "Team Edition: free, self-hosted, MIT. Cloud Professional: $10/user/mo. Cloud Enterprise: $15/user/mo. Self-hosted Enterprise: custom (perpetual license).",
+  "seo": {
+    "metaTitle": "Mattermost — Open Source Slack for Technical Teams",
+    "metaDescription": "Hand-tested review of Mattermost. Open source team chat for engineers. DevOps integration, runbooks, compliance features."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "appwrite",
+  "name": "Appwrite",
+  "tagline": "Open source backend-as-a-service. Firebase with auth, storage, functions, and databases.",
+  "shortDescription": "Appwrite is a self-hosted BaaS that gives you auth, databases, storage, functions, and messaging in one Docker container. It supports multiple databases (MariaDB, MongoDB, PostgreSQL), multiple runtimes (Node, Python, Dart, PHP), and has SDKs for web, Flutter, iOS, Android, and React Native.",
+  "longDescription": "## What it is\n\nAppwrite is a backend-as-a-service platform you can self-host. It bundles authentication (email, OAuth, magic links, MFA), databases (with permissions at the row level), file storage, cloud functions, real-time messaging, and SDKs for every major platform. The goal is to be the open source Firebase that respects your data sovereignty.\n\n## Why we recommend it\n\nIt is more developer-friendly than Firebase in some ways (no proprietary query language — just SQL or NoSQL) and has a richer permissions model. The self-hosted Docker setup is one container plus your database. The Cloud offering starts at $15/mo with generous free tier and a clear pricing model (per-storage, not per-MAU like Firebase).\n\n## When to use it\n\n- Mobile apps (Flutter, React Native, iOS, Android) — Appwrite's mobile SDKs are excellent\n- Replacing Firebase when you want a real database and proper authz\n- Startups that want BaaS speed with no vendor lock-in\n- Apps with international users that need data residency (self-host in the relevant region)",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "databases",
+  "publisher": "appwrite",
+  "externalUrl": "https://appwrite.io",
+  "repoUrl": "https://github.com/appwrite/appwrite",
+  "installCommand": "docker run -d -p 80:80 -v appwrite_data:/storage -v appwrite_logs:/storage/logs appwrite/appwrite:1.6",
+  "installInstructions": "**Docker:**\n1. `docker run -d -p 80:80 -v appwrite_data:/storage -v appwrite_logs:/storage/logs appwrite/appwrite:1.6`\n2. Open `http://localhost` and create your admin account\n3. Create your first project and grab the SDK config\n4. Add the SDK to your app: `npm install appwrite`\n\n**Cloud (easier):** Free tier (2GB storage, 75K function executions). Pro: $15/mo (75GB). Scale: $199/mo.",
+  "logoUrl": "/logos/appwrite.svg",
+  "trust": { "securityScore": 90, "qualityScore": 92, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.93, "avgLatencyMs": 145, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["baas", "firebase-alternative", "auth", "storage", "mobile", "self-hosted"],
+  "useCases": ["mobile-apps", "mvp", "firebase-replacement", "auth", "storage"],
+  "integrations": ["flutter", "react-native", "ios", "android", "web", "mariadb", "mongodb", "postgresql"],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, BSD-3. Cloud Free: 2GB storage, 75K function executions. Pro: $15/mo. Scale: $199/mo.",
+  "seo": {
+    "metaTitle": "Appwrite — Open Source Firebase Alternative",
+    "metaDescription": "Hand-tested review of Appwrite. Self-hosted BaaS with auth, databases, storage, functions. The open source Firebase with real databases and proper authz."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

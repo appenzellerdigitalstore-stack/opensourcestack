@@ -1,0 +1,29 @@
+{
+  "slug": "docmost",
+  "name": "Docmost",
+  "tagline": "Open source collaborative wiki and docs. The Notion + Confluence alternative.",
+  "shortDescription": "Docmost is a fast, open source collaborative documentation and wiki platform built in 2023. Real-time collaboration, nested pages, permissions, diagrams, draw.io integration, and a Notion-style editor. Self-hostable in Docker with Postgres.",
+  "longDescription": "## What it is\n\nDocmost is a wiki and documentation platform for teams. It has a Notion-style block editor, real-time collaboration, nested page hierarchies, granular permissions, image upload, code blocks with syntax highlighting, math (KaTeX), diagrams (Mermaid, draw.io), and a clean API. The codebase is TypeScript + NestJS + React.\n\n## Why we recommend it\n\nIt is the best open source Notion/Confluence alternative that launched in the last two years. Notion can't be self-hosted; Confluence is expensive and bloated; BookStack, Outline, and Wiki.js are all older and less polished. Docmost is fast, beautiful, and actively maintained. The Docker setup is one container plus Postgres.\n\n## When to use it\n\n- Internal team documentation replacing Notion or Confluence\n- Engineering teams that want a real-time collaborative wiki\n- Companies that need to self-host due to compliance\n- Anyone who has tried Wiki.js or BookStack and found them too old-feeling",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "cms",
+  "publisher": "n8n",
+  "externalUrl": "https://docmost.com",
+  "repoUrl": "https://github.com/docmost/docmost",
+  "installCommand": "git clone https://github.com/docmost/docmost && cd docmost && cp .env.example .env && docker compose up -d",
+  "installInstructions": "**Docker Compose (recommended):**\n1. `git clone https://github.com/docmost/docmost && cd docmost`\n2. `cp .env.example .env` and fill in `APP_URL`, `APP_SECRET`, and `DATABASE_URL`\n3. `docker compose up -d`\n4. Open `http://localhost:3000` and create your workspace\n5. Invite your team\n\n**Cloud (managed):** Free for 1 user (beta), $8/mo Pro, custom Enterprise.",
+  "logoUrl": "/logos/docmost.svg",
+  "trust": { "securityScore": 88, "qualityScore": 92, "isVerified": true, "isOfficial": true, "lastVerifiedAt": "2026-08-28" },
+  "status": { "up": true, "uptimePct30d": 99.92, "avgLatencyMs": 220, "lastCheck": "2026-08-28T22:00:00Z" },
+  "tags": ["wiki", "documentation", "notion-alternative", "confluence-alternative", "collaboration"],
+  "useCases": ["team-docs", "internal-wiki", "engineering-wiki", "knowledge-base"],
+  "integrations": ["drawio", "mermaid", "katex", "rest-api", "webhooks"],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, AGPL. Cloud Free: 1 user (beta). Pro: $8/mo. Enterprise: custom.",
+  "seo": {
+    "metaTitle": "Docmost — Open Source Notion Alternative for Teams",
+    "metaDescription": "Hand-tested review of Docmost. Open source collaborative wiki. Notion-style editor + real-time collaboration + self-hosting. The Confluence alternative that doesn't feel old."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}
