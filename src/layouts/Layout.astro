@@ -25,7 +25,9 @@ const { title, description, canonical, ogImage, ogType, noindex, hideHeader } = 
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="#020617" />
     <SEOMeta title={title} description={description} canonical={canonical} ogImage={ogImage} ogType={ogType} noindex={noindex} />
-    <!-- AdSense auto-ads placeholder. Replace with your ca-pub-XXX when approved. -->
+    <!-- AdSense auto-ads. Pub-ID is account-level (works for all your sites). -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8749554989768993"
+         crossorigin="anonymous"></script>
   </head>
   <body>
     {!hideHeader && <Header />}
