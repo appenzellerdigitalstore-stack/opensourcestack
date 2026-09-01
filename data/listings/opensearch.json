@@ -1,0 +1,57 @@
+{
+  "slug": "opensearch",
+  "name": "OpenSearch",
+  "tagline": "Open source Elasticsearch fork. Search, observability, analytics.",
+  "shortDescription": "OpenSearch is the open source fork of Elasticsearch 7. Full-text search, log analytics (Observability), security analytics, vector search. Apache-2.0 licensed.",
+  "longDescription": "## What it is\n\nOpenSearch is the open source fork of Elasticsearch 7, maintained by AWS and the Linux Foundation. Full-text search, log analytics (OpenSearch Dashboards), security analytics (SIEM), vector search (k-NN), and machine learning plugins.\n\n## Why we recommend it\n\nIf you were on Elasticsearch and the license change to SSPL scared you, OpenSearch is the drop-in alternative. Same APIs (mostly), same scale, true open source.\n\n## When to use it\n\n- Elasticsearch alternative (after the license change)\n- Full-text search for an app\n- Log aggregation (with OpenSearch Dashboards)\n- Vector search (k-NN plugin)",
+  "kind": "platform",
+  "runtime": "java",
+  "category": "search",
+  "publisher": "opensearch",
+  "externalUrl": "https://opensearch.org",
+  "repoUrl": "https://github.com/opensearch-project/OpenSearch",
+  "installCommand": "docker run -d --name opensearch -p 9200:9200 -p 9600:9600 -e discovery.type=single-node -e DISABLE_SECURITY_PLUGIN=true opensearchproject/opensearch:latest",
+  "installInstructions": "**Docker (single-node):**\n```\ndocker run -d --name opensearch -p 9200:9200 -e discovery.type=single-node -e DISABLE_SECURITY_PLUGIN=true opensearchproject/opensearch\n```\n\n**Docker Compose with OpenSearch Dashboards:** see opensearch.org docs.",
+  "logoUrl": "/logos/opensearch.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 95,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "elasticsearch-fork",
+    "full-text-search",
+    "log-analytics",
+    "vector-search",
+    "apache-2"
+  ],
+  "useCases": [
+    "elasticsearch-replacement",
+    "full-text-search",
+    "log-aggregation",
+    "vector-search"
+  ],
+  "integrations": [
+    "rest-api",
+    "kibana-alternative",
+    "logstash",
+    "beats",
+    "python"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Apache-2.0 licensed. AWS OpenSearch Service (managed) from $0.024/hour.",
+  "seo": {
+    "metaTitle": "OpenSearch - Open Source Elasticsearch Fork",
+    "metaDescription": "Hand-tested review of OpenSearch. Open source fork of Elasticsearch 7. Full-text search, log analytics, vector search. Apache-2.0."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

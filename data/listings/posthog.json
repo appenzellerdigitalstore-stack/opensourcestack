@@ -1,0 +1,57 @@
+{
+  "slug": "posthog",
+  "name": "PostHog",
+  "tagline": "Open source product analytics. Sessions, funnels, feature flags, A/B tests.",
+  "shortDescription": "The all-in-one product analytics platform: events, funnels, cohorts, feature flags, A/B tests, session replay, and surveys. The open source Amplitude/Mixpanel/LaunchDarkly combo.",
+  "longDescription": "## What it is\n\nPostHog bundles product analytics, feature flags, A/B testing, session replay, and surveys into one self-hostable platform. The OSS edition includes events, funnels, trends, cohorts, feature flags, experiments, and session replay (self-hosted).\n\n## Why we recommend it\n\nIf you need Mixpanel + LaunchDarkly + Hotjar and don't want to pay 4 SaaS bills, PostHog is the open source answer. Self-host it, or use their generous cloud free tier (1M events/month).\n\n## When to use it\n\n- Replacing Mixpanel/Amplitude with self-hosting\n- Adding feature flags without paying for LaunchDarkly\n- Session replay to debug user issues\n- A/B testing without Optimizely fees",
+  "kind": "platform",
+  "runtime": "python",
+  "category": "analytics",
+  "publisher": "posthog",
+  "externalUrl": "https://posthog.com",
+  "repoUrl": "https://github.com/PostHog/posthog",
+  "installCommand": "docker run -d --name posthog -p 8000:8000 posthog/posthog:latest",
+  "installInstructions": "**Docker Compose (recommended):**\n```\ngit clone https://github.com/PostHog/posthog\ncd posthog/docker\ndocker compose up -d\n```\n\n**Cloud:** Free tier with 1M events/month. From $0.00031/event after.",
+  "logoUrl": "/logos/posthog.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 95,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 145,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "product-analytics",
+    "feature-flags",
+    "ab-testing",
+    "session-replay",
+    "all-in-one"
+  ],
+  "useCases": [
+    "replacing-mixpanel",
+    "feature-flags",
+    "session-replay",
+    "ab-testing"
+  ],
+  "integrations": [
+    "javascript",
+    "python",
+    "react",
+    "node",
+    "ruby"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: 1M events/month free. From $0.00031/event.",
+  "seo": {
+    "metaTitle": "PostHog — Open Source Product Analytics",
+    "metaDescription": "Hand-tested review of PostHog. Open source product analytics, feature flags, A/B tests, session replay. Self-hostable."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "leantime",
+  "name": "Leantime",
+  "tagline": "Open source project management for ADHD-friendly workflows.",
+  "shortDescription": "Leantime is an open source project management tool designed for neurodiverse teams. PHP + MySQL, Kanban + Gantt + Calendar, idea boards, and milestone-based planning.",
+  "longDescription": "## What it is\n\nLeantime is an open source project management tool designed with neurodiversity in mind. PHP + MySQL, multiple views (Kanban, Gantt, Calendar, Table), idea boards, milestone planning, and a UI that minimizes distractions.\n\n## Why we recommend it\n\nIf you or your team has ADHD, dyslexia, or other neurodiverse needs, Leantime is the only PM tool designed specifically for that. The UI reduces cognitive load and the workflow supports how neurodiverse people actually work.\n\n## When to use it\n\n- Neurodiverse teams that want a tailored tool\n- Small teams that want a simple, opinionated PM\n- Companies prioritizing accessibility\n- Open source projects with a focus on inclusion",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "project-management",
+  "publisher": "leantime",
+  "externalUrl": "https://leantime.io",
+  "repoUrl": "https://github.com/Leantime/leantime",
+  "installCommand": "docker run -d --name leantime -p 80:80 leantime/leantime:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name leantime -p 80:80 leantime/leantime:latest\n```\n\n**Cloud:** From $9/user/month. Free trial.",
+  "logoUrl": "/logos/leantime.svg",
+  "trust": {
+    "securityScore": 89,
+    "qualityScore": 90,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.93,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "pm",
+    "neurodiversity",
+    "adhd",
+    "kanban",
+    "gantt"
+  ],
+  "useCases": [
+    "neurodiverse-teams",
+    "accessibility",
+    "small-teams",
+    "inclusion"
+  ],
+  "integrations": [
+    "ldap",
+    "rest-api",
+    "webhooks",
+    "zapier"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: from $9/user/month. Free trial.",
+  "seo": {
+    "metaTitle": "Leantime — Open Source PM for Neurodiverse Teams",
+    "metaDescription": "Hand-tested review of Leantime. Open source project management designed for neurodiverse teams. Kanban, Gantt, Calendar."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

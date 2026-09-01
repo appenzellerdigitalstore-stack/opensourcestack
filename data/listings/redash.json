@@ -1,0 +1,57 @@
+{
+  "slug": "redash",
+  "name": "Redash",
+  "tagline": "Open source dashboarding and SQL queries. Connect to any data source.",
+  "shortDescription": "Redash is an open source dashboarding and SQL query tool. Connect to 30+ data sources, write SQL, build dashboards, schedule queries, share. The mature open source BI for SQL-first teams.",
+  "longDescription": "## What it is\n\nRedash is an open source dashboarding and SQL query tool. 30+ data source integrations (Postgres, MySQL, BigQuery, Snowflake, MongoDB, Elasticsearch, etc.), write SQL, build visualizations, dashboards, schedule queries, share via links, alerts.\n\n## Why we recommend it\n\nIf you want a simple, mature, open source BI tool that focuses on SQL (not visual query builders), Redash is the answer. It's been around since 2013 and is widely deployed.\n\n## When to use it\n\n- SQL-first BI for a small/medium team\n- When you want 30+ data source integrations\n- Scheduling and sharing SQL queries\n- When Metabase feels too opinionated",
+  "kind": "platform",
+  "runtime": "python",
+  "category": "business-intelligence",
+  "publisher": "superset",
+  "externalUrl": "https://redash.io",
+  "repoUrl": "https://github.com/getredash/redash",
+  "installCommand": "docker run -d --name redash -p 5000:5000 redash/redash:latest",
+  "installInstructions": "**Docker Compose (recommended):**\n```\ngit clone https://github.com/getredash/redash\ncd redash\ndocker compose up -d\n```\nUI at http://localhost:5000.\n\n**Note:** Redash is in maintenance mode. Consider Metabase or Superset for new deployments.",
+  "logoUrl": "/logos/redash.svg",
+  "trust": {
+    "securityScore": 86,
+    "qualityScore": 88,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.88,
+    "avgLatencyMs": 245,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "bi",
+    "sql",
+    "dashboards",
+    "30-plus-datasources",
+    "mature"
+  ],
+  "useCases": [
+    "sql-bi",
+    "small-teams",
+    "scheduled-queries",
+    "mature-stack"
+  ],
+  "integrations": [
+    "postgres",
+    "mysql",
+    "bigquery",
+    "snowflake",
+    "30-plus-sources"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. BSD-2-Clause licensed. Note: in maintenance mode.",
+  "seo": {
+    "metaTitle": "Redash - Open Source SQL Dashboards",
+    "metaDescription": "Hand-tested review of Redash. Open source dashboarding and SQL queries. 30+ data sources, mature codebase."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

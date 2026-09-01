@@ -1,0 +1,57 @@
+{
+  "slug": "kestra",
+  "name": "Kestra",
+  "tagline": "Declarative open source workflow orchestration. YAML + plugins, scalable.",
+  "shortDescription": "Kestra is a declarative open source workflow orchestration platform. YAML-defined workflows, 100+ plugins, scalable execution, beautiful UI, event-driven triggers. The Airflow alternative with better UX.",
+  "longDescription": "## What it is\n\nKestra is a declarative open source workflow orchestration platform. Workflows are defined in YAML (not Python), the UI is modern and easy to use, and the platform scales horizontally. 100+ plugins for common data sources and tools.\n\n## Why we recommend it\n\nIf you want Airflow's power but with a more modern UX and YAML instead of Python, Kestra is the answer. The event-driven triggers (webhooks, schedules, file watchers) are first-class.\n\n## When to use it\n\n- Data pipelines with a modern UI\n- Event-driven workflows (webhook, schedule, file watcher)\n- Teams that prefer YAML over Python\n- When you want Airflow without the operational overhead",
+  "kind": "platform",
+  "runtime": "java",
+  "category": "automation",
+  "publisher": "kestraio",
+  "externalUrl": "https://kestra.io",
+  "repoUrl": "https://github.com/kestra-io/kestra",
+  "installCommand": "docker run -d --name kestra -p 8080:8080 kestra/kestra:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name kestra -p 8080:8080 kestra/kestra\n```\n\n**Docker Compose (with Postgres):** See the repo.\n\n**Cloud (EE):** From $30/month per user.",
+  "logoUrl": "/logos/kestra.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "workflow",
+    "yaml",
+    "declarative",
+    "event-driven",
+    "modern"
+  ],
+  "useCases": [
+    "data-pipelines",
+    "event-driven",
+    "yaml-workflows",
+    "airflow-alternative"
+  ],
+  "integrations": [
+    "100-plus-plugins",
+    "postgres",
+    "s3",
+    "slack",
+    "github"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free (OSS). Enterprise: from $30/month per user with support.",
+  "seo": {
+    "metaTitle": "Kestra - Declarative Open Source Workflow Orchestration",
+    "metaDescription": "Hand-tested review of Kestra. Declarative open source workflow orchestration. YAML-defined workflows, modern UI, event-driven."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

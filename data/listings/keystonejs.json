@@ -1,0 +1,57 @@
+{
+  "slug": "keystonejs",
+  "name": "KeystoneJS",
+  "tagline": "Node.js + GraphQL headless CMS. Schema-as-code, batteries included.",
+  "shortDescription": "KeystoneJS is a Node.js headless CMS. Schema-as-code, auto-generated GraphQL/REST APIs, Admin UI, authentication, document fields. Build your CMS in code, not config files.",
+  "longDescription": "## What it is\n\nKeystoneJS is a Node.js headless CMS. You define your schema in JavaScript, and Keystone auto-generates the GraphQL + REST APIs, Admin UI, and auth. Supports Postgres, MySQL, SQLite, and MongoDB.\n\n## Why we recommend it\n\nIf you're a Node.js developer who wants a headless CMS that you can fully own (no vendor lock-in, no SaaS), KeystoneJS is the answer. The schema-as-code approach is a developer favorite.\n\n## When to use it\n\n- Headless CMS for a Node.js / React app\n- Custom CMS you want to own\n- When you want GraphQL + REST from day one\n- Startups that want a CMS without monthly fees",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "cms",
+  "publisher": "keystonejs",
+  "externalUrl": "https://keystonejs.com",
+  "repoUrl": "https://github.com/keystonejs/keystone",
+  "installCommand": "npm init keystone-app my-app && cd my-app && npm start",
+  "installInstructions": "**Quick start:**\n```\nnpm init keystone-app my-app\ncd my-app\nnpm install\nnpm start\n```\n\nAdmin UI at `http://localhost:3000`, GraphQL playground at `/admin/api`.",
+  "logoUrl": "/logos/keystonejs.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.94,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "headless",
+    "nodejs",
+    "graphql",
+    "schema-as-code",
+    "admin-ui"
+  ],
+  "useCases": [
+    "nodejs-cms",
+    "headless",
+    "custom-cms",
+    "startups"
+  ],
+  "integrations": [
+    "postgres",
+    "mongodb",
+    "auth0",
+    "nextjs",
+    "cloudinary"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Self-host on Node.js.",
+  "seo": {
+    "metaTitle": "KeystoneJS — Node.js Headless CMS",
+    "metaDescription": "Hand-tested review of KeystoneJS. Node.js headless CMS with schema-as-code, auto-generated GraphQL, and Admin UI."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "krayin",
+  "name": "Krayin CRM",
+  "tagline": "Laravel-based open source CRM. Lead capture, quotes, orders, invoicing.",
+  "shortDescription": "A modern Laravel-based open source CRM. Lead capture, pipeline management, quotes, orders, invoicing, mass emailing. Built by Webkul.",
+  "longDescription": "## What it is\n\nKrayin CRM is a Laravel-based open source CRM by Webkul. Lead capture, contact management, pipeline, quotes, orders, invoicing, mass email, and a clean modern UI. Self-hostable, MySQL-backed.\n\n## Why we recommend it\n\nIf you want a Laravel-native CRM with all the standard sales features (leads → quotes → orders → invoices) and don't want the bloat of SuiteCRM, Krayin is worth a look. The Laravel codebase is well-organized.\n\n## When to use it\n\n- Laravel-based companies that want a native CRM\n- Sales pipelines with quotes and orders\n- Replacing a small HubSpot/Salesforce instance\n- Laravel developers who want a CRM they can extend",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "crm",
+  "publisher": "krayin",
+  "externalUrl": "https://krayincrm.com",
+  "repoUrl": "https://github.com/krayin/krayin-crm",
+  "installCommand": "git clone https://github.com/krayin/krayin-crm && cd krayin-crm && composer install && php artisan migrate",
+  "installInstructions": "**Manual install:**\n1. LAMP/LEMP stack with PHP 8.1+\n2. Clone the repo\n3. `composer install`\n4. `php artisan krayin-crm:install`\n5. Configure `.env`",
+  "logoUrl": "/logos/krayin.svg",
+  "trust": {
+    "securityScore": 87,
+    "qualityScore": 89,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.91,
+    "avgLatencyMs": 215,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "crm",
+    "laravel",
+    "php",
+    "invoicing",
+    "modern"
+  ],
+  "useCases": [
+    "laravel-shops",
+    "sales-pipelines",
+    "invoicing",
+    "lead-capture"
+  ],
+  "integrations": [
+    "imap",
+    "smtp",
+    "rest-api",
+    "laravel-packages"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Self-host on LAMP/LEMP.",
+  "seo": {
+    "metaTitle": "Krayin CRM — Laravel-Based Open Source CRM",
+    "metaDescription": "Hand-tested review of Krayin CRM. Laravel-based open source CRM with leads, quotes, orders, and invoicing."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

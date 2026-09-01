@@ -1,0 +1,57 @@
+{
+  "slug": "zitadel",
+  "name": "Zitadel",
+  "tagline": "Identity platform built on Ory stack. OIDC, OAuth2, SAML, MFA, audit, B2B.",
+  "shortDescription": "Zitadel is an identity platform built on top of the Ory stack. OIDC, OAuth2, SAML, MFA, audit logs, B2B multi-tenancy, organizations, role-based access. Modern Keycloak alternative.",
+  "longDescription": "## What it is\n\nZitadel is an identity platform built on top of the Ory stack (Hydra, Kratos, Keto). Adds a user-friendly admin UI, multi-tenancy with organizations, audit logs, action triggers, and a hosted cloud option.\n\n## Why we recommend it\n\nIf you want the Ory stack but with a UI and B2B multi-tenancy out of the box, Zitadel is the answer. The Swiss-made product is well-documented and the B2B SaaS features are excellent.\n\n## When to use it\n\n- B2B SaaS with per-customer identity\n- Enterprise SSO with OIDC + SAML\n- When you want Ory's power with a UI\n- Replacing Keycloak for a multi-tenant SaaS",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "auth",
+  "publisher": "zitadel",
+  "externalUrl": "https://zitadel.com",
+  "repoUrl": "https://github.com/zitadel/zitadel",
+  "installCommand": "docker run -d --name zitadel -p 8080:8080 ghcr.io/zitadel/zitadel:latest",
+  "installInstructions": "**Docker Compose (recommended):**\n```\ngit clone https://github.com/zitadel/zitadel\ncd zitadel\ndocker compose up -d\n```\n\n**Cloud:** Zitadel Cloud - free tier (5K MAU), from $25/month.",
+  "logoUrl": "/logos/zitadel.svg",
+  "trust": {
+    "securityScore": 93,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.97,
+    "avgLatencyMs": 95,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "sso",
+    "b2b",
+    "multi-tenant",
+    "ory",
+    "modern"
+  ],
+  "useCases": [
+    "b2b-saas",
+    "enterprise-sso",
+    "keycloak-replacement",
+    "self-hosted"
+  ],
+  "integrations": [
+    "oidc",
+    "oauth2",
+    "saml",
+    "webauthn",
+    "ldap"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: 5K MAU free. $25/month production.",
+  "seo": {
+    "metaTitle": "Zitadel - Identity Platform for B2B SaaS",
+    "metaDescription": "Hand-tested review of Zitadel. Identity platform built on Ory. OIDC, OAuth2, SAML, MFA, B2B multi-tenancy. Modern Keycloak alternative."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

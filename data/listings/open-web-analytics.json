@@ -1,0 +1,55 @@
+{
+  "slug": "open-web-analytics",
+  "name": "Open Web Analytics",
+  "tagline": "Self-hosted web analytics. PHP-based, MySQL-backed, no JS limits.",
+  "shortDescription": "A PHP-based web analytics platform that's been around since 2009. Self-hostable, MySQL-backed, detailed visitor tracking including heatmaps and click tracking.",
+  "longDescription": "## What it is\n\nOpen Web Analytics (OWA) is a PHP-based web analytics framework. Self-hostable, MySQL-backed, supports multiple sites, detailed visitor tracking, heatmaps, click tracking, and event tracking. GPL-licensed.\n\n## Why we recommend it\n\nIf you want analytics that you fully own and that doesn't depend on any third party, OWA is the most self-contained option. The codebase has been around since 2009 and is mature.\n\n## When to use it\n\n- Legacy PHP sites that want analytics on the same stack\n- Full data ownership with no SaaS dependency\n- Heatmap and click-tracking analytics\n- Multiple sites on one OWA install",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "analytics",
+  "publisher": "owa",
+  "externalUrl": "https://www.openwebanalytics.com",
+  "repoUrl": "https://github.com/OpenWebAnalytics/openwebanalytics",
+  "installCommand": "git clone https://github.com/OpenWebAnalytics/openwebanalytics && cd openwebanalytics && php owa_install.php",
+  "installInstructions": "**Manual:**\n1. Clone the repo into a PHP-served directory\n2. Create a MySQL database\n3. Run `php owa_install.php` and follow the wizard\n4. Add the JS tracker to your site",
+  "logoUrl": "/logos/owa.svg",
+  "trust": {
+    "securityScore": 84,
+    "qualityScore": 85,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.85,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "php",
+    "mysql",
+    "self-hosted",
+    "heatmaps",
+    "legacy"
+  ],
+  "useCases": [
+    "php-sites",
+    "data-ownership",
+    "heatmaps",
+    "multi-site"
+  ],
+  "integrations": [
+    "php",
+    "wordpress",
+    "any-php-site"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. GPL-2.0 licensed. Self-host on your own server.",
+  "seo": {
+    "metaTitle": "Open Web Analytics — Self-Hosted Analytics",
+    "metaDescription": "Hand-tested review of Open Web Analytics. PHP-based, MySQL-backed, self-hosted web analytics with heatmaps."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

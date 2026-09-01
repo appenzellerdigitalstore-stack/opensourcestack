@@ -1,0 +1,56 @@
+{
+  "slug": "mumble",
+  "name": "Mumble",
+  "tagline": "Open source VoIP for gamers. Low latency, self-hosted, secure.",
+  "shortDescription": "Mumble is the gold-standard open source VoIP for low-latency voice chat. Used by gaming communities, esports, and distributed teams. Self-hosted server, cross-platform client.",
+  "longDescription": "## What it is\n\nMumble is an open source VoIP client/server. The client is called Mumble, the server is called Murmur. Low-latency, high-quality voice, positional audio (for games), strong encryption, cross-platform clients.\n\n## Why we recommend it\n\nIf you need low-latency voice chat (lower than Discord, lower than Teams), Mumble is the answer. The protocol is designed for gaming — positional audio, push-to-talk, very low CPU.\n\n## When to use it\n\n- Gaming communities that want low-latency voice\n- Esports teams (Mumble is the de facto standard)\n- Distributed teams that prioritize voice quality over video\n- Replacing TeamSpeak or Ventrilo",
+  "kind": "platform",
+  "runtime": "cpp",
+  "category": "communication",
+  "publisher": "mumble",
+  "externalUrl": "https://www.mumble.info",
+  "repoUrl": "https://github.com/mumble-voip/mumble",
+  "installCommand": "apt install mumble mumble-server",
+  "installInstructions": "**Server (Ubuntu):**\n```\napt install mumble-server\ndpkg-reconfigure mumble-server\n```\n\n**Client:** Download from mumble.info (Windows, macOS, Linux, iOS, Android).",
+  "logoUrl": "/logos/mumble.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 65,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "voip",
+    "gaming",
+    "low-latency",
+    "self-hosted",
+    "positional-audio"
+  ],
+  "useCases": [
+    "gaming",
+    "esports",
+    "distributed-teams",
+    "team-replacement"
+  ],
+  "integrations": [
+    "ice",
+    "ldap",
+    "mumble-django",
+    "mumblerecbot"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. BSD-licensed. Self-host on any server.",
+  "seo": {
+    "metaTitle": "Mumble — Open Source Low-Latency VoIP",
+    "metaDescription": "Hand-tested review of Mumble. The open source VoIP standard for gaming and esports. Low latency, self-hosted, secure."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

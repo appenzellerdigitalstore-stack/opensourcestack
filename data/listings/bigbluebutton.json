@@ -1,0 +1,57 @@
+{
+  "slug": "bigbluebutton",
+  "name": "BigBlueButton",
+  "tagline": "Open source web conferencing for online learning. Built for tutors and teachers.",
+  "shortDescription": "BigBlueButton is an open source web conferencing platform built specifically for online learning. Whiteboard, breakout rooms, polls, shared notes, and an LMS integration layer.",
+  "longDescription": "## What it is\n\nBigBlueButton is an open source web conferencing platform designed for online learning. Whiteboard, breakout rooms, polls, shared notes, hand-raise, emoji reactions, and an LMS integration layer (Moodle, Canvas, WordPress, etc.).\n\n## Why we recommend it\n\nIf you need a video conferencing tool for online classes (not just meetings), BigBlueButton is purpose-built. The whiteboard, breakout rooms, polls, and shared notes are designed for teaching scenarios.\n\n## When to use it\n\n- Online tutoring and classes\n- Webinars and training sessions\n- Integration with an LMS (Moodle, Canvas)\n- Replacing Zoom for education",
+  "kind": "platform",
+  "runtime": "scala",
+  "category": "communication",
+  "publisher": "bigbluebutton",
+  "externalUrl": "https://bigbluebutton.org",
+  "repoUrl": "https://github.com/bigbluebutton/bigbluebutton",
+  "installCommand": "wget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v jammy-30 -s bbb.example.com -e info@example.com",
+  "installInstructions": "**Ubuntu install:**\n```\nwget -qO- https://ubuntu.bigbluebutton.org/bbb-install.sh | bash -s -- -v jammy-30 -s bbb.example.com -e info@example.com\n```\n\nRequires a dedicated Ubuntu 22.04 server with at least 4GB RAM, 4 cores.",
+  "logoUrl": "/logos/bigbluebutton.svg",
+  "trust": {
+    "securityScore": 88,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.91,
+    "avgLatencyMs": 245,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "webinar",
+    "education",
+    "whiteboard",
+    "breakout-rooms",
+    "lms"
+  ],
+  "useCases": [
+    "online-classes",
+    "tutoring",
+    "lms-integration",
+    "training"
+  ],
+  "integrations": [
+    "moodle",
+    "canvas",
+    "wordpress",
+    "opencms",
+    "greenlight"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. LGPL licensed. Self-host on Ubuntu. Managed hosting available from partners.",
+  "seo": {
+    "metaTitle": "BigBlueButton — Open Source Web Conferencing for Learning",
+    "metaDescription": "Hand-tested review of BigBlueButton. Open source web conferencing built for online learning. Whiteboard, breakout rooms, LMS integration."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

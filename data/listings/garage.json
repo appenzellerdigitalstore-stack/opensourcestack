@@ -1,0 +1,56 @@
+{
+  "slug": "garage",
+  "name": "Garage",
+  "tagline": "S3-compatible distributed object storage. Rust, lightweight, for small clusters.",
+  "shortDescription": "Garage is an S3-compatible distributed object storage written in Rust. Designed for small clusters (3-10 nodes), low resource use, geo-distribution, and S3 API compatibility.",
+  "longDescription": "## What it is\n\nGarage is a S3-compatible distributed object storage written in Rust. Designed for small clusters (3-10 nodes) where MinIO or Ceph feel heavy. Low resource use, geo-distribution, automatic data placement, and full S3 API.\n\n## Why we recommend it\n\nIf you need a distributed S3 alternative for a small cluster (homelab, edge deployment, small org) and want a Rust-based low-resource option, Garage is the answer. Built by Deuxfleurs, a French non-profit.\n\n## When to use it\n\n- Distributed S3 storage for small clusters\n- Edge deployments (multiple sites, one bucket)\n- Low-resource S3 alternative\n- Homelab distributed storage",
+  "kind": "platform",
+  "runtime": "rust",
+  "category": "storage",
+  "publisher": "garagehq",
+  "externalUrl": "https://garagehq.deuxfleurs.fr",
+  "repoUrl": "https://github.com/deuxfleurs/garage",
+  "installCommand": "docker run -d --name garage -p 3900:3900 -p 3901:3901 -p 3902:3902 -v garage_data:/data dxflrs/garage:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name garage -p 3900:3900 -p 3901:3901 -p 3902:3902 dxflrs/garage\n```\n\n**Single binary:** Download from GitHub releases.\n\n**Recommended:** Run on 3+ nodes for replication.",
+  "logoUrl": "/logos/garage.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 35,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "s3",
+    "distributed",
+    "rust",
+    "small-clusters",
+    "edge"
+  ],
+  "useCases": [
+    "small-clusters",
+    "edge-deployments",
+    "homelab",
+    "geo-distribution"
+  ],
+  "integrations": [
+    "aws-sdk",
+    "s3-api",
+    "rclone",
+    "minio-client"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. AGPL-3.0 licensed. Self-host on small clusters.",
+  "seo": {
+    "metaTitle": "Garage - Distributed S3-Compatible Object Storage",
+    "metaDescription": "Hand-tested review of Garage. S3-compatible distributed object storage in Rust. Designed for small clusters and edge deployments."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

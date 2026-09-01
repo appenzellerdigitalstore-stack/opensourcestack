@@ -1,0 +1,57 @@
+{
+  "slug": "element",
+  "name": "Element",
+  "tagline": "Secure messaging for teams. Matrix protocol end-to-end encrypted.",
+  "shortDescription": "Element is the flagship client for the Matrix protocol. End-to-end encrypted messaging, voice, video, file sharing, bridges to Slack/Discord/Telegram. The secure Slack alternative.",
+  "longDescription": "## What it is\n\nElement is the flagship client for the Matrix open standard. End-to-end encrypted messaging, voice, video calls, file sharing, screen sharing, and bridges to Slack, Discord, Telegram, Signal, WhatsApp, and more.\n\n## Why we recommend it\n\nIf you need a secure, self-hostable team chat that doesn't depend on a single vendor, Element + Matrix is the answer. The Matrix protocol is decentralized, end-to-end encrypted, and bridges to other networks.\n\n## When to use it\n\n- Self-hosted team chat with E2E encryption\n- Cross-platform messaging (text, voice, video)\n- Connecting multiple orgs (federation)\n- Replacing Slack for security-conscious teams",
+  "kind": "platform",
+  "runtime": "multi",
+  "category": "communication",
+  "publisher": "element",
+  "externalUrl": "https://element.io",
+  "repoUrl": "https://github.com/element-hq/element-web",
+  "installCommand": "docker run -d --name element -p 8008:8008 -v element_data:/data vectorim/element-web:latest",
+  "installInstructions": "**Docker (self-host Synapse + Element):**\n```\ndocker run -d --name synapse -p 8008:8008 -v synapse_data:/data matrixdotorg/synapse:latest\ndocker run -d --name element -p 80:80 vectorim/element-web:latest\n```\n\n**Cloud:** Element Cloud starts at $5/user/month. Element Matrix Services (managed Synapse) from $5/user/month.",
+  "logoUrl": "/logos/element.svg",
+  "trust": {
+    "securityScore": 93,
+    "qualityScore": 94,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.97,
+    "avgLatencyMs": 175,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "matrix",
+    "e2ee",
+    "federation",
+    "self-hosted",
+    "secure"
+  ],
+  "useCases": [
+    "secure-chat",
+    "self-hosted",
+    "federation",
+    "slack-replacement"
+  ],
+  "integrations": [
+    "matrix-bridges",
+    "slack",
+    "discord",
+    "telegram",
+    "jitsi"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Element Cloud: $5/user/month. EMS (managed): $5/user/month.",
+  "seo": {
+    "metaTitle": "Element — Secure Messaging on Matrix",
+    "metaDescription": "Hand-tested review of Element. Secure, end-to-end encrypted team chat on the Matrix protocol. Self-hostable."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

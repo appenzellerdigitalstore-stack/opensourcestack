@@ -1,0 +1,57 @@
+{
+  "slug": "gitea",
+  "name": "Gitea",
+  "tagline": "Self-hosted Git platform. Lightweight, Go-based, GitHub-like UI.",
+  "shortDescription": "Gitea is a self-hosted Git platform. Lightweight (Go-based), GitHub-like UI, issues, pull requests, packages, actions (CI/CD), wiki, releases. The painless self-hosted GitHub alternative.",
+  "longDescription": "## What it is\n\nGitea is a self-hosted Git platform. Go-based, lightweight, runs on a Raspberry Pi, GitHub-like UI, issues, pull requests, packages (container/Generic), actions (CI/CD via Gitea Actions), wiki, releases, and a thriving plugin ecosystem.\n\n## Why we recommend it\n\nIf you want to self-host Git but don't want GitLab's weight, Gitea is the answer. The UI is familiar (GitHub-like), the resource use is low, and the feature set is comprehensive.\n\n## When to use it\n\n- Self-hosted Git platform for a small team\n- When you don't want GitLab's complexity\n- Lightweight alternative to GitHub (can migrate with Gitea CLI)\n- Raspberry Pi and low-resource deployments",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "code-hosting",
+  "publisher": "gitea",
+  "externalUrl": "https://gitea.io",
+  "repoUrl": "https://github.com/go-gitea/gitea",
+  "installCommand": "docker run -d --name gitea -p 3000:3000 -p 2222:22 -v gitea_data:/data gitea/gitea:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name gitea -p 3000:3000 -p 2222:22 -v gitea_data:/data gitea/gitea\n```\n\n**Binary:** Download from gitea.io, run ./gitea web.\n\n**Kubernetes:** Helm chart available.",
+  "logoUrl": "/logos/gitea.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 94,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.97,
+    "avgLatencyMs": 85,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "git",
+    "self-hosted",
+    "lightweight",
+    "github-like",
+    "actions"
+  ],
+  "useCases": [
+    "self-hosted-git",
+    "github-migration",
+    "small-teams",
+    "raspberry-pi"
+  ],
+  "integrations": [
+    "actions",
+    "packages",
+    "wiki",
+    "webhooks",
+    "oauth"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Self-host on any server (including Raspberry Pi).",
+  "seo": {
+    "metaTitle": "Gitea - Self-Hosted Git Platform",
+    "metaDescription": "Hand-tested review of Gitea. Self-hosted Git platform. Lightweight, Go-based, GitHub-like UI."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

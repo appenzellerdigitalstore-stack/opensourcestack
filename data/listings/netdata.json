@@ -1,0 +1,57 @@
+{
+  "slug": "netdata",
+  "name": "Netdata",
+  "tagline": "Real-time performance monitoring. Per-second metrics, beautiful dashboards.",
+  "shortDescription": "Netdata is a real-time performance monitoring tool. Per-second metrics on every system, app, or container. Beautiful dashboards, alerts, OpenTelemetry export. Zero configuration.",
+  "longDescription": "## What it is\n\nNetdata is a real-time performance monitoring tool. Per-second metrics for CPU, memory, disk, network, apps, containers, and more. Beautiful web dashboards, alerts, OpenTelemetry/Prometheus/Graphite export, zero configuration.\n\n## Why we recommend it\n\nIf you want real-time visibility into your infrastructure with zero configuration, Netdata is the answer. Install one binary, get a dashboard at port 19999, done.\n\n## When to use it\n\n- Real-time infrastructure monitoring\n- Per-second metrics for debugging spikes\n- Container monitoring (auto-discovers Docker/Kubernetes)\n- When you want zero-config setup",
+  "kind": "platform",
+  "runtime": "c",
+  "category": "monitoring",
+  "publisher": "netdata",
+  "externalUrl": "https://www.netdata.cloud",
+  "repoUrl": "https://github.com/netdata/netdata",
+  "installCommand": "curl https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh",
+  "installInstructions": "**One-liner (Linux):**\n```\ncurl https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh\nsh /tmp/netdata-kickstart.sh\n```\n\n**Docker:** `docker run -d --name netdata -p 19999:19999 netdata/netdata`\n\n**Cloud:** Free tier (5 servers). From $10/month.",
+  "logoUrl": "/logos/netdata.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 94,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 65,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "monitoring",
+    "real-time",
+    "per-second",
+    "zero-config",
+    "dashboards"
+  ],
+  "useCases": [
+    "infrastructure-monitoring",
+    "container-monitoring",
+    "debugging",
+    "real-time"
+  ],
+  "integrations": [
+    "prometheus",
+    "opentelemetry",
+    "graphite",
+    "kafka",
+    "docker"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: 5 servers free. $10/month for production.",
+  "seo": {
+    "metaTitle": "Netdata - Real-Time Performance Monitoring",
+    "metaDescription": "Hand-tested review of Netdata. Real-time performance monitoring. Per-second metrics, beautiful dashboards, zero configuration."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

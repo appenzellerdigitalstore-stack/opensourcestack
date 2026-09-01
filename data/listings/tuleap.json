@@ -1,0 +1,57 @@
+{
+  "slug": "tuleap",
+  "name": "Tuleap",
+  "tagline": "Enterprise open source ALM. Agile, requirements, tests, docs, VCS.",
+  "shortDescription": "Tuleap is an enterprise open source Application Lifecycle Management platform. Agile planning, requirements, test management, document management, version control, CI/CD integration.",
+  "longDescription": "## What it is\n\nTuleap is an enterprise open source ALM (Application Lifecycle Management) platform. Agile planning, requirements management, test management, document management, version control, CI/CD integration, and project dashboards.\n\n## Why we recommend it\n\nIf you need a full ALM suite (not just issue tracking), Tuleap is the most complete open source option. It's used by Airbus, Thales, and other large enterprises for regulated industries.\n\n## When to use it\n\n- Enterprises with complex regulated workflows\n- Companies needing requirements + tests + agile in one tool\n- Replacing Jira + Confluence + Zephyr\n- Open source projects that want a public ALM",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "project-management",
+  "publisher": "tuleap",
+  "externalUrl": "https://www.tuleap.org",
+  "repoUrl": "https://github.com/Enalean/tuleap",
+  "installCommand": "docker run -d --name tuleap -p 80:80 -p 22:22 enalean/tuleap-community-edition",
+  "installInstructions": "**Docker (Community Edition):**\n```\ndocker run -d --name tuleap -p 80:80 -p 22:22 enalean/tuleap-community-edition\n```\n\n**Enterprise:** Enalean offers enterprise support and SaaS.",
+  "logoUrl": "/logos/tuleap.svg",
+  "trust": {
+    "securityScore": 88,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.92,
+    "avgLatencyMs": 245,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "alm",
+    "enterprise",
+    "agile",
+    "test-management",
+    "requirements"
+  ],
+  "useCases": [
+    "enterprise-alm",
+    "regulated-industries",
+    "jira-replacement",
+    "complex-pm"
+  ],
+  "integrations": [
+    "git",
+    "svn",
+    "jenkins",
+    "gitlab",
+    "rest-api"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Community Edition: free. Enterprise: from $10/user/month with support.",
+  "seo": {
+    "metaTitle": "Tuleap — Enterprise Open Source ALM",
+    "metaDescription": "Hand-tested review of Tuleap. Enterprise open source Application Lifecycle Management. Agile, requirements, tests, docs."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

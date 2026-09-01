@@ -1,0 +1,56 @@
+{
+  "slug": "wekan",
+  "name": "Wekan",
+  "tagline": "Open source Trello-like Kanban. Meteor + MongoDB, self-hostable.",
+  "shortDescription": "Wekan is an open source Trello-like Kanban board. Meteor + MongoDB, drag-and-drop cards, swimlanes, checklists, attachments, and a real-time UI.",
+  "longDescription": "## What it is\n\nWekan is an open source Kanban board. Meteor + MongoDB, drag-and-drop cards, swimlanes, checklists, attachments, labels, due dates, real-time updates, and a self-hostable architecture.\n\n## Why we recommend it\n\nIf you want a Trello clone you can fully own, Wekan is the answer. The feature set is comprehensive, the UI is familiar, and the codebase has been around since 2014.\n\n## When to use it\n\n- Self-hosted Trello alternative\n- Teams that want Kanban without the SaaS fee\n- Personal task management\n- Multi-board setups with shared swimlanes",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "project-management",
+  "publisher": "wekan",
+  "externalUrl": "https://wekan.github.io",
+  "repoUrl": "https://github.com/wekan/wekan",
+  "installCommand": "docker run -d --name wekan -p 8080:8080 -v wekan_data:/data wekan/wekan",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name wekan -p 8080:8080 wekan/wekan\n```\n\n**Sandstorm:** One-click install at sandstorm.io.",
+  "logoUrl": "/logos/wekan.svg",
+  "trust": {
+    "securityScore": 86,
+    "qualityScore": 88,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.9,
+    "avgLatencyMs": 215,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "kanban",
+    "trello-clone",
+    "meteor",
+    "self-hosted",
+    "real-time"
+  ],
+  "useCases": [
+    "trello-replacement",
+    "kanban",
+    "personal-tasks",
+    "small-teams"
+  ],
+  "integrations": [
+    "ldap",
+    "oauth",
+    "rest-api",
+    "webhooks"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Self-host on a small VPS.",
+  "seo": {
+    "metaTitle": "Wekan — Open Source Kanban (Trello Alternative)",
+    "metaDescription": "Hand-tested review of Wekan. Open source Trello-like Kanban board. Meteor + MongoDB, self-hostable."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

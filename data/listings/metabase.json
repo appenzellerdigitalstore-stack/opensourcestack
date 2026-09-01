@@ -1,0 +1,57 @@
+{
+  "slug": "metabase",
+  "name": "Metabase",
+  "tagline": "Open source BI tool. Beautiful dashboards, SQL or no-code, self-hostable.",
+  "shortDescription": "Metabase is an open source business intelligence tool. Beautiful dashboards, native or no-code queries, 20+ data source integrations, alerts, embedding. The easiest way to expose data to a non-technical team.",
+  "longDescription": "## What it is\n\nMetabase is an open source business intelligence tool. Beautiful dashboards, native SQL or no-code query builder, 20+ data source integrations (Postgres, MySQL, MongoDB, BigQuery, Snowflake, etc.), alerts, scheduled reports, public embedding, and white-labeling.\n\n## Why we recommend it\n\nIf you need to expose data to a non-technical team and don't want to pay Tableau/Looker/Power BI fees, Metabase is the answer. The UX is excellent, the data sources are broad, and the price is right.\n\n## When to use it\n\n- Self-hosted BI for a small/medium team\n- Replacing Tableau/Looker with self-hosting\n- Internal dashboards over a SQL database\n- When you need beautiful dashboards without SQL knowledge",
+  "kind": "platform",
+  "runtime": "java",
+  "category": "business-intelligence",
+  "publisher": "metabase",
+  "externalUrl": "https://www.metabase.com",
+  "repoUrl": "https://github.com/metabase/metabase",
+  "installCommand": "docker run -d --name metabase -p 3000:3000 -v metabase_data:/data metabase/metabase:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name metabase -p 3000:3000 metabase/metabase\n```\n\n**Cloud (Metabase Cloud):** Free for 5 users. From $85/month for production.",
+  "logoUrl": "/logos/metabase.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 94,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "bi",
+    "dashboards",
+    "sql",
+    "self-hosted",
+    "no-code"
+  ],
+  "useCases": [
+    "self-hosted-bi",
+    "internal-dashboards",
+    "tableau-replacement",
+    "data-exploration"
+  ],
+  "integrations": [
+    "postgres",
+    "mysql",
+    "mongodb",
+    "bigquery",
+    "snowflake"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: 5 users free. $85/month for production.",
+  "seo": {
+    "metaTitle": "Metabase - Open Source BI Tool",
+    "metaDescription": "Hand-tested review of Metabase. Open source BI tool. Beautiful dashboards, SQL or no-code, self-hostable."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

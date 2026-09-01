@@ -1,0 +1,57 @@
+{
+  "slug": "taiga",
+  "name": "Taiga",
+  "tagline": "Agile project management. Scrum + Kanban, beautiful UI, self-hostable.",
+  "shortDescription": "Taiga is an open source agile project management tool. Scrum (backlog, sprints, user stories) and Kanban (boards) views, beautiful UI, Python + Angular/Django.",
+  "longDescription": "## What it is\n\nTaiga is an open source agile project management tool. Scrum and Kanban views, user stories, epics, sprints, backlog, wiki, issue tracking, multiple projects. Python (Django) backend, Angular frontend.\n\n## Why we recommend it\n\nIf you want a modern, beautifully designed PM tool that supports both Scrum and Kanban, Taiga is the best open source option. The UI is more polished than Redmine, and the agile-specific features (sprints, story points, burndown) are first-class.\n\n## When to use it\n\n- Agile teams that want self-hosting\n- Scrum and Kanban workflows\n- Teams migrating from Jira\n- Open source projects that want a public issue tracker",
+  "kind": "platform",
+  "runtime": "python",
+  "category": "project-management",
+  "publisher": "taiga",
+  "externalUrl": "https://www.taiga.io",
+  "repoUrl": "https://github.com/kaleidos-ventures/taiga-back",
+  "installCommand": "git clone https://github.com/kaleidos-ventures/taiga-docker && cd taiga-docker && docker compose up -d",
+  "installInstructions": "**Docker Compose:**\n```\ngit clone https://github.com/kaleidos-ventors/taiga-docker\ncd taiga-docker\ndocker compose up -d\n```\nUI at `http://localhost:9000`.\n\n**Cloud:** From $5/user/month. Free for open source projects.",
+  "logoUrl": "/logos/taiga.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "agile",
+    "scrum",
+    "kanban",
+    "modern",
+    "python"
+  ],
+  "useCases": [
+    "agile-teams",
+    "jira-replacement",
+    "open-source-projects",
+    "scrum"
+  ],
+  "integrations": [
+    "github",
+    "gitlab",
+    "bitbucket",
+    "slack",
+    "webhooks"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: from $5/user/month. Free for open source projects.",
+  "seo": {
+    "metaTitle": "Taiga — Open Source Agile Project Management",
+    "metaDescription": "Hand-tested review of Taiga. Open source Scrum + Kanban. Beautiful UI, self-hostable, Python + Angular."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

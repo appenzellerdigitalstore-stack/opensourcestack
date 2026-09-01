@@ -1,0 +1,57 @@
+{
+  "slug": "wildduck",
+  "name": "WildDuck",
+  "tagline": "Distributed IMAP/POP3 server. Node.js, MongoDB, scales horizontally.",
+  "shortDescription": "WildDuck is a distributed IMAP/POP3 mail server written in Node.js. MongoDB-backed, scales horizontally, designed for hosted email providers and large self-hosted deployments.",
+  "longDescription": "## What it is\n\nWildDuck is a distributed IMAP/POP3 mail server written in Node.js. MongoDB-backed, designed to scale horizontally (sharded by user), built for hosted email providers and very large self-hosted deployments.\n\n## Why we recommend it\n\nIf you need to run email for tens of thousands of users on commodity hardware, WildDuck is the answer. The architecture is sharded, the API is REST, and the codebase is modern (Node.js + MongoDB).\n\n## When to use it\n\n- Hosted email providers\n- Large organizations (10K+ users)\n- Horizontal scale requirements\n- When IMAP is the primary protocol",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "email-marketing",
+  "publisher": "wildduck",
+  "externalUrl": "https://wildduck.email",
+  "repoUrl": "https://github.com/nodemailer/wildduck",
+  "installCommand": "git clone https://github.com/nodemailer/wildduck && cd wildduck && npm install && npm start",
+  "installInstructions": "**Manual:**\n1. MongoDB (replica set)\n2. Redis\n3. Clone the repo\n4. `npm install && npm start`\n\n**Recommended:** Use ZoneMTA for SMTP, WildDuck for IMAP, Haraka for inbound.",
+  "logoUrl": "/logos/wildduck.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 95,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "imap",
+    "distributed",
+    "mongodb",
+    "nodejs",
+    "scalable"
+  ],
+  "useCases": [
+    "hosted-providers",
+    "large-deployments",
+    "horizontal-scale",
+    "imap-heavy"
+  ],
+  "integrations": [
+    "mongodb",
+    "redis",
+    "zonemta",
+    "haraka",
+    "rest-api"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. EUPL-1.1 licensed. Self-host with MongoDB + Redis.",
+  "seo": {
+    "metaTitle": "WildDuck — Distributed IMAP Mail Server",
+    "metaDescription": "Hand-tested review of WildDuck. Distributed IMAP/POP3 mail server. Node.js + MongoDB, scales horizontally."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

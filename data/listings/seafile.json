@@ -1,0 +1,57 @@
+{
+  "slug": "seafile",
+  "name": "Seafile",
+  "tagline": "Self-hosted file sync and share. Fast, reliable, with built-in encryption.",
+  "shortDescription": "Seafile is a self-hosted file sync and share platform. Fast, reliable, with built-in encryption, libraries, teams, sharing links, and integrations with Office/OnlyOffice.",
+  "longDescription": "## What it is\n\nSeafile is a self-hosted file sync and share platform. Python + C, fast (uses a custom protocol for sync), libraries, teams, sharing links, web upload, mobile apps, desktop clients, and integrations with Collabora/OnlyOffice for online editing.\n\n## Why we recommend it\n\nIf you want a self-hosted Dropbox/Google Drive alternative that's faster than Nextcloud sync, Seafile is the answer. The custom protocol is much faster than WebDAV for large libraries.\n\n## When to use it\n\n- Self-hosted Dropbox/Drive alternative\n- File sync for a team or organization\n- When you need fast sync (many files, large files)\n- Online document editing (with OnlyOffice/Collabora)",
+  "kind": "platform",
+  "runtime": "python",
+  "category": "storage",
+  "publisher": "seafile",
+  "externalUrl": "https://www.seafile.com",
+  "repoUrl": "https://github.com/haiwen/seafile",
+  "installCommand": "docker run -d --name seafile -p 80:80 -v seafile_data:/shared seafileltd/seafile:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name seafile -p 80:80 seafileltd/seafile\n```\n\n**Manual:** See docs.seafile.com for the manual install on Linux.",
+  "logoUrl": "/logos/seafile.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 145,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "file-sync",
+    "self-hosted",
+    "fast-sync",
+    "libraries",
+    "encryption"
+  ],
+  "useCases": [
+    "dropbox-replacement",
+    "team-file-share",
+    "fast-sync",
+    "online-editing"
+  ],
+  "integrations": [
+    "onlyoffice",
+    "collabora",
+    "webdav",
+    "rest-api",
+    "ldap"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Community Edition: free. Pro Edition: from $800/year per 100 users.",
+  "seo": {
+    "metaTitle": "Seafile - Self-Hosted File Sync & Share",
+    "metaDescription": "Hand-tested review of Seafile. Self-hosted file sync and share. Fast, reliable, with built-in encryption. The faster Nextcloud alternative."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

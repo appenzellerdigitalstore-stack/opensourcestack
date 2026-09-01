@@ -1,0 +1,57 @@
+{
+  "slug": "tinacms",
+  "name": "TinaCMS",
+  "tagline": "Git-based headless CMS. Markdown + React for static sites and Next.js.",
+  "shortDescription": "TinaCMS is a git-based headless CMS with a great editing UX. Edit Markdown/MDX in a sidebar, commit changes back to your Git repo. Built for Next.js, Astro, and static sites.",
+  "longDescription": "## What it is\n\nTinaCMS is a git-based headless CMS. You add Tina to your site (Next.js, Astro, Hugo, Jekyll), and your editors get a visual editing experience backed by Markdown/MDX files in Git. Changes are committed to Git, so your content history is full Git history.\n\n## Why we recommend it\n\nIf you have a static site (Next.js, Astro, etc.) and want a CMS that doesn't introduce a database, Tina is the answer. The editing experience is great, and the Git integration means you get version control, branching, and PR workflows for content.\n\n## When to use it\n\n- Static sites that need a CMS without a database\n- Next.js, Astro, Hugo, or Jekyll sites\n- Teams that want Git-backed content workflows\n- When the editors are also developers",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "cms",
+  "publisher": "tinacms",
+  "externalUrl": "https://tina.io",
+  "repoUrl": "https://github.com/tinacms/tinacms",
+  "installCommand": "npx @tinacms/cli init",
+  "installInstructions": "**Add to Next.js:**\n```\nnpx @tinacms/cli init\n```\nFollow the prompts. The CMS is mounted on `/admin`.\n\n**Tina Cloud (managed):** Free tier. From $29/month for production.",
+  "logoUrl": "/logos/tinacms.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 94,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "git-cms",
+    "markdown",
+    "mdx",
+    "nextjs",
+    "static-sites"
+  ],
+  "useCases": [
+    "static-sites",
+    "nextjs-cms",
+    "git-workflows",
+    "developer-editors"
+  ],
+  "integrations": [
+    "nextjs",
+    "astro",
+    "hugo",
+    "jekyll",
+    "github"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Tina Cloud: free tier, $29/month for production.",
+  "seo": {
+    "metaTitle": "TinaCMS — Git-Based Headless CMS",
+    "metaDescription": "Hand-tested review of TinaCMS. Git-based headless CMS for Next.js, Astro, and static sites. Markdown + React, version-controlled content."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

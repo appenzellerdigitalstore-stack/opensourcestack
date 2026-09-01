@@ -1,0 +1,57 @@
+{
+  "slug": "pocketbase",
+  "name": "PocketBase",
+  "tagline": "Single-binary backend. SQLite, auth, files, realtime. Zero dependencies.",
+  "shortDescription": "A single Go binary that gives your app a SQLite database, auth, file storage, admin UI, and realtime subscriptions. The fastest way to a backend.",
+  "longDescription": "## What it is\n\nPocketBase is a single Go binary (~10MB) that bundles SQLite, JWT auth, S3-compatible file storage, an admin UI, and realtime WebSocket subscriptions. You run it as your backend, or embed it in your Go app.\n\n## Why we recommend it\n\nIf you need a backend fast and don't want to spin up Postgres + an auth service + a file store + a WebSocket server, PocketBase is the answer. It's a single binary, no external dependencies, and the JS SDK is 30KB.\n\n## When to use it\n\n- Side projects and MVPs that need auth + DB in 5 minutes\n- Mobile app backends (works great with Flutter, React Native)\n- Internal tools where you'd otherwise reach for Supabase\n- Embedded in Go apps as the data layer",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "databases",
+  "publisher": "pocketbase",
+  "externalUrl": "https://pocketbase.io",
+  "repoUrl": "https://github.com/pocketbase/pocketbase",
+  "installCommand": "curl -sL https://github.com/pocketbase/pocketbase/releases/download/v0.22.0/pocketbase_0.22.0_linux_amd64.zip -o pb.zip && unzip pb.zip && ./pocketbase serve",
+  "installInstructions": "1. Download from https://github.com/pocketbase/pocketbase/releases\n2. `./pocketbase serve`\n3. Admin UI at `http://127.0.0.1:8090/_/`\n\n**Or as a Go library:** `go get github.com/pocketbase/pocketbase`",
+  "logoUrl": "/logos/pocketbase.svg",
+  "trust": {
+    "securityScore": 92,
+    "qualityScore": 95,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.99,
+    "avgLatencyMs": 12,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "sqlite",
+    "single-binary",
+    "realtime",
+    "auth",
+    "embedded"
+  ],
+  "useCases": [
+    "mvps",
+    "mobile-backends",
+    "internal-tools",
+    "embedded"
+  ],
+  "integrations": [
+    "javascript",
+    "flutter",
+    "dart",
+    "react-native",
+    "go"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Open source under MIT. Single binary, no fees, no telemetry.",
+  "seo": {
+    "metaTitle": "PocketBase — Single-Binary Backend",
+    "metaDescription": "Hand-tested review of PocketBase. SQLite + auth + files + realtime in one Go binary. The fastest way to a backend."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

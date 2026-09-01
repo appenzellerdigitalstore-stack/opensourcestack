@@ -1,0 +1,57 @@
+{
+  "slug": "postal",
+  "name": "Postal",
+  "tagline": "Open source mail server. SMTP, delivery, bounces, all in one.",
+  "shortDescription": "Postal is a complete open source mail server. SMTP for sending, IMAP/POP3 for receiving, webhooks for bounces/complaints, click/open tracking. The self-hosted SendGrid.",
+  "longDescription": "## What it is\n\nPostal is a complete open source mail server. SMTP for sending (with DKIM/SPF/DMARC), IMAP/POP3 for receiving, webhooks for bounces and complaints, click/open tracking, suppression lists, and a web admin UI.\n\n## Why we recommend it\n\nIf you send transactional email from your own infrastructure (not via SendGrid/Mailgun), Postal is the cleanest way to run it. The admin UI is much nicer than rolling your own Postfix.\n\n## When to use it\n\n- Self-hosted transactional email\n- Running your own SMTP relay\n- Privacy-sensitive email (your own server, your own data)\n- When you want to avoid SendGrid/Mailgun fees",
+  "kind": "platform",
+  "runtime": "ruby",
+  "category": "email-marketing",
+  "publisher": "postal",
+  "externalUrl": "https://postal.wiki",
+  "repoUrl": "https://github.com/postalserver/postal",
+  "installCommand": "git clone https://github.com/postalserver/postal && cd postal && ./bin/install",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name postal -p 25:25 -p 587:587 -p 993:993 postalpostal/postal:latest\n```\n\n**Manual:** Ruby + MariaDB + RabbitMQ + Nginx.",
+  "logoUrl": "/logos/postal.svg",
+  "trust": {
+    "securityScore": 88,
+    "qualityScore": 90,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.92,
+    "avgLatencyMs": 165,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "mail-server",
+    "smtp",
+    "self-hosted",
+    "transactional",
+    "sendgrid-alternative"
+  ],
+  "useCases": [
+    "transactional-email",
+    "self-hosted-mail",
+    "smtp-relay",
+    "privacy"
+  ],
+  "integrations": [
+    "smtp",
+    "imap",
+    "webhooks",
+    "rest-api",
+    "dkim-spf-dmarc"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Self-host on Ubuntu/Debian.",
+  "seo": {
+    "metaTitle": "Postal — Open Source Mail Server",
+    "metaDescription": "Hand-tested review of Postal. Complete open source mail server. SMTP, IMAP, webhooks, bounce tracking. The self-hosted SendGrid."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

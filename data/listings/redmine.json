@@ -1,0 +1,57 @@
+{
+  "slug": "redmine",
+  "name": "Redmine",
+  "tagline": "Mature, flexible open source project management. Ruby on Rails.",
+  "shortDescription": "A mature, flexible open source project management tool. Ruby on Rails, MySQL/Postgres, Gantt charts, time tracking, wikis, forums, issue tracking. The most full-featured OSS PM tool.",
+  "longDescription": "## What it is\n\nRedmine is a flexible open source project management web app. Written in Ruby on Rails, supports MySQL/Postgres/SQLite, multiple projects, Gantt charts, calendars, time tracking, wikis, forums, file management, and per-project wikis/forums.\n\n## Why we recommend it\n\nIf you need a project management tool that has been battle-tested for 15+ years, Redmine is it. The feature set is enormous, the plugin ecosystem is huge, and the codebase is mature.\n\n## When to use it\n\n- Replacing Jira for a team that wants self-hosting\n- Companies with complex multi-project workflows\n- Teams that need Gantt charts and time tracking\n- Long-running software projects that want a stable tool",
+  "kind": "platform",
+  "runtime": "ruby",
+  "category": "project-management",
+  "publisher": "redmine",
+  "externalUrl": "https://www.redmine.org",
+  "repoUrl": "https://github.com/redmine/redmine",
+  "installCommand": "docker run -d --name redmine -p 3000:3000 -v redmine_data:/usr/src/redmine/files redmine:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name redmine -p 3000:3000 redmine:latest\n```\n\n**Bitnami:**\n```\ndocker run -d --name redmine -p 80:80 -p 443:443 bitnami/redmine:latest\n```",
+  "logoUrl": "/logos/redmine.svg",
+  "trust": {
+    "securityScore": 87,
+    "qualityScore": 89,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.91,
+    "avgLatencyMs": 225,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "pm",
+    "gantt",
+    "time-tracking",
+    "wiki",
+    "mature"
+  ],
+  "useCases": [
+    "jira-replacement",
+    "multi-project",
+    "gantt",
+    "time-tracking"
+  ],
+  "integrations": [
+    "ldap",
+    "svn",
+    "git",
+    "rest-api",
+    "email"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. GPL-2.0 licensed. Self-host on any server.",
+  "seo": {
+    "metaTitle": "Redmine — Open Source Project Management",
+    "metaDescription": "Hand-tested review of Redmine. Mature, flexible open source project management. Gantt charts, time tracking, wikis."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

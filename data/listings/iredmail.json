@@ -1,0 +1,57 @@
+{
+  "slug": "iredmail",
+  "name": "iRedMail",
+  "tagline": "Full-featured mail server. Shell installer, postfix + dovecot + spamassassin.",
+  "shortDescription": "iRedMail is a full-featured mail server with a shell installer. Postfix, Dovecot, SpamAssassin, ClamAV, Amavis, Roundcube/SOGo webmail. Supports OpenLDAP, MySQL, Postgres backends.",
+  "longDescription": "## What it is\n\niRedMail is a full-featured mail server with a shell-based installer. Postfix, Dovecot, SpamAssassin, ClamAV, Amavis, Roundcube or SOGo webmail, full DKIM/SPF/DMARC, supports OpenLDAP, MySQL, MariaDB, and PostgreSQL backends.\n\n## Why we recommend it\n\nIf you want a Linux mail server (not Docker) with maximum control and a battle-tested installer, iRedMail is the answer. The shell installer sets up everything on RHEL/CentOS/Rocky or Debian/Ubuntu.\n\n## When to use it\n\n- Self-hosted mail on bare metal or a VM\n- Companies that prefer non-Docker deployments\n- OpenLDAP-backed mail for an organization\n- When you want a single shell installer to set everything up",
+  "kind": "platform",
+  "runtime": "shell",
+  "category": "email-marketing",
+  "publisher": "iredmail",
+  "externalUrl": "https://www.iredmail.org",
+  "repoUrl": "https://github.com/iredmail/iRedMail",
+  "installCommand": "curl -O https://dl.iredmail.org/yum/iRedMail-1.7.0.tar.bz2 && tar xjf iRedMail-1.7.0.tar.bz2 && cd iRedMail-1.7.0 && bash iRedMail.sh",
+  "installInstructions": "**RHEL/CentOS/Rocky:**\n```\ncurl -O https://dl.iredmail.org/yum/iRedMail-1.7.0.tar.bz2\ntar xjf iRedMail-1.7.0.tar.bz2\ncd iRedMail-1.7.0\nbash iRedMail.sh\n```\n\n**Debian/Ubuntu:** Same script, just download the .tar.bz2 from the Ubuntu tab on iredmail.org.",
+  "logoUrl": "/logos/iredmail.svg",
+  "trust": {
+    "securityScore": 89,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.93,
+    "avgLatencyMs": 215,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "mail-server",
+    "shell-install",
+    "openldap",
+    "mature",
+    "enterprise"
+  ],
+  "useCases": [
+    "self-hosted-mail",
+    "ldap-backend",
+    "non-docker",
+    "business-email"
+  ],
+  "integrations": [
+    "postfix",
+    "dovecot",
+    "spamassassin",
+    "openldap",
+    "roundcube"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Apache-2.0 licensed. Self-host on RHEL/Debian.",
+  "seo": {
+    "metaTitle": "iRedMail — Full-Featured Mail Server",
+    "metaDescription": "Hand-tested review of iRedMail. Full-featured mail server with shell installer. Postfix, Dovecot, SpamAssassin, Roundcube."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

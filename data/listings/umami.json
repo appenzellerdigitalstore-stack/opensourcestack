@@ -1,0 +1,57 @@
+{
+  "slug": "umami",
+  "name": "Umami",
+  "tagline": "Privacy-first web analytics. Google Analytics without the cookies.",
+  "shortDescription": "Self-hostable, cookieless web analytics. Real-time dashboard, custom events, UTM tracking, multiple sites. The drop-in Google Analytics replacement.",
+  "longDescription": "## What it is\n\nUmami is a privacy-first web analytics platform. Self-hostable, no cookies, GDPR/CCPA compliant out of the box, real-time dashboard, custom events, UTM tracking, multi-site support, and a clean modern UI.\n\n## Why we recommend it\n\nIf you want to ditch Google Analytics but keep the metrics that matter (pageviews, bounce, referrers, UTMs, events), Umami is the cleanest option. No cookie banner needed, no $100K/yr enterprise plan.\n\n## When to use it\n\n- Replacing Google Analytics on a privacy-conscious site\n- Self-hosted analytics for marketing teams\n- Multiple sites on one Umami instance\n- Tracking custom events (button clicks, video plays, etc.)",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "analytics",
+  "publisher": "umami",
+  "externalUrl": "https://umami.is",
+  "repoUrl": "https://github.com/umami-software/umami",
+  "installCommand": "git clone https://github.com/umami-software/umami.git && cd umami && docker compose up -d",
+  "installInstructions": "**Docker Compose:**\n```\ngit clone https://github.com/umami-software/umami\ncd umami\ndocker compose up -d\n```\nDashboard at `http://localhost:3000`.\n\n**Cloud:** From $9/month. Free trial.",
+  "logoUrl": "/logos/umami.svg",
+  "trust": {
+    "securityScore": 93,
+    "qualityScore": 95,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.98,
+    "avgLatencyMs": 85,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "privacy",
+    "web-analytics",
+    "cookieless",
+    "gdpr",
+    "google-analytics-alternative"
+  ],
+  "useCases": [
+    "google-analytics-replacement",
+    "privacy-analytics",
+    "multi-site",
+    "custom-events"
+  ],
+  "integrations": [
+    "react",
+    "nextjs",
+    "vue",
+    "gatsby",
+    "wordpress"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: free trial, from $9/month.",
+  "seo": {
+    "metaTitle": "Umami — Privacy-First Web Analytics",
+    "metaDescription": "Hand-tested review of Umami. Open source, cookieless web analytics. The Google Analytics alternative that respects privacy."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

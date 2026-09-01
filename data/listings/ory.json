@@ -1,0 +1,57 @@
+{
+  "slug": "ory",
+  "name": "Ory",
+  "tagline": "Open source identity infrastructure. OAuth2, OIDC, SAML, MFA, permissions.",
+  "shortDescription": "Ory is an open source identity infrastructure. OAuth2, OpenID Connect, SAML, WebAuthn, MFA, permissions API, and a control plane for managing identities. The CNCF identity stack.",
+  "longDescription": "## What it is\n\nOry is a suite of open source identity services: Ory Hydra (OAuth2/OIDC), Ory Kratos (identity/user management), Ory Oathkeeper (identity proxy), Ory Keto (permissions), and Ory Fosite (OAuth2 library). All CNCF projects, all production-grade.\n\n## Why we recommend it\n\nIf you need OAuth2/OIDC/SAML/MFA and don't want to pay Auth0/Okta fees, Ory is the answer. Each component can be used standalone or composed. The license is Apache-2.0, and the cloud offering is reasonably priced.\n\n## When to use it\n\n- OAuth2/OIDC provider for your app\n- Replacing Auth0/Okta with self-hosting\n- Multi-tenant SaaS with per-tenant identity\n- When you need SAML for enterprise SSO",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "auth",
+  "publisher": "ory",
+  "externalUrl": "https://www.ory.sh",
+  "repoUrl": "https://github.com/ory",
+  "installCommand": "bash <(curl https://raw.githubusercontent.com/ory/meta/master/install.sh) -d ./hydra -b v2.2.0",
+  "installInstructions": "**Each component is a Go binary. Docker images are also available.**\n\n**Ory Hydra (OAuth2/OIDC):**\n```\ndocker run -d --name hydra -p 4444:4444 -p 4445:4445 oryd/hydra:latest serve all --dangerous-force-http\n```\n\n**Cloud:** Ory Network - free tier, $25/month production.",
+  "logoUrl": "/logos/ory.svg",
+  "trust": {
+    "securityScore": 94,
+    "qualityScore": 95,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.98,
+    "avgLatencyMs": 85,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "oauth2",
+    "oidc",
+    "saml",
+    "mfa",
+    "cncf"
+  ],
+  "useCases": [
+    "oauth2-provider",
+    "auth0-replacement",
+    "saml-sso",
+    "multi-tenant"
+  ],
+  "integrations": [
+    "oauth2",
+    "oidc",
+    "saml",
+    "webauthn",
+    "ldap"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Ory Network: free tier. $25/month for production. Enterprise: custom.",
+  "seo": {
+    "metaTitle": "Ory - Open Source Identity Infrastructure",
+    "metaDescription": "Hand-tested review of Ory. Open source OAuth2/OIDC/SAML/MFA. CNCF identity stack. Self-hostable, Apache-2.0."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

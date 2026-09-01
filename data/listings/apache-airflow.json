@@ -1,0 +1,57 @@
+{
+  "slug": "apache-airflow",
+  "name": "Apache Airflow",
+  "tagline": "The original open source workflow orchestrator. Python, DAGs, used everywhere.",
+  "shortDescription": "Apache Airflow is the original open source workflow orchestrator. Python-defined DAGs, rich UI, 1000+ providers, scalable execution, used by Airbnb, Google, Amazon, and every data team.",
+  "longDescription": "## What it is\n\nApache Airflow is the original open source workflow orchestrator. Define workflows as Python DAGs (Directed Acyclic Graphs), schedule them, monitor them, and scale them. 1000+ providers, rich web UI, and battle-tested at scale.\n\n## Why we recommend it\n\nIf you need to orchestrate data pipelines, ETL, ML workflows, or any scheduled jobs, Airflow is the most widely-adopted open source option. Every data tool integrates with it.\n\n## When to use it\n\n- Data pipelines (ETL/ELT)\n- ML training and batch inference\n- Scheduled jobs that have dependencies\n- When you need a battle-tested orchestrator",
+  "kind": "platform",
+  "runtime": "python",
+  "category": "automation",
+  "publisher": "apache",
+  "externalUrl": "https://airflow.apache.org",
+  "repoUrl": "https://github.com/apache/airflow",
+  "installCommand": "pip install apache-airflow",
+  "installInstructions": "**pip install:**\n```\npip install apache-airflow\nairflow db init\nairflow webserver -p 8080\nairflow scheduler\n```\n\n**Docker:** See the official Docker Compose file in the repo.\n\n**Astronomer (managed):** From $0.00005/task-second.",
+  "logoUrl": "/logos/airflow.svg",
+  "trust": {
+    "securityScore": 89,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.92,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "workflow",
+    "orchestration",
+    "data-pipelines",
+    "python",
+    "dags"
+  ],
+  "useCases": [
+    "etl",
+    "data-pipelines",
+    "ml-workflows",
+    "scheduled-jobs"
+  ],
+  "integrations": [
+    "1000-plus-providers",
+    "kubernetes",
+    "celery",
+    "postgres",
+    "snowflake"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Apache-2.0 licensed. Managed via Astronomer, AWS MWAA, or Google Cloud Composer.",
+  "seo": {
+    "metaTitle": "Apache Airflow - Open Source Workflow Orchestration",
+    "metaDescription": "Hand-tested review of Apache Airflow. Open source workflow orchestrator. Python DAGs, rich UI, 1000+ providers."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

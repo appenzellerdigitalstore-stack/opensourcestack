@@ -1,0 +1,57 @@
+{
+  "slug": "owncloud",
+  "name": "ownCloud",
+  "tagline": "Self-hosted file sync and share. WebDAV, federation, mature.",
+  "shortDescription": "ownCloud is a self-hosted file sync and share platform. WebDAV-based, federation, mature, with online editing (via Collabora), file drop, password-protected links, and enterprise features.",
+  "longDescription": "## What it is\n\nownCloud is a self-hosted file sync and share platform. PHP + Go, WebDAV-based, federation (ownCloud Global Scale), online editing (Collabora), file versioning, password-protected links, end-to-end encryption, and enterprise features.\n\n## Why we recommend it\n\nIf you want a mature, federated self-hosted file sync platform, ownCloud is the answer. The codebase has been around since 2010 and the enterprise features are well-developed.\n\n## When to use it\n\n- Self-hosted Dropbox/Drive alternative\n- File sync for an enterprise\n- Federated file sync (multiple servers)\n- Compliance-heavy deployments (with E2E encryption)",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "storage",
+  "publisher": "owncloud",
+  "externalUrl": "https://owncloud.com",
+  "repoUrl": "https://github.com/owncloud/core",
+  "installCommand": "docker run -d --name owncloud -p 80:80 -v owncloud_data:/var/www/html owncloud/server:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name owncloud -p 80:80 owncloud/server\n```\n\n**Manual:** LAMP stack + download from owncloud.com.",
+  "logoUrl": "/logos/owncloud.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 175,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "file-sync",
+    "self-hosted",
+    "webdav",
+    "federation",
+    "mature"
+  ],
+  "useCases": [
+    "dropbox-replacement",
+    "enterprise",
+    "federation",
+    "compliance"
+  ],
+  "integrations": [
+    "collabora",
+    "onlyoffice",
+    "webdav",
+    "ldap",
+    "s3"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Community: free. Enterprise: from $3,600/year per 100 users.",
+  "seo": {
+    "metaTitle": "ownCloud - Self-Hosted File Sync & Share",
+    "metaDescription": "Hand-tested review of ownCloud. Self-hosted file sync and share. WebDAV, federation, mature. Enterprise features."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

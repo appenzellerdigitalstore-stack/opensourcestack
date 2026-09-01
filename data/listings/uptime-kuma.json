@@ -1,0 +1,57 @@
+{
+  "slug": "uptime-kuma",
+  "name": "Uptime Kuma",
+  "tagline": "Self-hosted monitoring tool. Beautiful UI, 100+ notification types, free.",
+  "shortDescription": "Uptime Kuma is a self-hosted monitoring tool. HTTP(s), TCP, ping, DNS, push, Docker, database checks, 100+ notification types, beautiful UI, single binary. The Uptime Robot alternative you self-host.",
+  "longDescription": "## What it is\n\nUptime Kuma is a self-hosted monitoring tool. HTTP(s), TCP, ping, DNS, push, Docker container, database, and more check types. 100+ notification types (Slack, Discord, Telegram, email, webhook, etc.). Beautiful Vue 3 UI, single Node.js binary.\n\n## Why we recommend it\n\nIf you want Uptime Robot but self-hosted, Uptime Kuma is the answer. The UI is gorgeous, the feature set is comprehensive, and the price is free.\n\n## When to use it\n\n- Self-hosted Uptime Robot alternative\n- Monitoring HTTP, TCP, ping, DNS endpoints\n- Status page (public or private)\n- When you want beautiful UI without SaaS fees",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "monitoring",
+  "publisher": "uptimekuma",
+  "externalUrl": "https://github.com/louislam/uptime-kuma",
+  "repoUrl": "https://github.com/louislam/uptime-kuma",
+  "installCommand": "docker run -d --name uptime-kuma -p 3001:3001 -v uptime_kuma:/app/data louislam/uptime-kuma:1",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name uptime-kuma -p 3001:3001 -v uptime_kuma:/app/data louislam/uptime-kuma:1\n```\n\n**Web UI:** http://localhost:3001",
+  "logoUrl": "/logos/uptime-kuma.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 95,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.97,
+    "avgLatencyMs": 95,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "uptime",
+    "monitoring",
+    "self-hosted",
+    "notifications",
+    "status-page"
+  ],
+  "useCases": [
+    "uptime-robot-alternative",
+    "self-hosted",
+    "status-page",
+    "notifications"
+  ],
+  "integrations": [
+    "100-plus-notifications",
+    "docker",
+    "prometheus",
+    "slack",
+    "discord"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Self-host on a small VPS.",
+  "seo": {
+    "metaTitle": "Uptime Kuma - Self-Hosted Uptime Monitoring",
+    "metaDescription": "Hand-tested review of Uptime Kuma. Self-hosted uptime monitoring. Beautiful UI, 100+ notification types, single binary, free."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

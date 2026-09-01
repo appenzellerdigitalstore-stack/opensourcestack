@@ -1,0 +1,57 @@
+{
+  "slug": "superset",
+  "name": "Apache Superset",
+  "tagline": "Open source data exploration and visualization. 40+ chart types, SQL IDE.",
+  "shortDescription": "Apache Superset is an open source data exploration and visualization platform. 40+ chart types, SQL IDE, dashboards, alerts, 30+ data source integrations. The Airbnb-built enterprise BI tool.",
+  "longDescription": "## What it is\n\nApache Superset is an open source data exploration and visualization platform. 40+ chart types, SQL IDE, dashboards, alerts, 30+ data source integrations, public embedding, and a plugin architecture. Originally built at Airbnb.\n\n## Why we recommend it\n\nIf you need an enterprise-grade BI tool that you can self-host, Superset is the answer. The SQL IDE is excellent for power users, the chart library is broad, and the architecture scales to thousands of dashboards.\n\n## When to use it\n\n- Enterprise BI with self-hosting\n- When you need a powerful SQL IDE for analysts\n- Embedding dashboards in your product\n- Replacing Tableau with open source",
+  "kind": "platform",
+  "runtime": "python",
+  "category": "business-intelligence",
+  "publisher": "superset",
+  "externalUrl": "https://superset.apache.org",
+  "repoUrl": "https://github.com/apache/superset",
+  "installCommand": "docker run -d --name superset -p 8088:8088 apache/superset:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name superset -p 8088:8088 apache/superset\n```\n\n**Helm chart:** Available for Kubernetes deployments.\n\n**Preset Cloud (managed):** From $0.20/query.",
+  "logoUrl": "/logos/superset.svg",
+  "trust": {
+    "securityScore": 89,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.94,
+    "avgLatencyMs": 215,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "bi",
+    "data-visualization",
+    "sql-ide",
+    "airbnb",
+    "enterprise"
+  ],
+  "useCases": [
+    "enterprise-bi",
+    "sql-ide",
+    "embedded-dashboards",
+    "tableau-replacement"
+  ],
+  "integrations": [
+    "30-plus-datasources",
+    "postgres",
+    "bigquery",
+    "snowflake",
+    "druid"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Preset Cloud: from $0.20/query.",
+  "seo": {
+    "metaTitle": "Apache Superset - Open Source Data Visualization",
+    "metaDescription": "Hand-tested review of Apache Superset. Open source data exploration and visualization. 40+ chart types, SQL IDE, dashboards."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

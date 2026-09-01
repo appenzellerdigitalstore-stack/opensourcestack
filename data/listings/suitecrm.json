@@ -1,0 +1,57 @@
+{
+  "slug": "suitecrm",
+  "name": "SuiteCRM",
+  "tagline": "The open source Salesforce fork. Mature, feature-rich, enterprise-ready.",
+  "shortDescription": "A fork of the open-sourced SugarCRM Community Edition, maintained and extended by SalesAgility. The most feature-rich open source CRM in existence.",
+  "longDescription": "## What it is\n\nSuiteCRM is a fork of SugarCRM Community Edition, actively maintained by SalesAgility. Mature codebase, broad feature set (sales, marketing, service, projects), workflow engine, reporting, mobile app.\n\n## Why we recommend it\n\nIf you need the broadest feature set in an open source CRM, SuiteCRM is it. It's been around since 2004 (as SugarCRM) and has every feature you'd expect from a mature CRM.\n\n## When to use it\n\n- Mid-market companies that need full CRM features\n- SugarCRM migration target\n- Companies that want a battle-tested codebase\n- Industries with complex sales processes",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "crm",
+  "publisher": "salesagility",
+  "externalUrl": "https://suitecrm.com",
+  "repoUrl": "https://github.com/salesagility/SuiteCRM",
+  "installCommand": "docker run -d --name suitecrm -p 80:80 bitnami/suitecrm:latest",
+  "installInstructions": "**Docker (Bitnami):**\n```\ndocker run -d --name suitecrm -p 80:80 bitnami/suitecrm:latest\n```\n\n**Manual:** LAMP stack + download from suitecrm.com.",
+  "logoUrl": "/logos/suitecrm.svg",
+  "trust": {
+    "securityScore": 87,
+    "qualityScore": 89,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.9,
+    "avgLatencyMs": 245,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "crm",
+    "sugarcrm-fork",
+    "mature",
+    "enterprise",
+    "php"
+  ],
+  "useCases": [
+    "mid-market",
+    "sugarcrm-migration",
+    "enterprise",
+    "complex-sales"
+  ],
+  "integrations": [
+    "imap",
+    "smtp",
+    "asterisk",
+    "rest-api",
+    "ldap"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Open source: free. SuiteCRM Cloud: from $25/user/month. Support contracts from $1,200/year.",
+  "seo": {
+    "metaTitle": "SuiteCRM — The Open Source Salesforce Fork",
+    "metaDescription": "Hand-tested review of SuiteCRM. Mature open source CRM forked from SugarCRM. Full sales, marketing, and service features."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

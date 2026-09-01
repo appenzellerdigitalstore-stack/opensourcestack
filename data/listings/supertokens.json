@@ -1,0 +1,57 @@
+{
+  "slug": "supertokens",
+  "name": "SuperTokens",
+  "tagline": "Open source auth with pre-built UI. Email/password, social, MFA, passwordless.",
+  "shortDescription": "SuperTokens is an open source authentication solution with pre-built login/signup UIs. Email/password, social login, MFA, passwordless (email/SMS), session management, role-based access.",
+  "longDescription": "## What it is\n\nSuperTokens is an open source authentication solution. Pre-built login/signup UI components (React, React Native, Vue, Angular), session management, email/password, social login, passwordless (email/SMS), MFA, and role-based access control.\n\n## Why we recommend it\n\nIf you want a complete auth solution with pre-built UI but don't want to lock into Auth0, SuperTokens is the answer. The UI components are well-designed and customizable, and the backend is Apache-2.0.\n\n## When to use it\n\n- Apps that need login/signup UI without building it\n- Auth0 alternative with self-hosting\n- Email/password + social + MFA in one\n- When you want pre-built session management",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "auth",
+  "publisher": "supertokens",
+  "externalUrl": "https://supertokens.com",
+  "repoUrl": "https://github.com/supertokens/supertokens-core",
+  "installCommand": "docker run -d --name supertokens -p 3567:3567 -v supertokens_data:/data registry.supertokens.io/supertokens/supertokens-core:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name supertokens -p 3567:3567 registry.supertokens.io/supertokens/supertokens-core\n```\n\n**Managed (SuperTokens Cloud):** 5K MAU free. From $0.02/MAU after.",
+  "logoUrl": "/logos/supertokens.svg",
+  "trust": {
+    "securityScore": 92,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.97,
+    "avgLatencyMs": 75,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "auth",
+    "pre-built-ui",
+    "session",
+    "mfa",
+    "passwordless"
+  ],
+  "useCases": [
+    "app-auth",
+    "auth0-replacement",
+    "pre-built-ui",
+    "self-hosted"
+  ],
+  "integrations": [
+    "react",
+    "react-native",
+    "vue",
+    "angular",
+    "nextjs"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: 5K MAU free. $0.02/MAU after.",
+  "seo": {
+    "metaTitle": "SuperTokens - Open Source Authentication",
+    "metaDescription": "Hand-tested review of SuperTokens. Open source auth with pre-built UI. Email/password, social, MFA, passwordless."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

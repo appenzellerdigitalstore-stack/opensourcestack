@@ -1,0 +1,56 @@
+{
+  "slug": "ackee",
+  "name": "Ackee",
+  "tagline": "Self-hosted, cookieless analytics. GraphQL API, modern UI.",
+  "shortDescription": "Lightweight, self-hosted, cookieless analytics for techies. GraphQL API, modern UI, no JavaScript required for visitors. The minimal analytics tool.",
+  "longDescription": "## What it is\n\nAckee is a self-hosted analytics platform focused on simplicity. Cookieless, no personal data, no fingerprints, GraphQL API, real-time dashboard, dark mode, and tiny (~2KB tracking script).\n\n## Why we recommend it\n\nIf Plausible and Umami feel heavy, Ackee is the minimalist choice. It does the basics — pageviews, referrers, devices, countries — without any of the extras. The tracking script is 2KB.\n\n## When to use it\n\n- Minimal analytics for a static site\n- Techies who want a GraphQL API to query\n- When you want cookieless + lightweight + self-hosted, nothing else\n- A side project that needs analytics without the bloat",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "analytics",
+  "publisher": "ackee",
+  "externalUrl": "https://ackee.electerious.com",
+  "repoUrl": "https://github.com/electerious/Ackee",
+  "installCommand": "docker run -d --name ackee -p 3000:3000 -v ackee_data:/data electerious/ackee",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name ackee -p 3000:3000 -v ackee_data:/data electerious/ackee\n```\n\n**Heroku / Netlify / Vercel:** One-click deploys supported.",
+  "logoUrl": "/logos/ackee.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.97,
+    "avgLatencyMs": 60,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "minimal",
+    "graphql",
+    "cookieless",
+    "lightweight",
+    "static-sites"
+  ],
+  "useCases": [
+    "static-sites",
+    "side-projects",
+    "minimalists",
+    "graphql-api"
+  ],
+  "integrations": [
+    "react",
+    "nextjs",
+    "gatsby",
+    "any-static-site"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Self-host on $5 VPS.",
+  "seo": {
+    "metaTitle": "Ackee — Minimal Self-Hosted Analytics",
+    "metaDescription": "Hand-tested review of Ackee. Cookieless, GraphQL-based analytics for static sites. Self-host on a $5 VPS."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

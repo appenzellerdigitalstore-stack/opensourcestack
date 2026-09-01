@@ -1,0 +1,58 @@
+{
+  "slug": "decap-cms",
+  "name": "Decap CMS",
+  "tagline": "Open source Git-based CMS for static sites. The original Netlify CMS.",
+  "shortDescription": "Decap CMS (formerly Netlify CMS) is an open source Git-based CMS. Add a static admin panel to any static site generator, edit Markdown/YAML/TOML, commit back to your repo.",
+  "longDescription": "## What it is\n\nDecap CMS (formerly Netlify CMS) is an open source Git-based CMS. Drop a single HTML tag into your static site, and you get a full admin panel for editing Markdown, YAML, or TOML files. Commits go back to your Git repo.\n\n## Why we recommend it\n\nIf you want a free, open source, Git-based CMS with no SaaS tier, Decap is the answer. It's the spiritual successor to Netlify CMS (renamed after Netlify acquired it and forked).\n\n## When to use it\n\n- Static sites that need a CMS\n- Hugo, Jekyll, Eleventy, Astro, Next.js (static export)\n- Git-based content workflows\n- When you want no SaaS dependency",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "cms",
+  "publisher": "decap",
+  "externalUrl": "https://decapcms.org",
+  "repoUrl": "https://github.com/decaporg/decap-cms",
+  "installCommand": "npm install decap-cms decap-server",
+  "installInstructions": "**Add to your static site:**\n1. Create `/admin/index.html`\n2. Load Decap CMS from CDN\n3. Add a `config.yml` to define collections\n4. Editors visit `/admin/`\n\n**Auth:** GitHub, GitLab, Bitbucket, or local (with decap-server).",
+  "logoUrl": "/logos/decap.svg",
+  "trust": {
+    "securityScore": 88,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 165,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "git-cms",
+    "static-sites",
+    "markdown",
+    "no-saas",
+    "netlify-cms"
+  ],
+  "useCases": [
+    "static-sites",
+    "hugo",
+    "jekyll",
+    "11ty",
+    "git-workflows"
+  ],
+  "integrations": [
+    "hugo",
+    "jekyll",
+    "11ty",
+    "astro",
+    "github"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Use with any Git host.",
+  "seo": {
+    "metaTitle": "Decap CMS — Open Source Git-Based CMS",
+    "metaDescription": "Hand-tested review of Decap CMS. The open source Git-based CMS for static sites. Free, no SaaS dependency."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

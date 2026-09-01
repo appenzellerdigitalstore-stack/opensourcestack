@@ -1,0 +1,57 @@
+{
+  "slug": "budibase",
+  "name": "Budibase",
+  "tagline": "Open source low-code platform. Build internal tools in hours.",
+  "shortDescription": "Self-hostable low-code platform for building internal tools, admin panels, and forms. Connects to SQL/NoSQL/APIs. The Retool alternative you can self-host.",
+  "longDescription": "## What it is\n\nBudibase is a low-code platform designed for internal tools. Self-hostable, supports SQL (Postgres, MySQL, MS SQL, Oracle), MongoDB, REST, Google Sheets, and more. The visual builder outputs production-ready apps with auth, automations, and RBAC.\n\n## Why we recommend it\n\nIf you want the speed of Retool without the per-user fees and without the cloud-only constraint, Budibase is the answer. Connect to your existing DB, build CRUD screens, and ship.\n\n## When to use it\n\n- Admin panels over an existing Postgres database\n- Internal CRUD apps that would take weeks to build from scratch\n- Approval workflows and forms\n- Replacing spreadsheets with proper apps",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "databases",
+  "publisher": "budibase",
+  "externalUrl": "https://budibase.com",
+  "repoUrl": "https://github.com/Budibase/budibase",
+  "installCommand": "npx -y budibase-cli latest",
+  "installInstructions": "**Docker (self-host):**\n```\ndocker run -d -p 80:80 -v budibase_data:/data budibase/budibase:latest\n```\n\n**Cloud:** Free tier with 5 users, 1 app, 1K rows.",
+  "logoUrl": "/logos/budibase.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.94,
+    "avgLatencyMs": 165,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "low-code",
+    "internal-tools",
+    "retool-alternative",
+    "crud",
+    "forms"
+  ],
+  "useCases": [
+    "admin-panels",
+    "internal-crud",
+    "approval-workflows",
+    "replace-spreadsheets"
+  ],
+  "integrations": [
+    "postgres",
+    "mysql",
+    "mongodb",
+    "rest-api",
+    "google-sheets"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: free tier (5 users). Premium from $50/month per app builder.",
+  "seo": {
+    "metaTitle": "Budibase — Open Source Low-Code for Internal Tools",
+    "metaDescription": "Hand-tested review of Budibase. Open source low-code platform for internal tools. Self-hostable Retool alternative."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

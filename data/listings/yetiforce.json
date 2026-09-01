@@ -1,0 +1,57 @@
+{
+  "slug": "yetiforce",
+  "name": "YetiForce",
+  "tagline": "Open source CRM with inventory, projects, finances, and HR. Polish-built.",
+  "shortDescription": "A feature-rich open source CRM built in Poland. Sales, marketing, projects, inventory, finances, HR, helpdesk — everything in one self-hostable platform.",
+  "longDescription": "## What it is\n\nYetiForce is a feature-rich open source CRM. Sales, marketing, projects, inventory, finances, HR, helpdesk, calendar, and more. Self-hostable PHP + MySQL. Translated into 30+ languages.\n\n## Why we recommend it\n\nIf you need an all-in-one business platform (CRM + ERP + HR) and don't want multiple SaaS bills, YetiForce is the most feature-complete open source option.\n\n## When to use it\n\n- Mid-market companies with complex business processes\n- Companies that need CRM + ERP in one\n- Multi-language deployments (YetiForce is in 30+ languages)\n- Replacing Salesforce/Sugar + a separate ERP",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "crm",
+  "publisher": "yetiforce",
+  "externalUrl": "https://yetiforce.com",
+  "repoUrl": "https://github.com/YetiForceCompany/YetiForceCRM",
+  "installCommand": "docker run -d --name yetiforce -p 80:80 yetiforce/yetiforce-crm",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name yetiforce -p 80:80 yetiforce/yetiforce-crm\n```\n\n**Manual:** LAMP stack + download from yetiforce.com.",
+  "logoUrl": "/logos/yetiforce.svg",
+  "trust": {
+    "securityScore": 86,
+    "qualityScore": 88,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.89,
+    "avgLatencyMs": 245,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "crm",
+    "erp",
+    "all-in-one",
+    "polish",
+    "multi-language"
+  ],
+  "useCases": [
+    "mid-market",
+    "crm-erp",
+    "multi-language",
+    "complex-business"
+  ],
+  "integrations": [
+    "imap",
+    "smtp",
+    "ldap",
+    "rest-api",
+    "webhooks"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Open source: free. Premium support and modules from $200/month.",
+  "seo": {
+    "metaTitle": "YetiForce — All-in-One Open Source CRM/ERP",
+    "metaDescription": "Hand-tested review of YetiForce. Open source CRM with inventory, projects, finances, and HR. Self-hostable, 30+ languages."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

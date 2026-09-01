@@ -1,0 +1,57 @@
+{
+  "slug": "jitsi-meet",
+  "name": "Jitsi Meet",
+  "tagline": "Open source Zoom alternative. Encrypted video conferencing, no account needed.",
+  "shortDescription": "Jitsi Meet is a fully encrypted, open source video conferencing platform. No account needed, share a link, start a meeting. The open source Zoom.",
+  "longDescription": "## What it is\n\nJitsi Meet is an open source video conferencing platform. WebRTC-based, end-to-end encrypted, no account or install required — share a link, join a meeting. Self-hostable, with a free public instance at meet.jit.si.\n\n## Why we recommend it\n\nThe cleanest open source Zoom alternative. The public instance at meet.jit.si is free for everyone, and the codebase is straightforward to self-host for organizations that need it on their own infrastructure.\n\n## When to use it\n\n- Free video conferencing with no account needed\n- Self-hosted video for organizations with privacy requirements\n- Embedding video calls in your app (Jitsi IFrame API)\n- Replacing Zoom for budget-conscious teams",
+  "kind": "platform",
+  "runtime": "java",
+  "category": "communication",
+  "publisher": "jitsi",
+  "externalUrl": "https://jitsi.org",
+  "repoUrl": "https://github.com/jitsi/jitsi-meet",
+  "installCommand": "curl https://download.jitsi.org/jitsi-repo.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/jitsi-keyring.gpg && sudo apt install jitsi-meet",
+  "installInstructions": "**Quick install (Ubuntu):**\n```\ncurl https://download.jitsi.org/jitsi-repo.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/jitsi-keyring.gpg\nsudo apt install jitsi-meet\n```\n\n**Docker:** `docker-compose up -d` with the official compose file.\n\n**Public instance:** Free at meet.jit.si (no signup).",
+  "logoUrl": "/logos/jitsi.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 94,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "video",
+    "webrtc",
+    "e2ee",
+    "open-source",
+    "no-account"
+  ],
+  "useCases": [
+    "video-conferencing",
+    "self-hosted",
+    "app-embedding",
+    "zoom-replacement"
+  ],
+  "integrations": [
+    "jitsi-iframe",
+    "slack",
+    "mattermost",
+    "rocketchat",
+    "element"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Apache-2.0 licensed. Self-host or use meet.jit.si.",
+  "seo": {
+    "metaTitle": "Jitsi Meet — Open Source Video Conferencing",
+    "metaDescription": "Hand-tested review of Jitsi Meet. Free, open source, end-to-end encrypted video conferencing. No account needed."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

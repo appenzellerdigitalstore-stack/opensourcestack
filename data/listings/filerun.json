@@ -1,0 +1,57 @@
+{
+  "slug": "filerun",
+  "name": "FileRun",
+  "tagline": "Self-hosted file management. Beautiful UI, WebDAV, mobile, file preview.",
+  "shortDescription": "FileRun is a self-hosted file management and sync platform. Beautiful UI, WebDAV, mobile apps, file preview (PDF, images, video, Office), share links, and tight Nextcloud compatibility.",
+  "longDescription": "## What it is\n\nFileRun is a self-hosted file management and sync platform. PHP + MySQL, beautiful UI (Google Drive-like), WebDAV, mobile apps (iOS, Android), file preview (PDF, images, video, Office via Collabora/OnlyOffice), and share links with passwords/expiry.\n\n## Why we recommend it\n\nIf you want a Google Drive-like UI for your self-hosted files, FileRun is the answer. The UI is more modern than Nextcloud's, and the file preview is excellent.\n\n## When to use it\n\n- Self-hosted Google Drive alternative with modern UI\n- File management for small teams\n- When you want a Dropbox-like experience\n- WebDAV server with mobile access",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "storage",
+  "publisher": "filerun",
+  "externalUrl": "https://www.filerun.com",
+  "repoUrl": null,
+  "installCommand": "Download from filerun.com and follow the install guide",
+  "installInstructions": "**Requirements:** LAMP/LEMP, PHP 7.4+, MySQL/MariaDB.\n\n**Install:**\n1. Download FileRun from filerun.com\n2. Unzip into a web-served directory\n3. Visit http://your-server/ and follow the installer\n\n**License:** Free for personal use. From $49/year per user for commercial.",
+  "logoUrl": "/logos/filerun.svg",
+  "trust": {
+    "securityScore": 89,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 165,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "file-management",
+    "self-hosted",
+    "webdav",
+    "modern-ui",
+    "preview"
+  ],
+  "useCases": [
+    "google-drive-alternative",
+    "file-management",
+    "small-teams",
+    "dropbox-like"
+  ],
+  "integrations": [
+    "webdav",
+    "collabora",
+    "onlyoffice",
+    "ldap",
+    "s3"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Personal: free. Commercial: $49/year per user. Enterprise: custom.",
+  "seo": {
+    "metaTitle": "FileRun - Self-Hosted File Management",
+    "metaDescription": "Hand-tested review of FileRun. Self-hosted file management with Google Drive-like UI, WebDAV, mobile apps, file preview."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

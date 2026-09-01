@@ -1,0 +1,57 @@
+{
+  "slug": "signoz",
+  "name": "SigNoz",
+  "tagline": "Open source Datadog alternative. Logs, metrics, traces, in one platform.",
+  "shortDescription": "SigNoz is an open source observability platform. Logs, metrics, and traces in one place, OpenTelemetry-native, beautiful UI, ClickHouse-backed. The open source Datadog/New Relic alternative.",
+  "longDescription": "## What it is\n\nSigNoz is an open source observability platform. Logs, metrics, and traces in one place, OpenTelemetry-native (use any OTel SDK), ClickHouse-backed for fast queries, beautiful React UI, alerts, and dashboards.\n\n## Why we recommend it\n\nIf you need Datadog/New Relic but with self-hosting and OpenTelemetry-native, SigNoz is the answer. The UI is excellent, the data is yours, and the cost is your infrastructure.\n\n## When to use it\n\n- Self-hosted Datadog alternative\n- OpenTelemetry-native observability\n- Logs + metrics + traces in one platform\n- When you want to own your telemetry data",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "monitoring",
+  "publisher": "signoz",
+  "externalUrl": "https://signoz.io",
+  "repoUrl": "https://github.com/SigNoz/signoz",
+  "installCommand": "git clone https://github.com/SigNoz/signoz.git && cd signoz/deploy/docker && docker compose up -d",
+  "installInstructions": "**Docker Compose (recommended):**\n```\ngit clone https://github.com/SigNoz/signoz\ncd signoz/deploy/docker\ndocker compose up -d\n```\nUI at http://localhost:3301.\n\n**Cloud:** SigNoz Cloud from $0.30/GB ingested.",
+  "logoUrl": "/logos/signoz.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 145,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "observability",
+    "opentelemetry",
+    "datadog-alternative",
+    "clickhouse",
+    "self-hosted"
+  ],
+  "useCases": [
+    "datadog-replacement",
+    "opentelemetry",
+    "self-hosted",
+    "all-in-one"
+  ],
+  "integrations": [
+    "opentelemetry",
+    "prometheus",
+    "clickhouse",
+    "kubernetes",
+    "alerts"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: $0.30/GB ingested. Free tier (10GB/month).",
+  "seo": {
+    "metaTitle": "SigNoz - Open Source Datadog Alternative",
+    "metaDescription": "Hand-tested review of SigNoz. Open source observability platform. Logs, metrics, traces, OpenTelemetry-native."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

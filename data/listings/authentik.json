@@ -1,0 +1,57 @@
+{
+  "slug": "authentik",
+  "name": "Authentik",
+  "tagline": "Open source identity provider. OAuth2, OIDC, SAML, LDAP, MFA, with a great UI.",
+  "shortDescription": "Authentik is an open source identity provider. OAuth2, OpenID Connect, SAML, LDAP, SCIM, MFA, with a beautiful admin UI. The modern Keycloak alternative.",
+  "longDescription": "## What it is\n\nAuthentik is an open source identity provider. OAuth2, OpenID Connect, SAML, LDAP, SCIM, MFA (TOTP, WebAuthn, SMS), admin UI, and a flexible policy engine. Python (Django) + Go, runs as a single container.\n\n## Why we recommend it\n\nIf Keycloak feels heavy or has the UI you want to replace, Authentik is the modern alternative. The admin UI is clean, the policy engine is flexible, and the integrations cover most modern apps.\n\n## When to use it\n\n- SSO provider for a self-hosted stack\n- OAuth2/OIDC/SAML for an enterprise\n- MFA for hundreds of users\n- Replacing Keycloak with a more modern UI",
+  "kind": "platform",
+  "runtime": "python",
+  "category": "auth",
+  "publisher": "authentik",
+  "externalUrl": "https://goauthentik.io",
+  "repoUrl": "https://github.com/goauthentik/authentik",
+  "installCommand": "docker run -d --name authentik -p 9000:9000 -p 9443:9443 -v authentik_data:/data ghcr.io/goauthentik/server:latest",
+  "installInstructions": "**Docker Compose (recommended):**\n```\ngit clone https://github.com/goauthentik/authentik\ncd authentik\ndocker compose up -d\n```\nUI at http://localhost:9000.\n\n**Cloud:** From $5/user/month (managed).",
+  "logoUrl": "/logos/authentik.svg",
+  "trust": {
+    "securityScore": 93,
+    "qualityScore": 94,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.97,
+    "avgLatencyMs": 95,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "sso",
+    "oauth2",
+    "oidc",
+    "saml",
+    "mfa"
+  ],
+  "useCases": [
+    "sso",
+    "enterprise-idp",
+    "keycloak-alternative",
+    "self-hosted"
+  ],
+  "integrations": [
+    "oauth2",
+    "oidc",
+    "saml",
+    "ldap",
+    "scim"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: from $5/user/month. Free for personal use.",
+  "seo": {
+    "metaTitle": "Authentik - Modern Open Source Identity Provider",
+    "metaDescription": "Hand-tested review of Authentik. Open source identity provider with OAuth2, OIDC, SAML, LDAP, MFA. Modern Keycloak alternative."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

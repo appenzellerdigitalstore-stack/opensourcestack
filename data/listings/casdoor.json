@@ -1,0 +1,57 @@
+{
+  "slug": "casdoor",
+  "name": "Casdoor",
+  "tagline": "Identity platform with a beautiful UI. OAuth2, OIDC, SAML, LDAP, MFA.",
+  "shortDescription": "Casdoor is an open source identity platform with a beautiful modern UI. OAuth2, OIDC, SAML, LDAP, MFA, WebAuthn, multi-tenancy, role-based access, audit logs.",
+  "longDescription": "## What it is\n\nCasdoor is an open source identity platform. OAuth2, OIDC, SAML, LDAP, MFA (TOTP, SMS, WebAuthn, Face ID), multi-tenancy, RBAC, audit logs, social login (Google, GitHub, etc.), and a beautiful admin UI.\n\n## Why we recommend it\n\nIf you want a single-binary identity platform with a modern UI and the broadest set of features, Casdoor is the answer. The Go backend + React frontend are well-maintained.\n\n## When to use it\n\n- Identity platform for a SaaS\n- Enterprise SSO with SAML\n- Multi-tenant identity\n- When you want a modern UI (not the Keycloak look)",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "auth",
+  "publisher": "casdoor",
+  "externalUrl": "https://casdoor.org",
+  "repoUrl": "https://github.com/casdoor/casdoor",
+  "installCommand": "docker run -d --name casdoor -p 8000:8000 casdoor/casdoor:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name casdoor -p 8000:8000 casdoor/casdoor\n```\n\n**Default login:** admin / 123 (change immediately).",
+  "logoUrl": "/logos/casdoor.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 95,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "sso",
+    "oauth2",
+    "oidc",
+    "saml",
+    "multi-tenant"
+  ],
+  "useCases": [
+    "saas-identity",
+    "enterprise-sso",
+    "multi-tenant",
+    "modern-ui"
+  ],
+  "integrations": [
+    "oauth2",
+    "oidc",
+    "saml",
+    "ldap",
+    "webauthn"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Apache-2.0 licensed. Self-host on a small VPS.",
+  "seo": {
+    "metaTitle": "Casdoor - Open Source Identity Platform",
+    "metaDescription": "Hand-tested review of Casdoor. Open source identity platform with OAuth2, OIDC, SAML, MFA, and a beautiful modern UI."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

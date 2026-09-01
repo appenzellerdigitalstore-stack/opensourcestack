@@ -1,0 +1,56 @@
+{
+  "slug": "manticoresearch",
+  "name": "Manticore Search",
+  "tagline": "Fast, multi-threaded SQL search engine. Elasticsearch alternative, MySQL protocol.",
+  "shortDescription": "Manticore Search is a fast, multi-threaded search engine. SQL-first (MySQL protocol), full-text search, vector search, faceted search, real-time indexing. The fastest ES alternative.",
+  "longDescription": "## What it is\n\nManticore Search is a fast, multi-threaded search engine forked from Sphinx. SQL-first (use MySQL client), full-text search, vector search (k-NN), faceted search, real-time indexing, JSON attributes, and geospatial search.\n\n## Why we recommend it\n\nIf you want search that you can query with SQL (not a custom DSL), Manticore is the answer. The MySQL protocol means every MySQL client works, and the speed is impressive.\n\n## When to use it\n\n- Full-text search for a SQL-first team\n- Real-time log analytics\n- E-commerce product search\n- Replacing Elasticsearch for SQL lovers",
+  "kind": "platform",
+  "runtime": "cpp",
+  "category": "search",
+  "publisher": "manticoresearch",
+  "externalUrl": "https://manticoresearch.com",
+  "repoUrl": "https://github.com/manticoresoftware/manticoresearch",
+  "installCommand": "docker run -d --name manticore -p 9306:9306 -p 9308:9308 -v manticore_data:/var/lib/manticore manticoresearch/manticore:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name manticore -p 9306:9306 -p 9308:9308 manticoresearch/manticore\n```\n\n**Query with mysql client:**\n```\nmysql -h 0.0.0.0 -P 9306 -e \"SELECT * FROM index WHERE MATCH('test')\"\n```",
+  "logoUrl": "/logos/manticore.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 25,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "search",
+    "sql",
+    "mysql-protocol",
+    "fast",
+    "vector-search"
+  ],
+  "useCases": [
+    "sql-search",
+    "real-time-logs",
+    "ecommerce",
+    "sphinx-fork"
+  ],
+  "integrations": [
+    "mysql-protocol",
+    "rest-api",
+    "elasticsearch-clients",
+    "logstash"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. GPL-3.0 licensed. Self-host or use Manticore Cloud (from $19/month).",
+  "seo": {
+    "metaTitle": "Manticore Search - SQL-First Search Engine",
+    "metaDescription": "Hand-tested review of Manticore Search. Fast, multi-threaded search engine. SQL-first via MySQL protocol. Elasticsearch alternative."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

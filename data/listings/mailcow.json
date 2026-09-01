@@ -1,0 +1,57 @@
+{
+  "slug": "mailcow",
+  "name": "Mailcow",
+  "tagline": "Self-hosted mail server. Dockerized, full stack, easy to deploy.",
+  "shortDescription": "Mailcow is a self-hosted mail server in a Docker stack. Postfix, Dovecot, SOGo webmail, Rspamd anti-spam, full-stack with one docker-compose. The easiest full mail server to deploy.",
+  "longDescription": "## What it is\n\nMailcow is a self-hosted mail server in a Docker stack. Postfix, Dovecot, SOGo (webmail), Rspamd (anti-spam), ClamAV (antivirus), Redis, MariaDB, Nginx, and more — all wired up and managed through a web UI.\n\n## Why we recommend it\n\nIf you want a self-hosted mail server that you can get running in an afternoon, Mailcow is the answer. The web UI manages everything: domains, mailboxes, DKIM, quotas, quarantine, and updates.\n\n## When to use it\n\n- Self-hosted email for a small business or organization\n- Privacy-sensitive deployments\n- When you want a one-command full mail stack\n- Replacing Google Workspace / Microsoft 365",
+  "kind": "platform",
+  "runtime": "docker",
+  "category": "email-marketing",
+  "publisher": "mailcow",
+  "externalUrl": "https://mailcow.email",
+  "repoUrl": "https://github.com/mailcow/mailcow-dockerized",
+  "installCommand": "git clone https://github.com/mailcow/mailcow-dockerized && cd mailcow-dockerized && ./generate_config.sh && docker compose pull && docker compose up -d",
+  "installInstructions": "**One-command install:**\n```\ngit clone https://github.com/mailcow/mailcow-dockerized\ncd mailcow-dockerized\n./generate_config.sh\ndocker compose pull && docker compose up -d\n```\nUI at `https://your-server:443`.\n\n**Requirements:** Ubuntu/Debian, 6GB+ RAM, 20GB+ disk, dedicated IP.",
+  "logoUrl": "/logos/mailcow.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.94,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "mail-server",
+    "docker",
+    "webmail",
+    "easy-install",
+    "all-in-one"
+  ],
+  "useCases": [
+    "small-business",
+    "privacy",
+    "workspace-replacement",
+    "self-hosted"
+  ],
+  "integrations": [
+    "postfix",
+    "dovecot",
+    "rspamd",
+    "sogo",
+    "clamav"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. GPL-3.0 licensed. Self-host on a dedicated server with 6GB+ RAM.",
+  "seo": {
+    "metaTitle": "Mailcow — Self-Hosted Mail Server (Dockerized)",
+    "metaDescription": "Hand-tested review of Mailcow. Self-hosted mail server in a Docker stack. One-command install, web UI for everything."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

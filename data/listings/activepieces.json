@@ -1,0 +1,57 @@
+{
+  "slug": "activepieces",
+  "name": "Activepieces",
+  "tagline": "Open source no-code automation. Zapier alternative with self-hosting.",
+  "shortDescription": "Activepieces is an open source no-code automation platform. 300+ integrations, visual flow builder, TypeScript pieces, self-hostable, the modern open source Zapier/Make alternative.",
+  "longDescription": "## What it is\n\nActivepieces is an open source no-code automation platform. 300+ pre-built pieces (integrations), visual flow builder, TypeScript pieces you can write and share, self-hostable, and growing fast.\n\n## Why we recommend it\n\nIf you want Zapier/Make but with self-hosting and open source, Activepieces is the answer. The pieces are TypeScript (familiar to developers), the UI is modern, and the platform is being actively developed.\n\n## When to use it\n\n- Self-hosted Zapier/Make alternative\n- Internal automations (no per-task fees)\n- Building custom pieces in TypeScript\n- When you want to own your automation data",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "automation",
+  "publisher": "activepieces",
+  "externalUrl": "https://www.activepieces.com",
+  "repoUrl": "https://github.com/activepieces/activepieces",
+  "installCommand": "docker run -d --name activepieces -p 80:80 -v activepieces_data:/data activepieces/activepieces:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name activepieces -p 80:80 activepieces/activepieces\n```\n\n**Cloud:** Free tier (1K tasks/month). From $30/month for production.",
+  "logoUrl": "/logos/activepieces.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 145,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "automation",
+    "zapier-alternative",
+    "no-code",
+    "typescript",
+    "self-hosted"
+  ],
+  "useCases": [
+    "zapier-replacement",
+    "internal-automations",
+    "custom-pieces",
+    "self-hosted"
+  ],
+  "integrations": [
+    "google-sheets",
+    "slack",
+    "github",
+    "notion",
+    "300-plus-pieces"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: 1K tasks/month free. $30/month for production.",
+  "seo": {
+    "metaTitle": "Activepieces - Open Source No-Code Automation",
+    "metaDescription": "Hand-tested review of Activepieces. Open source no-code automation. 300+ integrations, self-hostable, TypeScript pieces."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

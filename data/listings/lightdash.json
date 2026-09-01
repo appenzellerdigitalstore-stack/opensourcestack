@@ -1,0 +1,57 @@
+{
+  "slug": "lightdash",
+  "name": "Lightdash",
+  "tagline": "Open source BI for modern data teams. dbt-native, self-hostable.",
+  "shortDescription": "Lightdash is an open source BI tool built for dbt users. Define metrics in your dbt project, Lightdash turns them into dashboards. SQL-first, self-hostable, beautiful UI. The dbt-native Tableau.",
+  "longDescription": "## What it is\n\nLightdash is an open source BI tool built for dbt (data build tool) users. You define metrics in your dbt project (with YAML), and Lightdash turns them into dashboards. SQL-first, self-hostable, beautiful UI, and integrates with the modern data stack (Snowflake, BigQuery, Postgres, dbt Cloud, etc.).\n\n## Why we recommend it\n\nIf you use dbt, Lightdash is the BI tool designed for you. The metrics-as-code approach means your KPIs live in version control alongside your transformations.\n\n## When to use it\n\n- BI for a dbt-based data team\n- When you want metrics as code (versioned KPIs)\n- Replacing Tableau/Looker with dbt-native BI\n- Modern data stack deployments",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "business-intelligence",
+  "publisher": "metabase",
+  "externalUrl": "https://www.lightdash.com",
+  "repoUrl": "https://github.com/lightdash/lightdash",
+  "installCommand": "docker run -d --name lightdash -p 8080:8080 lightdash/lightdash:latest",
+  "installInstructions": "**Docker Compose (recommended):**\n```\ngit clone https://github.com/lightdash/lightdash\ncd lightdash\ndocker compose up -d\n```\nUI at http://localhost:8080.\n\n**Cloud (Lightdash Cloud):** Free for 1 user. From $0.50/seat/month.",
+  "logoUrl": "/logos/lightdash.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.94,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "bi",
+    "dbt",
+    "sql",
+    "metrics-as-code",
+    "modern-data-stack"
+  ],
+  "useCases": [
+    "dbt-bi",
+    "metrics-as-code",
+    "modern-data-stack",
+    "self-hosted"
+  ],
+  "integrations": [
+    "dbt",
+    "snowflake",
+    "bigquery",
+    "postgres",
+    "redshift"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: 1 user free. $0.50/seat/month for production.",
+  "seo": {
+    "metaTitle": "Lightdash - Open Source BI for dbt Users",
+    "metaDescription": "Hand-tested review of Lightdash. Open source BI built for dbt. Metrics as code, SQL-first, self-hostable."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

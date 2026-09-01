@@ -1,0 +1,57 @@
+{
+  "slug": "peertube",
+  "name": "PeerTube",
+  "tagline": "Federated open source video platform. YouTube alternative, no ads, no algorithm.",
+  "shortDescription": "PeerTube is a federated, ActivityPub-based video hosting platform. Self-hostable, ad-free, no algorithm. Part of the Fediverse (like Mastodon for video).",
+  "longDescription": "## What it is\n\nPeerTube is a self-hostable, federated video platform built on ActivityPub. Each instance (called a \"PeerTube instance\") hosts videos and can follow/be followed by other instances, creating a decentralized network. No ads, no algorithm, no tracking.\n\n## Why we recommend it\n\nIf you want to host a video platform without YouTube's ads and algorithm, PeerTube is the answer. The federation means your instance is part of the broader Fediverse, so videos are discoverable across instances.\n\n## When to use it\n\n- Self-hosted video for creators who want no ads\n- Niche communities hosting their own video library\n- Federated video (part of the Fediverse)\n- Educational, archival, or community video projects",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "communication",
+  "publisher": "peertube",
+  "externalUrl": "https://joinpeertube.org",
+  "repoUrl": "https://github.com/Chocobozzz/PeerTube",
+  "installCommand": "docker compose -f support/docker/production/docker-compose.yml up -d",
+  "installInstructions": "**Docker Compose (recommended):**\n```\ngit clone https://github.com/Chocobozzz/PeerTube\ngit checkout v6.x\ncd PeerTube/support/docker/production\ndocker compose up -d\n```\n\n**Managed:** Some public instances allow you to create an account for free (framatube.org, peer.tube).",
+  "logoUrl": "/logos/peertube.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.92,
+    "avgLatencyMs": 285,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "video",
+    "federated",
+    "activitypub",
+    "fediverse",
+    "self-hosted"
+  ],
+  "useCases": [
+    "youtube-alternative",
+    "community-video",
+    "fediverse",
+    "niche-platforms"
+  ],
+  "integrations": [
+    "activitypub",
+    "mastodon",
+    "pleroma",
+    "rest-api",
+    "oembed"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. AGPL-3.0 licensed. Self-host on your own server.",
+  "seo": {
+    "metaTitle": "PeerTube — Federated Open Source Video",
+    "metaDescription": "Hand-tested review of PeerTube. Open source, federated video platform. YouTube alternative with no ads or algorithm."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

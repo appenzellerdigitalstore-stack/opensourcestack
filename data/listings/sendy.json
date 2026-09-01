@@ -1,0 +1,57 @@
+{
+  "slug": "sendy",
+  "name": "Sendy",
+  "tagline": "Self-hosted email newsletter. Amazon SES backend. $69 one-time.",
+  "shortDescription": "Sendy is a self-hosted email newsletter app that uses Amazon SES for delivery. Beautiful UI, autoresponders, segmentation, analytics. One-time $69 license, not monthly.",
+  "longDescription": "## What it is\n\nSendy is a self-hosted email newsletter app. PHP + MySQL, uses Amazon SES for delivery (cheap, $0.10 per 1K emails). Beautiful UI, autoresponders, segmentation, A/B testing, analytics, and a one-time $69 license.\n\n## Why we recommend it\n\nIf you send newsletters and want to escape Mailchimp/ConvertKit fees, Sendy is the most cost-effective option. The license is $69 one-time, and Amazon SES charges $0.10 per 1K emails (basically free for small lists).\n\n## When to use it\n\n- Newsletters that want to cut SaaS fees\n- Authors, creators, indie hackers\n- Lists up to 100K+ subscribers\n- When you want a self-hosted, one-time-license product",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "email-marketing",
+  "publisher": "sendy",
+  "externalUrl": "https://sendy.co",
+  "repoUrl": null,
+  "installCommand": "Download from sendy.co and follow the install guide",
+  "installInstructions": "**Requirements:** LAMP stack, Amazon SES account (verify a sender domain).\n\n**License:** $69 one-time per install. Unlimited subscribers.\n\n**Setup:**\n1. Upload Sendy files\n2. Create MySQL DB\n3. Run installer at `/_install`\n4. Configure SES API keys",
+  "logoUrl": "/logos/sendy.svg",
+  "trust": {
+    "securityScore": 89,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "newsletter",
+    "self-hosted",
+    "amazon-ses",
+    "one-time-license",
+    "mailchimp-alternative"
+  ],
+  "useCases": [
+    "newsletters",
+    "mailchimp-replacement",
+    "creators",
+    "indie-hackers"
+  ],
+  "integrations": [
+    "amazon-ses",
+    "zapier",
+    "webhooks",
+    "rest-api",
+    "wordpress"
+  ],
+  "pricing": "paid",
+  "pricingDetails": "License: $69 one-time. Amazon SES: $0.10 per 1K emails.",
+  "seo": {
+    "metaTitle": "Sendy — Self-Hosted Email Newsletter",
+    "metaDescription": "Hand-tested review of Sendy. Self-hosted email newsletter that uses Amazon SES. $69 one-time, not monthly. Mailchimp alternative."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

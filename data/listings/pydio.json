@@ -1,0 +1,57 @@
+{
+  "slug": "pydio",
+  "name": "Pydio Cells",
+  "tagline": "Self-hosted file sharing and sync. Go-based, modern UI, enterprise features.",
+  "shortDescription": "Pydio Cells is a self-hosted file sharing and sync platform. Go-based, modern UI, enterprise features (LDAP, audit, share policies), tight Nextcloud/ownCloud migration path.",
+  "longDescription": "## What it is\n\nPydio Cells is a self-hosted file sharing and sync platform. Go-based, modern UI, enterprise features (LDAP, audit logs, share policies, encryption), and good migration tools from Nextcloud/ownCloud.\n\n## Why we recommend it\n\nIf you need a self-hosted file sync with enterprise features and a Go backend (lower resource use than PHP alternatives), Pydio is the answer.\n\n## When to use it\n\n- Self-hosted Dropbox/Drive for an enterprise\n- Migration from Nextcloud or ownCloud\n- Go-based, low-resource deployment\n- When you need audit logs + share policies",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "storage",
+  "publisher": "pydio",
+  "externalUrl": "https://pydio.com",
+  "repoUrl": "https://github.com/pydio/cells",
+  "installCommand": "docker run -d --name pydio -p 8080:8080 -v pydio_data:/data pydio/cells:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name pydio -p 8080:8080 -v pydio_data:/data pydio/cells\n```\n\n**Binary:** Download from pydio.com, run ./cells configure and follow the wizard.",
+  "logoUrl": "/logos/pydio.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 145,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "file-sync",
+    "self-hosted",
+    "go",
+    "enterprise",
+    "audit-logs"
+  ],
+  "useCases": [
+    "enterprise-files",
+    "nextcloud-migration",
+    "low-resource",
+    "audit-logs"
+  ],
+  "integrations": [
+    "ldap",
+    "s3",
+    "sftp",
+    "webdav",
+    "rest-api"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Community: free. Enterprise: from $5/user/month with support.",
+  "seo": {
+    "metaTitle": "Pydio Cells - Self-Hosted File Sharing",
+    "metaDescription": "Hand-tested review of Pydio Cells. Go-based self-hosted file sharing and sync. Modern UI, enterprise features."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

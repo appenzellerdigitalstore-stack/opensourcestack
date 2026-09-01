@@ -1,0 +1,55 @@
+{
+  "slug": "monica",
+  "name": "Monica",
+  "tagline": "Personal CRM. Keep track of friends, family, and important relationships.",
+  "shortDescription": "A personal relationship manager. Track conversations, gift ideas, important dates, and how you know people. The CRM for your personal life.",
+  "longDescription": "## What it is\n\nMonica is a personal CRM. Track relationships: when you last talked to someone, what you talked about, gift ideas, their partner's name, important dates, and how you know them. Self-hostable, PHP + Laravel.\n\n## Why we recommend it\n\nIf you have trouble keeping up with friends and family (who doesn't?), Monica is a gentle, well-designed tool. It's not a sales CRM — it's a tool for being a better friend.\n\n## When to use it\n\n- Personal relationship management\n- Tracking your network for job searches\n- Remembering important dates and conversations\n- A CRM for your personal life, not your sales pipeline",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "crm",
+  "publisher": "monicahq",
+  "externalUrl": "https://www.monicahq.com",
+  "repoUrl": "https://github.com/monicahq/monica",
+  "installCommand": "docker run -d --name monica -p 80:80 monicahq/monica:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name monica -p 80:80 monicahq/monica:latest\n```\n\n**Cloud:** From $9/month. Free trial.",
+  "logoUrl": "/logos/monica.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 145,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "personal-crm",
+    "relationships",
+    "php",
+    "laravel",
+    "self-hosted"
+  ],
+  "useCases": [
+    "personal-relationships",
+    "networking",
+    "gift-tracking",
+    "important-dates"
+  ],
+  "integrations": [
+    "imap",
+    "ical",
+    "rest-api"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: from $9/month. Free trial.",
+  "seo": {
+    "metaTitle": "Monica — Personal CRM for Relationships",
+    "metaDescription": "Hand-tested review of Monica. Open source personal CRM. Track relationships, conversations, and important dates."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

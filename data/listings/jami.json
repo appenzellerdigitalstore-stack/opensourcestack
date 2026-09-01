@@ -1,0 +1,55 @@
+{
+  "slug": "jami",
+  "name": "Jami",
+  "tagline": "Peer-to-peer encrypted communication. No servers, no accounts, full privacy.",
+  "shortDescription": "Jami (formerly SFLphone) is a peer-to-peer communication platform. Encrypted text, voice, video, file transfer — no central server, no account required. The most private option.",
+  "longDescription": "## What it is\n\nJami (formerly SFLphone) is a peer-to-peer communication platform. All communication is end-to-end encrypted and goes directly between peers (no central server). Text, voice, video, file transfer, screen sharing, conference calls.\n\n## Why we recommend it\n\nIf you need the most private communication possible, Jami is the answer. There's no central server, no account, no metadata collection. The trade-off: you need to know the other person's Jami ID (no phone number discovery).\n\n## When to use it\n\n- Maximum privacy communication (no central server)\n- File transfer over the same network as the call\n- Conferences without paying for a service\n- Replacing Signal/Slack for ultra-privacy-conscious teams",
+  "kind": "platform",
+  "runtime": "cpp",
+  "category": "communication",
+  "publisher": "jami",
+  "externalUrl": "https://jami.net",
+  "repoUrl": "https://github.com/savoirfairelinux/jami-project",
+  "installCommand": "apt install jami  # or: brew install jami",
+  "installInstructions": "**Desktop:** Download from jami.net (Linux, macOS, Windows).\n**Mobile:** App Store, Google Play, F-Droid.\n\nNo account needed — share your Jami ID with contacts.",
+  "logoUrl": "/logos/jami.svg",
+  "trust": {
+    "securityScore": 94,
+    "qualityScore": 90,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.94,
+    "avgLatencyMs": 225,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "p2p",
+    "e2ee",
+    "no-server",
+    "privacy",
+    "file-transfer"
+  ],
+  "useCases": [
+    "maximum-privacy",
+    "p2p-files",
+    "no-account",
+    "conferences"
+  ],
+  "integrations": [
+    "sip-gateway",
+    "ldap",
+    "rest-api"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. GPL-3.0 licensed. No servers, no fees, no telemetry.",
+  "seo": {
+    "metaTitle": "Jami — Peer-to-Peer Encrypted Communication",
+    "metaDescription": "Hand-tested review of Jami. Peer-to-peer encrypted text, voice, video, and file transfer. No central server, no accounts."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

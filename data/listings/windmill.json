@@ -1,0 +1,57 @@
+{
+  "slug": "windmill",
+  "name": "Windmill",
+  "tagline": "Open source developer platform. Turn scripts into workflows and UIs.",
+  "shortDescription": "Windmill is an open source developer platform. Turn any script (Python, TypeScript, Go, Bash, SQL) into a workflow, schedule, API endpoint, or UI. The Retool + Airplane alternative.",
+  "longDescription": "## What it is\n\nWindmill is an open source developer platform. Write a script in Python/TypeScript/Go/Bash/SQL, and Windmill turns it into a workflow, scheduled job, API endpoint, or full UI (with forms and tables). Self-hostable, with a generous cloud free tier.\n\n## Why we recommend it\n\nIf you want to build internal tools without writing boilerplate (CRUD, auth, scheduling, UI), Windmill is the answer. The script-as-source model is a developer favorite, and the UI builder is excellent.\n\n## When to use it\n\n- Internal tools for engineering teams\n- Scripts that need a UI, schedule, or API\n- Replacing a collection of cron jobs\n- When you want a developer-first Retool",
+  "kind": "platform",
+  "runtime": "rust",
+  "category": "automation",
+  "publisher": "windmill",
+  "externalUrl": "https://www.windmill.dev",
+  "repoUrl": "https://github.com/windmill-labs/windmill",
+  "installCommand": "curl -fsSL https://github.com/windmill-labs/windmill/releases/latest/download/install.sh | bash",
+  "installInstructions": "**Single binary:**\n```\ncurl -fsSL https://github.com/windmill-labs/windmill/releases/latest/download/install.sh | bash\n```\n\n**Docker:** See docs.windmill.dev for the compose file.\n\n**Cloud:** Free tier (1K executions/month). From $20/month.",
+  "logoUrl": "/logos/windmill.svg",
+  "trust": {
+    "securityScore": 92,
+    "qualityScore": 94,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 95,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "developer-platform",
+    "scripts",
+    "workflows",
+    "ui-builder",
+    "rust"
+  ],
+  "useCases": [
+    "internal-tools",
+    "scheduled-scripts",
+    "retool-alternative",
+    "api-endpoints"
+  ],
+  "integrations": [
+    "python",
+    "typescript",
+    "go",
+    "bash",
+    "sql"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: 1K executions/month free. $20/month production.",
+  "seo": {
+    "metaTitle": "Windmill - Open Source Developer Platform",
+    "metaDescription": "Hand-tested review of Windmill. Open source developer platform. Turn scripts into workflows, schedules, APIs, and UIs."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

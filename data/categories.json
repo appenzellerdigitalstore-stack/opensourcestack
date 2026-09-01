@@ -1,13 +1,100 @@
 [
-  { "slug": "databases", "name": "Databases", "description": "PostgreSQL, MySQL, MongoDB, and more — the engines under your stack.", "icon": "database", "displayOrder": 1 },
-  { "slug": "analytics", "name": "Analytics", "description": "Privacy-first web and product analytics. No cookie banners, no $100K/yr enterprise plans.", "icon": "chart", "displayOrder": 2 },
-  { "slug": "crm", "name": "CRM & Sales", "description": "Customer relationship management, sales pipelines, and contact databases you actually own.", "icon": "users", "displayOrder": 3 },
-  { "slug": "communication", "name": "Communication", "description": "Team chat, video, async standups, and internal comms that respect your data.", "icon": "message", "displayOrder": 4 },
-  { "slug": "project-management", "name": "Project Management", "description": "Issue trackers, kanban boards, and project planning — no per-user fees.", "icon": "kanban", "displayOrder": 5 },
-  { "slug": "cms", "name": "CMS & Content", "description": "Headless CMS, publishing platforms, and content infrastructure for blogs to product catalogs.", "icon": "document", "displayOrder": 6 },
-  { "slug": "email-marketing", "name": "Email Marketing", "description": "Newsletters, drip campaigns, and transactional email without per-subscriber pricing.", "icon": "mail", "displayOrder": 7 },
-  { "slug": "auth", "name": "Authentication & Identity", "description": "SSO, OAuth, MFA, and identity providers that you can self-host in an afternoon.", "icon": "key", "displayOrder": 8 },
-  { "slug": "search", "name": "Search", "description": "Full-text and typo-tolerant search engines that scale from docs to product catalogs.", "icon": "search", "displayOrder": 9 },
-  { "slug": "storage", "name": "Storage & File Sync", "description": "Self-hosted file sync, S3-compatible object storage, and document collaboration.", "icon": "folder", "displayOrder": 10 },
-  { "slug": "automation", "name": "Automation & Workflows", "description": "Visual workflow builders, schedulers, and event routers — Zapier without the per-task fees.", "icon": "lightning", "displayOrder": 11 }
+  {
+    "slug": "databases",
+    "name": "Databases",
+    "description": "PostgreSQL, MySQL, MongoDB, and more — the engines under your stack.",
+    "icon": "database",
+    "displayOrder": 1
+  },
+  {
+    "slug": "analytics",
+    "name": "Analytics",
+    "description": "Privacy-first web and product analytics. No cookie banners, no $100K/yr enterprise plans.",
+    "icon": "chart",
+    "displayOrder": 2
+  },
+  {
+    "slug": "crm",
+    "name": "CRM & Sales",
+    "description": "Customer relationship management, sales pipelines, and contact databases you actually own.",
+    "icon": "users",
+    "displayOrder": 3
+  },
+  {
+    "slug": "communication",
+    "name": "Communication",
+    "description": "Team chat, video, async standups, and internal comms that respect your data.",
+    "icon": "message",
+    "displayOrder": 4
+  },
+  {
+    "slug": "project-management",
+    "name": "Project Management",
+    "description": "Issue trackers, kanban boards, and project planning — no per-user fees.",
+    "icon": "kanban",
+    "displayOrder": 5
+  },
+  {
+    "slug": "cms",
+    "name": "CMS & Content",
+    "description": "Headless CMS, publishing platforms, and content infrastructure for blogs to product catalogs.",
+    "icon": "document",
+    "displayOrder": 6
+  },
+  {
+    "slug": "email-marketing",
+    "name": "Email Marketing",
+    "description": "Newsletters, drip campaigns, and transactional email without per-subscriber pricing.",
+    "icon": "mail",
+    "displayOrder": 7
+  },
+  {
+    "slug": "auth",
+    "name": "Authentication & Identity",
+    "description": "SSO, OAuth, MFA, and identity providers that you can self-host in an afternoon.",
+    "icon": "key",
+    "displayOrder": 8
+  },
+  {
+    "slug": "search",
+    "name": "Search",
+    "description": "Full-text and typo-tolerant search engines that scale from docs to product catalogs.",
+    "icon": "search",
+    "displayOrder": 9
+  },
+  {
+    "slug": "storage",
+    "name": "Storage & File Sync",
+    "description": "Self-hosted file sync, S3-compatible object storage, and document collaboration.",
+    "icon": "folder",
+    "displayOrder": 10
+  },
+  {
+    "slug": "automation",
+    "name": "Automation & Workflows",
+    "description": "Visual workflow builders, schedulers, and event routers — Zapier without the per-task fees.",
+    "icon": "lightning",
+    "displayOrder": 11
+  },
+  {
+    "slug": "monitoring",
+    "name": "Monitoring & Observability",
+    "description": "Uptime checks, metrics, traces, log aggregation, and observability you can self-host.",
+    "icon": "activity",
+    "displayOrder": 12
+  },
+  {
+    "slug": "code-hosting",
+    "name": "Code Hosting & Review",
+    "description": "Self-hosted Git platforms, code review, and CI for teams that want to own their source.",
+    "icon": "git-branch",
+    "displayOrder": 13
+  },
+  {
+    "slug": "business-intelligence",
+    "name": "Business Intelligence",
+    "description": "SQL-first BI tools, dashboards, and analytics warehouses that connect to any data source.",
+    "icon": "pie-chart",
+    "displayOrder": 14
+  }
 ]

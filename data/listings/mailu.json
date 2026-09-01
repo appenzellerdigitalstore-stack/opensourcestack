@@ -1,0 +1,57 @@
+{
+  "slug": "mailu",
+  "name": "Mailu",
+  "tagline": "Simple, full-featured mail server in Docker. For small organizations.",
+  "shortDescription": "Mailu is a simple, full-featured mail server in Docker. Postfix, Dovecot, Rspamd, Nginx, Admin UI, full DKIM/SPF/DMARC. Designed for small organizations and families.",
+  "longDescription": "## What it is\n\nMailu is a simple, full-featured mail server in Docker. Postfix, Dovecot, Rspamd, Nginx, Rainloop webmail, Admin UI, full DKIM/SPF/DMARC, anti-spam, antivirus. Designed for small organizations (under 100 users).\n\n## Why we recommend it\n\nIf you want a self-hosted mail server that's even simpler than Mailcow, Mailu is the answer. The setup is one docker-compose, the admin UI is clean, and the resource requirements are low.\n\n## When to use it\n\n- Self-hosted mail for small organizations (under 100 users)\n- Family mail server\n- Privacy-focused deployments\n- When you want a low-resource mail stack",
+  "kind": "platform",
+  "runtime": "docker",
+  "category": "email-marketing",
+  "publisher": "mailu",
+  "externalUrl": "https://mailu.io",
+  "repoUrl": "https://github.com/Mailu/Mailu",
+  "installCommand": "git clone https://github.com/Mailu/Mailu && cd Mailu && docker compose -p mailu up -d",
+  "installInstructions": "**Docker Compose:**\n```\ngit clone https://github.com/Mailu/Mailu\ncd Mailu\ncp .env.dist .env  # edit with your domain\ndocker compose -p mailu up -d\n```\nAdmin UI at `https://your-server/admin`.",
+  "logoUrl": "/logos/mailu.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.94,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "mail-server",
+    "docker",
+    "simple",
+    "small-orgs",
+    "low-resource"
+  ],
+  "useCases": [
+    "small-orgs",
+    "family-mail",
+    "privacy",
+    "low-resource"
+  ],
+  "integrations": [
+    "postfix",
+    "dovecot",
+    "rspamd",
+    "rainloop",
+    "ldap"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Self-host on a 4GB+ VPS.",
+  "seo": {
+    "metaTitle": "Mailu — Simple Mail Server in Docker",
+    "metaDescription": "Hand-tested review of Mailu. Simple, full-featured mail server in Docker. Designed for small organizations and families."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "syncthing",
+  "name": "Syncthing",
+  "tagline": "Peer-to-peer continuous file sync. No cloud, no accounts, fully private.",
+  "shortDescription": "Syncthing is a peer-to-peer continuous file synchronization program. No cloud, no accounts, no central server - devices sync directly. End-to-end encrypted, cross-platform.",
+  "longDescription": "## What it is\n\nSyncthing is a peer-to-peer continuous file synchronization program. No cloud, no accounts, no central server - devices sync directly with each other. End-to-end encrypted (TLS), cross-platform (Linux, macOS, Windows, BSD, Android, iOS via partners).\n\n## Why we recommend it\n\nIf you want to sync files between your own devices without a third-party cloud, Syncthing is the answer. The P2P design means no server costs, no privacy concerns, no data limits.\n\n## When to use it\n\n- Sync between your own devices (laptop, phone, NAS)\n- Privacy-sensitive file sync (no cloud)\n- Replacing Dropbox/Resilio for personal use\n- Server-to-server sync (without a central node)",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "storage",
+  "publisher": "syncthing",
+  "externalUrl": "https://syncthing.net",
+  "repoUrl": "https://github.com/syncthing/syncthing",
+  "installCommand": "apt install syncthing  # or: brew install syncthing",
+  "installInstructions": "**Linux:**\n```\napt install syncthing  # Debian/Ubuntu\nbrew install syncthing  # macOS\n```\n\n**Web UI:** http://localhost:8384 (default).\n\n**Mobile:** Syncthing-Fork (Android), Mobius Sync (iOS).",
+  "logoUrl": "/logos/syncthing.svg",
+  "trust": {
+    "securityScore": 94,
+    "qualityScore": 95,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.99,
+    "avgLatencyMs": 12,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "p2p",
+    "sync",
+    "no-cloud",
+    "e2ee",
+    "cross-platform"
+  ],
+  "useCases": [
+    "device-sync",
+    "privacy",
+    "no-cloud",
+    "server-to-server"
+  ],
+  "integrations": [
+    "syncthing-fork",
+    "mobius-sync",
+    "rest-api",
+    "inotify"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MPL-2.0 licensed. No server, no accounts, no fees.",
+  "seo": {
+    "metaTitle": "Syncthing - Peer-to-Peer File Sync",
+    "metaDescription": "Hand-tested review of Syncthing. Peer-to-peer continuous file sync. No cloud, no accounts, fully private."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

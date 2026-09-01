@@ -1,0 +1,57 @@
+{
+  "slug": "authelia",
+  "name": "Authelia",
+  "tagline": "Single Sign-On for self-hosted apps. Nginx/Traefik reverse proxy + 2FA.",
+  "shortDescription": "Authelia is a Single Sign-On and 2FA proxy for self-hosted apps. Sits in front of your apps (Nginx, Traefik, Caddy), adds authentication and 2FA without modifying the apps.",
+  "longDescription": "## What it is\n\nAuthelia is a SSO and 2FA proxy for self-hosted apps. Sits between the user and your apps (Nginx, Traefik, Caddy, HAProxy), adds authentication (TOTP, WebAuthn, push, Yubikey) and authorization policies without modifying the apps themselves.\n\n## Why we recommend it\n\nIf you have a homelab or small self-hosted stack (Grafana, Nextcloud, Portainer, etc.) and want SSO without setting up Keycloak, Authelia is the answer. Single Go binary, works with any reverse proxy.\n\n## When to use it\n\n- SSO for a homelab or small self-hosted stack\n- 2FA for apps that don't support it natively\n- Reverse-proxy-level auth (no app changes needed)\n- When you want a lightweight alternative to Keycloak",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "auth",
+  "publisher": "authelia",
+  "externalUrl": "https://www.authelia.com",
+  "repoUrl": "https://github.com/authelia/authelia",
+  "installCommand": "docker run -d --name authelia -p 9091:9091 -v authelia_data:/data authelia/authelia:latest",
+  "installInstructions": "**Docker (standalone):**\n```\ndocker run -d --name authelia -p 9091:9091 authelia/authelia\n```\n\n**Behind a reverse proxy:** Configure Nginx/Traefik/Caddy to forward auth requests to Authelia.\n\n**Config:** configuration.yml (full example in the repo).",
+  "logoUrl": "/logos/authelia.svg",
+  "trust": {
+    "securityScore": 92,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.98,
+    "avgLatencyMs": 35,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "sso",
+    "2fa",
+    "proxy",
+    "nginx",
+    "traefik"
+  ],
+  "useCases": [
+    "homelab-sso",
+    "self-hosted-2fa",
+    "reverse-proxy",
+    "lightweight-idp"
+  ],
+  "integrations": [
+    "nginx",
+    "traefik",
+    "caddy",
+    "haproxy",
+    "ldap"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Apache-2.0 licensed. Single Go binary, low resource use.",
+  "seo": {
+    "metaTitle": "Authelia - SSO and 2FA for Self-Hosted Apps",
+    "metaDescription": "Hand-tested review of Authelia. SSO and 2FA proxy for self-hosted apps. Works with Nginx, Traefik, Caddy."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "appsmith",
+  "name": "Appsmith",
+  "tagline": "Open source low-code. Build internal tools from any data source.",
+  "shortDescription": "Self-hostable low-code platform with 45+ data source integrations. Drag-and-drop UI, JS everywhere, granular permissions. The most flexible Retool alternative.",
+  "longDescription": "## What it is\n\nAppsmith is a low-code platform for building internal tools. 45+ data source integrations (Postgres, MySQL, MongoDB, REST, GraphQL, S3, Stripe, etc.), drag-and-drop UI, full JavaScript anywhere, Git sync, and granular RBAC.\n\n## Why we recommend it\n\nIf Budibase is too opinionated, Appsmith is the most flexible option. You get a full IDE-like editor, JavaScript everywhere (no expression language to learn), Git sync, and the largest integration list in the space.\n\n## When to use it\n\n- Complex internal tools with non-trivial logic\n- Apps that need to be version-controlled (Git sync)\n- Dashboards over many data sources\n- Replacing an internal tool team's Retool bill",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "databases",
+  "publisher": "appsmith",
+  "externalUrl": "https://www.appsmith.com",
+  "repoUrl": "https://github.com/appsmithorg/appsmith",
+  "installCommand": "docker run -d --name appsmith -p 80:80 -v appsmith_data:/appsmith-stacks appsmith/appsmith-ce",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name appsmith -p 80:80 -v appsmith_data:/appsmith-stacks appsmith/appsmith-ce\n```\n\n**Cloud:** Free tier (5 users).",
+  "logoUrl": "/logos/appsmith.svg",
+  "trust": {
+    "securityScore": 91,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 155,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "low-code",
+    "internal-tools",
+    "javascript",
+    "retool-alternative",
+    "git-sync"
+  ],
+  "useCases": [
+    "internal-tools",
+    "dashboards",
+    "git-versioned",
+    "data-sources"
+  ],
+  "integrations": [
+    "postgres",
+    "mongodb",
+    "rest-api",
+    "graphql",
+    "s3"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: free tier (5 users). Premium from $15/user/month.",
+  "seo": {
+    "metaTitle": "Appsmith — Open Source Low-Code",
+    "metaDescription": "Hand-tested review of Appsmith. Open source low-code platform with 45+ data source integrations."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

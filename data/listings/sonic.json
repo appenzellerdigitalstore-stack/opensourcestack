@@ -1,0 +1,55 @@
+{
+  "slug": "sonic",
+  "name": "Sonic",
+  "tagline": "Fast, lightweight search backend. Rust, ~30MB binary, auto-indexing.",
+  "shortDescription": "Sonic is a fast, lightweight search backend written in Rust. Single ~30MB binary, auto-indexing, typo tolerance, geographic search, identifier search. Used in production by Opera.",
+  "longDescription": "## What it is\n\nSonic is a fast, lightweight search backend written in Rust. Single ~30MB binary, auto-indexing, typo tolerance (fuzzy search), geographic search, and identifier search. Used in production by Opera for browser search.\n\n## Why we recommend it\n\nIf you need lightweight search (think: autocomplete for an app, search for a static site, etc.) without the complexity of Elasticsearch, Sonic is the answer. The single binary is small and fast.\n\n## When to use it\n\n- Autocomplete / typeahead search\n- Search for a static site or app\n- Low-resource search (small VPS)\n- When Elasticsearch feels overkill",
+  "kind": "platform",
+  "runtime": "rust",
+  "category": "search",
+  "publisher": "sonic",
+  "externalUrl": "https://github.com/valeriansaliou/sonic",
+  "repoUrl": "https://github.com/valeriansaliou/sonic",
+  "installCommand": "docker run -d --name sonic -p 1491:1491 -v sonic_data:/data valeriansaliou/sonic",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name sonic -p 1491:1491 valeriansaliou/sonic\n```\n\n**Config:** /etc/sonic.cfg (see the repo for full example).\n\n**Ingest:** sonic-ingest CLI tool.",
+  "logoUrl": "/logos/sonic.svg",
+  "trust": {
+    "securityScore": 88,
+    "qualityScore": 90,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.94,
+    "avgLatencyMs": 8,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "search",
+    "rust",
+    "lightweight",
+    "autocomplete",
+    "fuzzy"
+  ],
+  "useCases": [
+    "autocomplete",
+    "static-site-search",
+    "low-resource",
+    "fast-search"
+  ],
+  "integrations": [
+    "ingest-cli",
+    "rest-api",
+    "sonic-channel"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MPL-2.0 licensed. Single ~30MB binary.",
+  "seo": {
+    "metaTitle": "Sonic - Fast Lightweight Search Backend",
+    "metaDescription": "Hand-tested review of Sonic. Fast, lightweight search backend in Rust. Single ~30MB binary, typo tolerance, geo search."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

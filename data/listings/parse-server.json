@@ -1,0 +1,57 @@
+{
+  "slug": "parse-server",
+  "name": "Parse Server",
+  "tagline": "Open source Firebase alternative. Node.js backend, MongoDB or Postgres.",
+  "shortDescription": "The original open source BaaS, originally by Facebook. Now community-maintained. Node.js server with MongoDB/Postgres, auth, file storage, GraphQL, and push notifications.",
+  "longDescription": "## What it is\n\nParse Server is the open source backend that Facebook open-sourced in 2016 after shutting down its hosted Parse service. Node.js server with MongoDB or Postgres, REST + GraphQL APIs, auth (email, OAuth, MFA), file storage (S3-compatible), push notifications, and cloud code jobs.\n\n## Why we recommend it\n\nIf you were on the original Parse and migrated away, you can come back. If you need a self-hostable BaaS with the same primitives as Firebase (auth, DB, storage, push), Parse Server is the most mature option.\n\n## When to use it\n\n- Migration target from legacy Parse apps\n- Self-hosted BaaS for mobile apps\n- Node.js apps that need auth + DB + push without writing boilerplate\n- IoT backends with millions of devices",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "databases",
+  "publisher": "parseplatform",
+  "externalUrl": "https://parseplatform.org",
+  "repoUrl": "https://github.com/parse-community/parse-server",
+  "installCommand": "npm install -g parse-server parse-dashboard",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name parse -p 1337:1337 parseplatform/parse-server --appId APP_ID --masterKey MASTER_KEY --databaseURI mongodb://mongo:27017/parse\n```\n\n**MongoDB or Postgres:** Set `--databaseURI` accordingly.",
+  "logoUrl": "/logos/parse.svg",
+  "trust": {
+    "securityScore": 89,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 145,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "baas",
+    "mongodb",
+    "postgres",
+    "graphql",
+    "mobile"
+  ],
+  "useCases": [
+    "migration",
+    "baas",
+    "mobile-apps",
+    "iot"
+  ],
+  "integrations": [
+    "javascript",
+    "ios",
+    "android",
+    "react-native",
+    "flutter"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Open source under BSD-3. Self-host on your own infra. Back4app, SashiDo offer managed Parse.",
+  "seo": {
+    "metaTitle": "Parse Server — Open Source Firebase Alternative",
+    "metaDescription": "Hand-tested review of Parse Server. Open source BaaS from the original Parse team. Node.js + MongoDB/Postgres."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

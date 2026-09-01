@@ -1,0 +1,57 @@
+{
+  "slug": "wordpress",
+  "name": "WordPress",
+  "tagline": "The world's most-used CMS. Open source, self-hostable, endless themes/plugins.",
+  "shortDescription": "WordPress powers 40%+ of the web. Open source, self-hostable, massive ecosystem of themes and plugins. The default CMS for blogs, business sites, and even e-commerce.",
+  "longDescription": "## What it is\n\nWordPress is the world's most-used content management system. PHP + MySQL, open source, GPL-licensed. Originally a blogging platform, now used for business sites, e-commerce (WooCommerce), learning platforms (LearnDash), and just about anything you can think of.\n\n## Why we recommend it\n\nIf you need a CMS that everyone knows, has a theme/plugin for everything, and is fully self-hostable, WordPress is the answer. The learning curve is gentle, the community is enormous, and the cost of ownership is low.\n\n## When to use it\n\n- Blogs and content sites\n- Small to mid-size business websites\n- E-commerce (via WooCommerce)\n- When you need a custom theme/plugin built fast",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "cms",
+  "publisher": "wordpress",
+  "externalUrl": "https://wordpress.org",
+  "repoUrl": "https://github.com/WordPress/WordPress",
+  "installCommand": "docker run -d --name wordpress -p 80:80 -v wordpress_data:/var/www/html wordpress:latest",
+  "installInstructions": "**Docker Compose (with MySQL):**\n```yaml\nservices:\n  wordpress:\n    image: wordpress:latest\n    ports: [\"80:80\"]\n    volumes: [wordpress_data:/var/www/html]\n  db:\n    image: mysql:8\n    environment:\n      MYSQL_DATABASE: wordpress\n      MYSQL_USER: wp\n      MYSQL_PASSWORD: wp\n      MYSQL_ROOT_PASSWORD: rootpw\n```\n\n**Managed:** WordPress.com from $4/month. WP Engine / Kinsta from $25/month.",
+  "logoUrl": "/logos/wordpress.svg",
+  "trust": {
+    "securityScore": 86,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.97,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "cms",
+    "blog",
+    "woocommerce",
+    "php",
+    "mature"
+  ],
+  "useCases": [
+    "blogging",
+    "business-sites",
+    "ecommerce",
+    "learning-platforms"
+  ],
+  "integrations": [
+    "woocommerce",
+    "jetpack",
+    "yoast",
+    "elementor",
+    "akismet"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. WordPress.com: from $4/month. Premium hosting: from $25/month.",
+  "seo": {
+    "metaTitle": "WordPress — The World's Most-Used CMS",
+    "metaDescription": "Hand-tested review of WordPress. The open source CMS that powers 40%+ of the web. Self-hostable, endless themes/plugins."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "fathom-lite",
+  "name": "Fathom Lite",
+  "tagline": "Open source, privacy-first web analytics. The original Fathom Analytics source.",
+  "shortDescription": "The open source edition of Fathom Analytics. Cookieless, GDPR/CCPA/PECR compliant, no fingerprinting. Use the hosted product or self-host the OSS code.",
+  "longDescription": "## What it is\n\nFathom Lite is the open source edition of Fathom Analytics. Self-hostable, cookieless, GDPR/CCPA/PECR compliant, single binary (Go), single-page dashboard. The paid product Fathom Analytics (usefathom.com) uses this same codebase.\n\n## Why we recommend it\n\nFathom was the original privacy-first analytics tool. The open source edition is solid for self-hosters who want a battle-tested codebase.\n\n## When to use it\n\n- Self-hosted privacy-first analytics\n- Multi-site on one instance\n- Compliance-focused deployments\n- Replacing Google Analytics with minimal disruption",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "analytics",
+  "publisher": "fathom",
+  "externalUrl": "https://github.com/usefathom/fathom",
+  "repoUrl": "https://github.com/usefathom/fathom",
+  "installCommand": "docker run -d --name fathom -p 8080:8080 -v fathom_data:/data usefathom/fathom:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name fathom -p 8080:8080 -v fathom_data:/data usefathom/fathom:latest\n```\n\n**Cloud (managed):** From $14/month. Free trial.",
+  "logoUrl": "/logos/fathom.svg",
+  "trust": {
+    "securityScore": 92,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 75,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "privacy",
+    "cookieless",
+    "gdpr",
+    "simple",
+    "multi-site"
+  ],
+  "useCases": [
+    "self-hosted-analytics",
+    "compliance",
+    "multi-site",
+    "replacing-ga"
+  ],
+  "integrations": [
+    "html",
+    "wordpress",
+    "ghost",
+    "react",
+    "any"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: $14/month. Free trial.",
+  "seo": {
+    "metaTitle": "Fathom Lite — Open Source Privacy Analytics",
+    "metaDescription": "Hand-tested review of Fathom Lite. Open source, privacy-first web analytics. Self-host or use the managed cloud."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

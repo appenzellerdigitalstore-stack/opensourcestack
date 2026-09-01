@@ -1,0 +1,57 @@
+{
+  "slug": "logto",
+  "name": "Logto",
+  "tagline": "Open source Auth0 alternative. OIDC, OAuth2, MFA, multi-tenancy, modern UI.",
+  "shortDescription": "Logto is an open source identity platform. OIDC, OAuth2, MFA (TOTP, WebAuthn, backup codes), social login, multi-tenancy, RBAC, beautiful UI, designed to be a drop-in Auth0 alternative.",
+  "longDescription": "## What it is\n\nLogto is an open source identity platform. OIDC, OAuth2, MFA, social login, multi-tenancy, RBAC, organizations, audit logs, account center UI, sign-in experience UI, and a beautiful admin console.\n\n## Why we recommend it\n\nIf you want a modern Auth0 alternative that you can self-host, Logto is the answer. The pre-built sign-in/account UIs save weeks of work, and the multi-tenant support is first-class.\n\n## When to use it\n\n- Auth0 alternative with self-hosting\n- B2B SaaS with multi-tenant identity\n- When you want pre-built sign-in UI (don't reinvent login)\n- Modern apps that need OIDC + MFA",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "auth",
+  "publisher": "logto",
+  "externalUrl": "https://logto.io",
+  "repoUrl": "https://github.com/logto-io/logto",
+  "installCommand": "docker run -d --name logto -p 3001:3001 -p 3002:3002 -v logto_data:/data svhd/logto:latest",
+  "installInstructions": "**Docker Compose (recommended):**\n```\ngit clone https://github.com/logto-io/logto\ncd logto\ndocker compose up -d\n```\n\n**Cloud:** Logto Cloud - free tier (5K MAU), from $32/month.",
+  "logoUrl": "/logos/logto.svg",
+  "trust": {
+    "securityScore": 92,
+    "qualityScore": 94,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.97,
+    "avgLatencyMs": 85,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "auth0-alternative",
+    "oidc",
+    "oauth2",
+    "mfa",
+    "multi-tenant"
+  ],
+  "useCases": [
+    "auth0-replacement",
+    "b2b-saas",
+    "modern-apps",
+    "pre-built-ui"
+  ],
+  "integrations": [
+    "oidc",
+    "oauth2",
+    "webauthn",
+    "social-login",
+    "mfa"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: 5K MAU free. $32/month for production.",
+  "seo": {
+    "metaTitle": "Logto - Open Source Auth0 Alternative",
+    "metaDescription": "Hand-tested review of Logto. Open source identity platform. OIDC, OAuth2, MFA, multi-tenancy, beautiful UI. Auth0 alternative."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

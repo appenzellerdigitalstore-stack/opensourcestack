@@ -1,0 +1,57 @@
+{
+  "slug": "baserow",
+  "name": "Baserow",
+  "tagline": "Open source Airtable alternative. Spreadsheet-database hybrid, no-code.",
+  "shortDescription": "Self-hostable no-code database. Build tables, link records, create forms, and collaborate in real time. The closest open source analog to Airtable.",
+  "longDescription": "## What it is\n\nBaserow is a no-code database that looks and feels like a spreadsheet. Self-hostable, REST + GraphQL API out of the box, real-time collaboration, granular permissions, and a marketplace of plugins.\n\n## Why we recommend it\n\nAirtable is great but expensive at scale and proprietary. Baserow gives you the same UX, with a fully open source backend you can self-host on a $5 VPS. The API is a first-class citizen — every table is auto-exposed as REST and GraphQL.\n\n## When to use it\n\n- Replacing Airtable for a team that wants self-hosting\n- Internal tools: tables + forms + per-row permissions\n- Lightweight CRM, project tracker, content calendar\n- Backend for prototypes — no need to write CRUD",
+  "kind": "platform",
+  "runtime": "multi",
+  "category": "databases",
+  "publisher": "baserow",
+  "externalUrl": "https://baserow.io",
+  "repoUrl": "https://github.com/bram2w/baserow",
+  "installCommand": "docker run -d --name baserow -p 80:80 -v baserow_data:/baserow/data baserow/baserow:latest",
+  "installInstructions": "**Docker (easiest):**\n```\ndocker run -d --name baserow -p 80:80 -v baserow_data:/baserow/data baserow/baserow:latest\n```\nStudio at `http://localhost`.\n\n**Managed:** Baserow Cloud starts at $5/month (free tier: 3,000 rows, 2GB storage).",
+  "logoUrl": "/logos/baserow.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.97,
+    "avgLatencyMs": 95,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "no-code",
+    "airtable-alternative",
+    "database",
+    "forms",
+    "rest-api"
+  ],
+  "useCases": [
+    "internal-tools",
+    "crm",
+    "content-calendar",
+    "prototyping"
+  ],
+  "integrations": [
+    "rest-api",
+    "graphql",
+    "webhooks",
+    "zapier",
+    "n8n"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free, you pay for hosting. Cloud: free tier (3K rows). Premium from $5/month.",
+  "seo": {
+    "metaTitle": "Baserow — Open Source Airtable Alternative",
+    "metaDescription": "Hand-tested review of Baserow. Self-hostable no-code database, REST + GraphQL API, real-time collaboration."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

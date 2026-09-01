@@ -1,0 +1,56 @@
+{
+  "slug": "zurmo",
+  "name": "Zurmo",
+  "tagline": "Gamified open source CRM. Sales, marketing, service, with a unique twist.",
+  "shortDescription": "An open source CRM with built-in gamification (badges, points, leaderboards) to encourage user adoption. Sales, marketing, service modules. PHP + MySQL.",
+  "longDescription": "## What it is\n\nZurmo is an open source CRM with a unique feature: built-in gamification. Users earn points, badges, and leaderboard positions for completing tasks, logging activities, and closing deals. Sales, marketing, service modules, customizable workflows.\n\n## Why we recommend it\n\nIf user adoption is your #1 CRM problem, gamification can help. Zurmo is the only open source CRM that bakes in this mechanic. It works surprisingly well for sales teams that need a nudge.\n\n## When to use it\n\n- Sales teams with low CRM adoption\n- Companies that want gamification to drive usage\n- Standard sales/marketing/service workflows\n- Custom workflow-heavy use cases",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "crm",
+  "publisher": "zurmo",
+  "externalUrl": "http://zurmo.org",
+  "repoUrl": "https://github.com/zurmo/zurmo",
+  "installCommand": "git clone https://github.com/zurmo/zurmo && cd zurmo && php install.php",
+  "installInstructions": "**Manual install:**\n1. LAMP with PHP 7.4+\n2. Clone the repo\n3. `php install.php` and follow the wizard\n\nNote: Zurmo's release pace has slowed, but the codebase is still maintained.",
+  "logoUrl": "/logos/zurmo.svg",
+  "trust": {
+    "securityScore": 82,
+    "qualityScore": 83,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.8,
+    "avgLatencyMs": 295,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "crm",
+    "gamification",
+    "badges",
+    "leaderboards",
+    "php"
+  ],
+  "useCases": [
+    "adoption-problems",
+    "gamified-sales",
+    "workflows",
+    "mid-market"
+  ],
+  "integrations": [
+    "imap",
+    "smtp",
+    "rest-api",
+    "webhooks"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Open source under AGPL-3.0. Self-host on LAMP.",
+  "seo": {
+    "metaTitle": "Zurmo — Gamified Open Source CRM",
+    "metaDescription": "Hand-tested review of Zurmo. Open source CRM with built-in gamification (badges, points, leaderboards) to drive adoption."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "zincsearch",
+  "name": "ZincSearch",
+  "tagline": "Lightweight Elasticsearch alternative. Single Go binary, no JVM, low memory.",
+  "shortDescription": "ZincSearch is a lightweight Elasticsearch alternative. Single Go binary, no JVM, low memory footprint, full-text search, log analytics, compatible with ES APIs.",
+  "longDescription": "## What it is\n\nZincSearch is a lightweight Elasticsearch alternative written in Go. Single binary, no JVM, low memory footprint (uses ~100MB vs GBs for ES), full-text search, log analytics, compatible with most ES APIs.\n\n## Why we recommend it\n\nIf you want Elasticsearch-like search without the JVM overhead, Zinc is the answer. Perfect for small to medium deployments where ES is overkill.\n\n## When to use it\n\n- Elasticsearch alternative with low resource use\n- Log aggregation on a small server\n- Full-text search for a side project\n- When you don't want to manage a JVM",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "search",
+  "publisher": "zincsearch",
+  "externalUrl": "https://zincsearch.com",
+  "repoUrl": "https://github.com/zinclabs/zinc",
+  "installCommand": "docker run -d --name zinc -p 4080:4080 -v zinc_data:/data public.ecr.aws/zinclabs/zincsearch:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name zinc -p 4080:4080 public.ecr.aws/zinclabs/zincsearch\n```\n\n**Single binary:** Download from GitHub releases, ./zinc and you are done.",
+  "logoUrl": "/logos/zincsearch.svg",
+  "trust": {
+    "securityScore": 88,
+    "qualityScore": 90,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 65,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "elasticsearch-alternative",
+    "go",
+    "low-memory",
+    "single-binary",
+    "logs"
+  ],
+  "useCases": [
+    "es-replacement",
+    "log-aggregation",
+    "small-deployments",
+    "side-projects"
+  ],
+  "integrations": [
+    "rest-api",
+    "elasticsearch-clients",
+    "logstash",
+    "beats"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Apache-2.0 licensed. Single binary, low resource use.",
+  "seo": {
+    "metaTitle": "ZincSearch - Lightweight Elasticsearch Alternative",
+    "metaDescription": "Hand-tested review of ZincSearch. Lightweight Elasticsearch alternative. Single Go binary, no JVM, low memory."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

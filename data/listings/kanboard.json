@@ -1,0 +1,56 @@
+{
+  "slug": "kanboard",
+  "name": "Kanboard",
+  "tagline": "Minimalist Kanban for geeks. PHP, SQLite, no JS framework.",
+  "shortDescription": "Kanboard is a minimalist Kanban tool for geeks. PHP + SQLite, no JS framework, simple to deploy, keyboard shortcuts, automation plugins.",
+  "longDescription": "## What it is\n\nKanboard is a minimalist Kanban tool aimed at power users. PHP + SQLite, simple to deploy (no JS framework, no heavy build process), keyboard shortcuts, automation plugins, and a clean UI.\n\n## Why we recommend it\n\nIf you want a no-frills Kanban that just works, Kanboard is the answer. It's lightweight, fast, and has all the features you need (and none you don't). The automation plugin is particularly powerful.\n\n## When to use it\n\n- Personal Kanban (GTD-style)\n- Small teams that want simplicity\n- Self-hosting on a $5 VPS (it's that light)\n- Power users who like keyboard shortcuts",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "project-management",
+  "publisher": "kanboard",
+  "externalUrl": "https://kanboard.org",
+  "repoUrl": "https://github.com/kanboard/kanboard",
+  "installCommand": "docker run -d --name kanboard -p 80:80 -v kanboard_data:/var/www/app/data kanboard/kanboard:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name kanboard -p 80:80 kanboard/kanboard\n```\n\n**Manual:** Download ZIP, drop in PHP-served directory, done.",
+  "logoUrl": "/logos/kanboard.svg",
+  "trust": {
+    "securityScore": 89,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 85,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "kanban",
+    "minimalist",
+    "php",
+    "sqlite",
+    "lightweight"
+  ],
+  "useCases": [
+    "personal-kanban",
+    "small-teams",
+    "gtd",
+    "simple-pm"
+  ],
+  "integrations": [
+    "webhooks",
+    "rest-api",
+    "ldap",
+    "plugins"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Self-host on the smallest VPS.",
+  "seo": {
+    "metaTitle": "Kanboard — Minimalist Open Source Kanban",
+    "metaDescription": "Hand-tested review of Kanboard. Minimalist Kanban for geeks. PHP + SQLite, lightweight, self-hostable."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

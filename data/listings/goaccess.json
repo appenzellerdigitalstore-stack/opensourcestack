@@ -1,0 +1,56 @@
+{
+  "slug": "goaccess",
+  "name": "GoAccess",
+  "tagline": "Real-time terminal + web log analyzer. For nginx, apache, and any text log.",
+  "shortDescription": "A fast terminal-based log analyzer. Reads nginx/apache logs in real time, generates an interactive terminal dashboard or HTML report. Zero infra.",
+  "longDescription": "## What it is\n\nGoAccess is a real-time web log analyzer that runs in your terminal or generates an HTML report. Reads nginx, Apache, CloudFront, and any text-based log format. No database, no client-side code, no tracking.\n\n## Why we recommend it\n\nIf you already have nginx logs and want visitor analytics without adding JS, GoAccess reads the server log directly. No cookies, no JS, just real traffic data.\n\n## When to use it\n\n- Server log analysis without adding JS to your site\n- Compliance scenarios where you can't use client-side trackers\n- Quick debugging of traffic spikes\n- Generating daily/weekly reports as static HTML",
+  "kind": "platform",
+  "runtime": "c",
+  "category": "analytics",
+  "publisher": "goaccess",
+  "externalUrl": "https://goaccess.io",
+  "repoUrl": "https://github.com/allinurl/goaccess",
+  "installCommand": "apt install goaccess  # or: brew install goaccess",
+  "installInstructions": "**Terminal:**\n```\ngoaccess /var/log/nginx/access.log -c\n```\n**HTML report:**\n```\ngoaccess /var/log/nginx/access.log -o report.html --log-format=COMBINED\n```",
+  "logoUrl": "/logos/goaccess.svg",
+  "trust": {
+    "securityScore": 94,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.99,
+    "avgLatencyMs": 5,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "log-analyzer",
+    "terminal",
+    "nginx",
+    "no-tracking",
+    "lightweight"
+  ],
+  "useCases": [
+    "nginx-logs",
+    "compliance",
+    "debugging",
+    "static-reports"
+  ],
+  "integrations": [
+    "nginx",
+    "apache",
+    "cloudfront",
+    "cli"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Single binary, no external dependencies.",
+  "seo": {
+    "metaTitle": "GoAccess — Real-Time Log Analyzer",
+    "metaDescription": "Hand-tested review of GoAccess. Terminal + HTML log analyzer for nginx and Apache. Zero client-side code."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

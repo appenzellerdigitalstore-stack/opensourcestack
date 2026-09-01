@@ -1,0 +1,57 @@
+{
+  "slug": "crater",
+  "name": "Crater",
+  "tagline": "Open source invoicing & expenses. Self-hosted, Laravel + Vue.",
+  "shortDescription": "Self-hosted invoicing, expense tracking, and time billing. Laravel + Vue, PDF invoices, online payments, customer portal. The Wave/FreshBooks alternative.",
+  "longDescription": "## What it is\n\nCrater is an open source invoicing and expense tracking app. Laravel backend, Vue frontend, REST API. Create/send invoices, track expenses, time billing, recurring invoices, online payments (Stripe, PayPal), customer portal.\n\n## Why we recommend it\n\nIf you want invoicing without FreshBooks/QuickBooks fees, Crater is the cleanest open source option. The PDF invoices look great, the customer portal is polished, and the online payment integrations just work.\n\n## When to use it\n\n- Self-hosted invoicing for freelancers/small businesses\n- Replacing FreshBooks or Wave\n- Time + expense + invoice in one app\n- Agencies billing clients monthly",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "crm",
+  "publisher": "crater",
+  "externalUrl": "https://crater.primotly.com",
+  "repoUrl": "https://github.com/crater-invoice/crater",
+  "installCommand": "git clone https://github.com/crater-invoice/crater && cd crater && composer install",
+  "installInstructions": "**Manual install:**\n1. LAMP/LEMP with PHP 8.1+\n2. Clone the repo\n3. `composer install`\n4. Configure `.env`\n5. `php artisan migrate --seed`\n6. `php artisan serve`",
+  "logoUrl": "/logos/crater.svg",
+  "trust": {
+    "securityScore": 88,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.93,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "invoicing",
+    "expenses",
+    "laravel",
+    "self-hosted",
+    "payments"
+  ],
+  "useCases": [
+    "freelancers",
+    "small-business",
+    "time-billing",
+    "agencies"
+  ],
+  "integrations": [
+    "stripe",
+    "paypal",
+    "imap",
+    "smtp",
+    "rest-api"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Open source under AGPL-3.0. Self-host on LAMP/LEMP.",
+  "seo": {
+    "metaTitle": "Crater — Open Source Invoicing & Expenses",
+    "metaDescription": "Hand-tested review of Crater. Open source invoicing and expense tracking. Laravel + Vue, self-hostable."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

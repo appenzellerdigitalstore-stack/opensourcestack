@@ -1,0 +1,57 @@
+{
+  "slug": "espocrm",
+  "name": "EspoCRM",
+  "tagline": "Lightweight open source CRM. PHP + MySQL. Self-hostable, customizable.",
+  "shortDescription": "A lightweight, flexible open source CRM. PHP + MySQL, custom entities, workflow engine, calendar, telephony integration, mobile app. The mature alternative to SuiteCRM.",
+  "longDescription": "## What it is\n\nEspoCRM is a lightweight, flexible open source CRM. PHP-based, MySQL-backed, REST API, custom entities and layouts, workflow engine, calendar, email integration, telephony (Asterisk), and a mobile app.\n\n## Why we recommend it\n\nEspoCRM is more modern than SuiteCRM, easier to customize than Salesforce, and ships with a built-in workflow engine. It's the best lightweight PHP CRM in the OSS world.\n\n## When to use it\n\n- Small to mid-size sales teams that want self-hosting\n- Companies with PHP infrastructure\n- Custom sales processes that need custom entities\n- Replacing HubSpot/Salesforce at a fraction of the cost",
+  "kind": "platform",
+  "runtime": "php",
+  "category": "crm",
+  "publisher": "espocrm",
+  "externalUrl": "https://www.espocrm.com",
+  "repoUrl": "https://github.com/espocrm/espocrm",
+  "installCommand": "docker run -d --name espocrm -p 80:80 espocrm/espocrm",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name espocrm -p 80:80 espocrm/espocrm\n```\n\n**Manual:** Download from espocrm.com, run the installer, follow the wizard.",
+  "logoUrl": "/logos/espocrm.svg",
+  "trust": {
+    "securityScore": 88,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.93,
+    "avgLatencyMs": 195,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "crm",
+    "php",
+    "lightweight",
+    "customizable",
+    "workflows"
+  ],
+  "useCases": [
+    "sales-crm",
+    "php-sites",
+    "custom-entities",
+    "small-business"
+  ],
+  "integrations": [
+    "imap",
+    "smtp",
+    "asterisk",
+    "rest-api",
+    "webhooks"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Open source: free. Extensions and premium support from $60/month.",
+  "seo": {
+    "metaTitle": "EspoCRM — Lightweight Open Source CRM",
+    "metaDescription": "Hand-tested review of EspoCRM. PHP + MySQL open source CRM with custom entities, workflows, and telephony integration."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

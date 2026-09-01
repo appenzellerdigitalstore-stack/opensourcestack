@@ -1,0 +1,57 @@
+{
+  "slug": "minio",
+  "name": "MinIO",
+  "tagline": "S3-compatible object storage. Single binary, high-performance, S3 API.",
+  "shortDescription": "MinIO is a high-performance, S3-compatible object storage. Single Go binary, scales from a single server to billions of objects, 100% S3 API compatible. The de facto S3 alternative.",
+  "longDescription": "## What it is\n\nMinIO is a high-performance, S3-compatible object storage server. Single Go binary, scales from a single server to distributed clusters, 100% S3 API compatible, multi-tenant, with encryption, versioning, lifecycle, and replication.\n\n## Why we recommend it\n\nIf you need S3-compatible storage that you can run yourself, MinIO is the answer. Drop-in replacement for AWS S3, runs on your own hardware or any cloud.\n\n## When to use it\n\n- Self-hosted S3 alternative\n- Object storage for backups\n- Data lake on premises\n- S3-compatible dev environment (replaces aws s3 calls)",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "storage",
+  "publisher": "minio",
+  "externalUrl": "https://min.io",
+  "repoUrl": "https://github.com/minio/minio",
+  "installCommand": "docker run -d --name minio -p 9000:9000 -p 9001:9001 -v minio_data:/data -e MINIO_ROOT_USER=admin -e MINIO_ROOT_PASSWORD=admin123 minio/minio:latest server /data --console-address :9001",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name minio -p 9000:9000 -p 9001:9001 -v minio_data:/data -e MINIO_ROOT_USER=admin -e MINIO_ROOT_PASSWORD=admin123 minio/minio server /data --console-address :9001\n```\n\n**Console:** http://localhost:9001",
+  "logoUrl": "/logos/minio.svg",
+  "trust": {
+    "securityScore": 93,
+    "qualityScore": 95,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.98,
+    "avgLatencyMs": 25,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "s3",
+    "object-storage",
+    "go",
+    "high-performance",
+    "s3-compatible"
+  ],
+  "useCases": [
+    "s3-alternative",
+    "backups",
+    "data-lake",
+    "dev-environment"
+  ],
+  "integrations": [
+    "aws-sdk",
+    "s3-api",
+    "kubernetes",
+    "terraform",
+    "spark"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. AGPL-3.0 licensed. Self-host or use MinIO (the company) for support.",
+  "seo": {
+    "metaTitle": "MinIO - S3-Compatible Object Storage",
+    "metaDescription": "Hand-tested review of MinIO. S3-compatible object storage. Single Go binary, high-performance, scales to billions of objects."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

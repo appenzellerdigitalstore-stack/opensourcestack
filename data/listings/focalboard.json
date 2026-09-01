@@ -1,0 +1,55 @@
+{
+  "slug": "focalboard",
+  "name": "Focalboard",
+  "tagline": "Open source alternative to Trello, Notion, and Asana. From Mattermost.",
+  "shortDescription": "Focalboard is an open source project tracking tool from the Mattermost team. Boards, cards, properties, views (Kanban, Table, Calendar, Gallery). Self-host or use the free cloud.",
+  "longDescription": "## What it is\n\nFocalboard is an open source project tracking tool from the Mattermost team. Boards with cards, custom properties, multiple views (Kanban, Table, Calendar, Gallery), templates, and personal/team boards.\n\n## Why we recommend it\n\nIf you want the Trello/Notion/Asana experience without the SaaS fees, Focalboard is the cleanest open source option. It's actively developed by the Mattermost team and integrates with Mattermost.\n\n## When to use it\n\n- Self-hosted Trello/Asana replacement\n- Personal + team boards\n- Integration with Mattermost\n- Project tracking for small teams",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "project-management",
+  "publisher": "focalboard",
+  "externalUrl": "https://www.focalboard.com",
+  "repoUrl": "https://github.com/mattermost/focalboard",
+  "installCommand": "docker run -d --name focalboard -p 8000:8000 mattermost/focalboard:latest",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name focalboard -p 8000:8000 mattermost/focalboard:latest\n```\n\n**Personal desktop:** Download from focalboard.com (Mac, Windows, Linux).",
+  "logoUrl": "/logos/focalboard.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.94,
+    "avgLatencyMs": 165,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "kanban",
+    "trello-alternative",
+    "mattermost",
+    "self-hosted",
+    "boards"
+  ],
+  "useCases": [
+    "trello-replacement",
+    "personal-pm",
+    "small-teams",
+    "mattermost-integration"
+  ],
+  "integrations": [
+    "mattermost",
+    "rest-api",
+    "webhooks"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. MIT licensed. Self-host or use Personal Desktop (free).",
+  "seo": {
+    "metaTitle": "Focalboard — Open Source Trello Alternative",
+    "metaDescription": "Hand-tested review of Focalboard. Open source project tracking from the Mattermost team. Kanban, Table, Calendar views."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

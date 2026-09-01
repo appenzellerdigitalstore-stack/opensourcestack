@@ -1,0 +1,57 @@
+{
+  "slug": "twenty",
+  "name": "Twenty",
+  "tagline": "Open source CRM. Modern UI, GraphQL API, Postgres.",
+  "shortDescription": "A modern open source CRM built with React, NestJS, and Postgres. Customizable objects, GraphQL API, workflow automations, beautiful UI. The Notion-meets-Salesforce.",
+  "longDescription": "## What it is\n\nTwenty is a modern open source CRM. Built with React (frontend), NestJS (backend), and Postgres (DB). Custom objects, GraphQL API, workflow automations, email integration, beautiful UI inspired by Notion.\n\n## Why we recommend it\n\nThe most exciting new open source CRM in years. Twenty is built like a modern SaaS — fast, beautiful, and developer-friendly. The GraphQL API and custom objects make it a real alternative to Salesforce/HubSpot for small teams.\n\n## When to use it\n\n- Building a CRM that you can fully customize\n- Replacing HubSpot/Salesforce for a small team\n- A CRM that fits your exact sales process\n- When you want a beautiful UI without per-seat fees",
+  "kind": "platform",
+  "runtime": "node",
+  "category": "crm",
+  "publisher": "twenty",
+  "externalUrl": "https://twenty.com",
+  "repoUrl": "https://github.com/twentyhq/twenty",
+  "installCommand": "git clone https://github.com/twentyhq/twenty && cd twenty && yarn && yarn start",
+  "installInstructions": "**Local dev:**\n```\ngit clone https://github.com/twentyhq/twenty\ncd twenty\nyarn\nyarn start\n```\nFrontend at `http://localhost:3001`.\n\n**Cloud:** Twenty Cloud (managed) — sign up at twenty.com.",
+  "logoUrl": "/logos/twenty.svg",
+  "trust": {
+    "securityScore": 89,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.94,
+    "avgLatencyMs": 165,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "crm",
+    "modern",
+    "graphql",
+    "postgres",
+    "customizable"
+  ],
+  "useCases": [
+    "sales-crm",
+    "replacing-hubspot",
+    "custom-workflows",
+    "small-teams"
+  ],
+  "integrations": [
+    "graphql",
+    "rest-api",
+    "webhooks",
+    "google-workspace",
+    "microsoft-365"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Open source. Self-host free. Twenty Cloud has a free tier for small teams.",
+  "seo": {
+    "metaTitle": "Twenty — Open Source Modern CRM",
+    "metaDescription": "Hand-tested review of Twenty. Open source CRM with modern UI, GraphQL API, custom objects, and workflow automations."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

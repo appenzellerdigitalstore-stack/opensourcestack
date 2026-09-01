@@ -1,0 +1,57 @@
+{
+  "slug": "vespa",
+  "name": "Vespa",
+  "tagline": "Open source big data serving engine. Search, recommendations, ML serving at scale.",
+  "shortDescription": "Vespa is an open source big data serving engine. Combines search, recommendation, and ML model serving at scale. Used by Yahoo for serving search and recommendations.",
+  "longDescription": "## What it is\n\nVespa is an open source big data serving engine. Combines vector search, lexical search, ML model evaluation, and ranking in one engine. Built for serving billions of items with millisecond latency.\n\n## Why we recommend it\n\nIf you need search + recommendations + ML serving in one engine (and at scale), Vespa is the answer. It is what Yahoo uses for its search and ads serving.\n\n## When to use it\n\n- Large-scale search (billions of items)\n- Recommendation systems\n- ML model serving with low latency\n- When you need search + ranking + ML in one",
+  "kind": "platform",
+  "runtime": "java",
+  "category": "search",
+  "publisher": "vespa",
+  "externalUrl": "https://vespa.ai",
+  "repoUrl": "https://github.com/vespa-engine/vespa",
+  "installCommand": "docker run -d --name vespa -p 8080:8080 -p 19071:19071 vespaengine/vespa",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name vespa -p 8080:8080 -p 19071:19071 vespaengine/vespa\n```\n\n**Cloud:** Vespa Cloud (Yahoo) - from $0.05/hour.",
+  "logoUrl": "/logos/vespa.svg",
+  "trust": {
+    "securityScore": 92,
+    "qualityScore": 93,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.96,
+    "avgLatencyMs": 35,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "search",
+    "recommendations",
+    "ml-serving",
+    "big-data",
+    "vector-search"
+  ],
+  "useCases": [
+    "large-scale-search",
+    "recommendations",
+    "ml-serving",
+    "ranking"
+  ],
+  "integrations": [
+    "rest-api",
+    "tensor-flow",
+    "onnx",
+    "java",
+    "python"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Vespa Cloud: from $0.05/hour. Apache-2.0 licensed.",
+  "seo": {
+    "metaTitle": "Vespa - Open Source Big Data Serving Engine",
+    "metaDescription": "Hand-tested review of Vespa. Open source engine for search, recommendations, and ML serving at scale. Used by Yahoo."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

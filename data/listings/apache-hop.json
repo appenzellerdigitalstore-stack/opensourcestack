@@ -1,0 +1,57 @@
+{
+  "slug": "apache-hop",
+  "name": "Apache Hop",
+  "tagline": "Open source data orchestration. Visual pipelines, multi-engine, Hop GUI.",
+  "shortDescription": "Apache Hop is an open source data orchestration tool. Visual pipeline designer, multi-engine (Spark, Flink, Google Dataflow), metadata injection, Hop GUI for developers. The Pentaho successor.",
+  "longDescription": "## What it is\n\nApache Hop is an open source data orchestration tool. Visual pipeline designer, metadata-driven, runs on multiple execution engines (Apache Spark, Apache Flink, Google Dataflow, local). Hop GUI is a full IDE for data engineers.\n\n## Why we recommend it\n\nIf you want visual data pipeline design with the power of multiple engines, Hop is the answer. The visual designer is mature, the metadata model is well-thought-out, and the multi-engine support means you can prototype locally and run on Spark in production.\n\n## When to use it\n\n- Visual data pipeline design\n- Multi-engine execution (Spark, Flink, Dataflow)\n- Pentaho Data Integration migration target\n- When you need a mature visual ETL tool",
+  "kind": "platform",
+  "runtime": "java",
+  "category": "automation",
+  "publisher": "apache",
+  "externalUrl": "https://hop.apache.org",
+  "repoUrl": "https://github.com/apache/hop",
+  "installCommand": "Download from hop.apache.org and run ./hop-gui.sh",
+  "installInstructions": "**Download:** Get the latest release from hop.apache.org.\n\n**Run Hop GUI:**\n```\n./hop-gui.sh\n```\n\n**Run a pipeline:** `./hop-run.sh --run=pipeline.hpl`",
+  "logoUrl": "/logos/hop.svg",
+  "trust": {
+    "securityScore": 88,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.93,
+    "avgLatencyMs": 215,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "data-orchestration",
+    "visual",
+    "etl",
+    "multi-engine",
+    "pentaho"
+  ],
+  "useCases": [
+    "visual-etl",
+    "data-pipelines",
+    "pentaho-migration",
+    "multi-engine"
+  ],
+  "integrations": [
+    "spark",
+    "flink",
+    "google-dataflow",
+    "kafka",
+    "databricks"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Apache-2.0 licensed. Self-host on your own infrastructure.",
+  "seo": {
+    "metaTitle": "Apache Hop - Open Source Data Orchestration",
+    "metaDescription": "Hand-tested review of Apache Hop. Open source data orchestration. Visual pipelines, multi-engine, Hop GUI."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

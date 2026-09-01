@@ -1,0 +1,57 @@
+{
+  "slug": "temporal",
+  "name": "Temporal",
+  "tagline": "Open source workflow orchestration for microservices. Durable execution, retries, timeouts.",
+  "shortDescription": "Temporal is an open source workflow orchestration platform. Durable execution (your workflow survives crashes), automatic retries, timeouts, signals, queries, and polyglot (Go, Java, TypeScript, Python, .NET).",
+  "longDescription": "## What it is\n\nTemporal is an open source workflow orchestration platform. Write workflows as code (Go, Java, TypeScript, Python, .NET), and Temporal handles durability (your workflow survives crashes), retries, timeouts, signals from external systems, and queries for state.\n\n## Why we recommend it\n\nIf you have complex microservice orchestration (long-running business processes, sagas, etc.) and don't want to write a state machine from scratch, Temporal is the answer. The durable execution model is a game-changer.\n\n## When to use it\n\n- Microservice orchestration (sagas, long-running workflows)\n- Replacing in-house state machines\n- When you need durable execution (workflows that survive crashes)\n- Distributed transactions across services",
+  "kind": "platform",
+  "runtime": "go",
+  "category": "automation",
+  "publisher": "temporalio",
+  "externalUrl": "https://temporal.io",
+  "repoUrl": "https://github.com/temporalio/temporal",
+  "installCommand": "brew install temporal  # or: docker run -d --name temporal temporalio/server:latest",
+  "installInstructions": "**Docker (dev):**\n```\ndocker run -d --name temporal temporalio/server:latest\n```\n\n**Production:** Helm chart, terraform module, or Temporal Cloud (managed).\n\n**Cloud:** Free tier (1K actions/month). From $25/month.",
+  "logoUrl": "/logos/temporal.svg",
+  "trust": {
+    "securityScore": 93,
+    "qualityScore": 95,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.98,
+    "avgLatencyMs": 65,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "workflow",
+    "orchestration",
+    "durable-execution",
+    "microservices",
+    "polyglot"
+  ],
+  "useCases": [
+    "microservice-orchestration",
+    "sagas",
+    "long-running",
+    "durable-execution"
+  ],
+  "integrations": [
+    "go",
+    "java",
+    "typescript",
+    "python",
+    "dotnet"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Self-host: free. Cloud: 1K actions/month free. $25/month for production.",
+  "seo": {
+    "metaTitle": "Temporal - Open Source Workflow Orchestration",
+    "metaDescription": "Hand-tested review of Temporal. Open source workflow orchestration for microservices. Durable execution, retries, timeouts."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}

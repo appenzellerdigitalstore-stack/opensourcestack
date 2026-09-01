@@ -1,0 +1,57 @@
+{
+  "slug": "apache-solr",
+  "name": "Apache Solr",
+  "tagline": "Battle-tested open source search. The original Lucene-based search server.",
+  "shortDescription": "Apache Solr is the original open source search server built on Apache Lucene. Battle-tested since 2004, full-text search, faceted search, geospatial, ML model upload, vector search (recent).",
+  "longDescription": "## What it is\n\nApache Solr is the original open source search server built on Apache Lucene. Battle-tested since 2004, used by Netflix, Apple, eBay, and many others. Full-text search, faceted search, geospatial, ML model upload, vector search (recent versions).\n\n## Why we recommend it\n\nIf you need the most battle-tested open source search, Solr is it. The codebase has been around for 20 years and is incredibly mature. The performance is excellent at scale.\n\n## When to use it\n\n- Enterprise search with battle-tested stack\n- E-commerce product search with faceting\n- Search for large document collections\n- When Elasticsearch is too heavy",
+  "kind": "platform",
+  "runtime": "java",
+  "category": "search",
+  "publisher": "apachesolr",
+  "externalUrl": "https://solr.apache.org",
+  "repoUrl": "https://github.com/apache/solr",
+  "installCommand": "docker run -d --name solr -p 8983:8983 -v solr_data:/var/solr solr:solr",
+  "installInstructions": "**Docker:**\n```\ndocker run -d --name solr -p 8983:8983 solr:solr\n```\n\n**Admin UI:** http://localhost:8983/solr",
+  "logoUrl": "/logos/solr.svg",
+  "trust": {
+    "securityScore": 90,
+    "qualityScore": 92,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-08-28"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 75,
+    "lastCheck": "2026-08-28T22:00:00Z"
+  },
+  "tags": [
+    "search",
+    "lucene",
+    "mature",
+    "enterprise",
+    "vector-search"
+  ],
+  "useCases": [
+    "enterprise-search",
+    "ecommerce",
+    "large-collections",
+    "solr-cloud"
+  ],
+  "integrations": [
+    "rest-api",
+    "lucene",
+    "spark",
+    "hadoop",
+    "kafka"
+  ],
+  "pricing": "free",
+  "pricingDetails": "Free. Apache-2.0 licensed. Self-host on JVM.",
+  "seo": {
+    "metaTitle": "Apache Solr - Battle-Tested Open Source Search",
+    "metaDescription": "Hand-tested review of Apache Solr. The original open source search server on Lucene. Battle-tested since 2004."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-08-28"
+}
