@@ -73,6 +73,17 @@ const allListings: Listing[] = Object.values(listingModules)
 
 import categoriesData from '../../data/categories.json' with { type: 'json' };
 import publishersData from '../../data/publishers.json' with { type: 'json' };
+import categoryIntrosData from '../../data/category_intros.json' with { type: 'json' };
+
+export interface CategoryIntro {
+  slug: string;
+  intro: string;
+  selectionNotes: string;
+}
+
+export function getCategoryIntro(slug: string): CategoryIntro | undefined {
+  return (categoryIntrosData as CategoryIntro[]).find((c) => c.slug === slug);
+}
 
 export function getAllListings(): Listing[] { return allListings; }
 export function getFeaturedListings(): Listing[] {
