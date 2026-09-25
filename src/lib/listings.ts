@@ -5,6 +5,13 @@
 
 export type SponsorTier = 'none' | 'verified' | 'featured' | 'sponsor';
 
+// Trigger Cloudflare Pages redeploy: live site was serving a stale wrangler
+// build (missing the /methodology page, "Why this directory exists" intro, and
+// category intros). Making a no-op change to push a fresh build via the
+// GitHub Pages integration, which auto-deploys from origin/main.
+// (See commit history for context.)
+
+
 export interface Trust {
   securityScore: number;
   qualityScore: number;
