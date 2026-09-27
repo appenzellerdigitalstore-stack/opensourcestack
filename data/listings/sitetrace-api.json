@@ -1,0 +1,65 @@
+{
+  "slug": "sitetrace-api",
+  "name": "SiteTrace API",
+  "tagline": "Open-source alternative to Ahrefs, Hunter.io, and SEMrush APIs. 100 free calls/day.",
+  "shortDescription": "SiteTrace API is a multi-endpoint SEO + content analysis API built on Cloudflare Workers. 10 utility endpoints (SEO audit, AI content detection, SERP scraping, company intelligence, email finder, web summarizer, review scraper, schema detector, email health, phone intelligence). Free + 4 paid tiers ($9.99–$79.99/mo). Self-hostable on Cloudflare's free tier.",
+  "longDescription": "## What it is\n\nSiteTrace API is a hosted API service that replaces expensive SaaS subscriptions for SEO and lead-gen tasks. Built on Cloudflare Workers + D1 + KV — the entire stack is open source on GitHub.\n\nThe 10 endpoints cover:\n\n- **SEO utility:** SEO Audit (0–100 scoring), SERP Scraper, Schema Detector, Web Summarizer\n- **Content / AI:** AI Content Detector (heuristic, no LLM cost)\n- **Lead generation:** Company Intelligence (tech stack + socials + contacts in one call), Email Finder (crawl + pattern + MX verification)\n- **Market research:** Review Scraper (Trustpilot + G2 + Capterra)\n- **Validation:** Email Health (8 checks), Phone Intelligence (19 countries)\n\n## Why we recommend it\n\n- **Drop-in alternative to expensive APIs.** Replaces: Ahrefs API ($99+/mo), Hunter.io ($49/mo), SEMrush API ($99+/mo), Diffbot ($$$ tier), Originality.ai ($30/mo).\n- **Free tier actually usable.** 100 calls/day per IP, no signup required. Most competitors either don't have a free tier or make you enter a credit card.\n- **Edge caching.** Same URL hit 100×/day = 1 scrape. Render + most competitors burn bandwidth on repeats.\n- **Self-hostable.** Cloudflare Workers free tier handles thousands of users. Open source repo on GitHub.\n\n## When to use it\n\n- Indie hackers building SEO tools without paying Ahrefs-tier prices\n- Agencies auditing client sites at scale\n- B2B sales teams needing clean lead-gen data (Company Intel + Email Finder)\n- Content agencies validating freelancer submissions for AI content\n- Schools / publishers checking for plagiarism or AI-generated text\n\n## Quickstart\n\n```bash\n# Free tier (no signup)\ncurl 'https://api.sitetrace.it.com/api/seo-audit?url=https://example.com'\n\n# Paid tier (API key)\ncurl 'https://api.sitetrace.it.com/api/ai-content-detector' \\\n  -H 'Authorization: Bearer YOUR_API_KEY' \\\n  -H 'Content-Type: application/json' \\\n  -d '{\"text\": \"your text here\"}'\n```\n\n## Self-hosting\n\nThe whole stack is open source. To run your own:\n\n1. Clone `appenzellerdigitalstore-stack/sitetrace-cloud`\n2. Create a Cloudflare account (free tier works)\n3. Run `wrangler pages deploy . --project-name=sitetrace-api`\n4. Configure KV namespace + D1 database per the deploy docs\n5. Set Paddle env vars (or swap for Stripe)\n\nTotal cost on Cloudflare free tier: $0 for ≤100k req/day. Paid plan adds $5/mo for Browser Rendering API.",
+  "kind": "tool",
+  "runtime": "cloudflare-workers",
+  "category": "analytics",
+  "publisher": "sitetrace",
+  "externalUrl": "https://api.sitetrace.it.com",
+  "repoUrl": "https://github.com/appenzellerdigitalstore-stack/sitetrace-cloud",
+  "installCommand": "git clone https://github.com/appenzellerdigitalstore-stack/sitetrace-cloud.git",
+  "installInstructions": "**Hosted (recommended):**\nSign up at https://api.sitetrace.it.com/signup — free tier, no card.\n\n**Self-host:**\n```bash\ngit clone https://github.com/appenzellerdigitalstore-stack/sitetrace-cloud.git\ncd sitetrace-cloud\nnpm install\nwrangler pages deploy . --project-name=sitetrace-api\n```\n\nSet Cloudflare KV namespace ID + D1 database ID + Paddle API key in wrangler.toml. See DEPLOY.md for details.",
+  "logoUrl": "/logos/sitetrace.svg",
+  "trust": {
+    "securityScore": 88,
+    "qualityScore": 91,
+    "isVerified": true,
+    "isOfficial": true,
+    "lastVerifiedAt": "2026-09-26"
+  },
+  "status": {
+    "up": true,
+    "uptimePct30d": 99.95,
+    "avgLatencyMs": 280,
+    "lastCheck": "2026-09-26T22:00:00Z"
+  },
+  "tags": [
+    "seo",
+    "analytics",
+    "ahrefs-alternative",
+    "hunter-alternative",
+    "semrush-alternative",
+    "free-tier",
+    "rest-api",
+    "cloudflare-workers",
+    "open-source",
+    "self-hostable"
+  ],
+  "useCases": [
+    "seo-audits",
+    "rank-tracking",
+    "lead-generation",
+    "ai-content-detection",
+    "competitor-analysis",
+    "email-validation",
+    "market-research"
+  ],
+  "integrations": [
+    "zapier",
+    "make",
+    "n8n",
+    "claude",
+    "cursor"
+  ],
+  "pricing": "freemium",
+  "pricingDetails": "Hosted: Free tier (100 calls/day, no signup). Paid tiers $9.99–$79.99/mo. Self-host: free on Cloudflare free tier.",
+  "seo": {
+    "metaTitle": "SiteTrace API — Open-Source Ahrefs Alternative",
+    "metaDescription": "10 SEO + content APIs for the price of one. Free 100 calls/day. Self-hostable on Cloudflare."
+  },
+  "sponsorTier": "none",
+  "dateAdded": "2026-09-26"
+}
