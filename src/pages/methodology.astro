@@ -25,7 +25,7 @@ import Layout from '../layouts/Layout.astro';
       Projects enter our consideration through four channels: our team finding them in release notes, GitHub trending, Hacker News, or maintainer newsletters; community submissions via our contact form; maintainer outreach (a project owner emails us saying "please consider us"); and word-of-mouth from other editors.
     </p>
     <p>
-      Every candidate goes through the same four-step process:
+      Every candidate goes through an editorial review before publication. The depth of hands-on testing varies by project; we only claim self-hosting or testing when that work has actually been performed and recorded:
     </p>
     <ol>
       <li>
@@ -84,18 +84,14 @@ import Layout from '../layouts/Layout.astro';
 
     <h2>5. Comparison pages</h2>
     <p>
-      Every comparison page (URLs like <code>/vs/supabase-vs-directus/</code>) is auto-generated from the underlying listings. Each one has:
+      Comparison pages are a curated editorial set rather than an automatically generated page for every possible pair. We publish a comparison when two projects solve a genuinely overlapping problem and the comparison can help a reader make a decision.
     </p>
     <ul>
-      <li>An "Editor's take" intro paragraph (auto-written from the two listings' descriptions)</li>
-      <li>Side-by-side cards with security and quality scores</li>
-      <li>A "When to pick which" section explaining the use cases each project is best for</li>
-      <li>A score breakdown table comparing the metrics</li>
-      <li>3 related projects in the same category</li>
+      <li>Each comparison has one canonical URL and one direction.</li>
+      <li>We do not generate both A-vs-B and B-vs-A pages.</li>
+      <li>Underlying listing data supplies factual metrics; the purpose of the comparison is to explain meaningful tradeoffs.</li>
+      <li>Pairs without enough useful editorial context are not published.</li>
     </ul>
-    <p>
-      Every comparison pair gets both orderings (supabase-vs-directus AND directus-vs-supabase) so users searching in either direction find the page.
-    </p>
 
     <h2>6. What gets a project removed</h2>
     <p>
@@ -159,7 +155,7 @@ import Layout from '../layouts/Layout.astro';
       The point of the methodology page is transparency. You should be able to read this and know exactly how the directory works, what its incentives are, and where its blind spots might be. If something here is unclear, or if you have a methodology question we haven't answered, email us — we'll add it.
     </p>
     <p class="text-sm text-ink-500">
-      Last updated: September 15, 2026. Maintained by the OpenSourceStack editorial team.
+      Last updated: October 6, 2026. Maintained by the OpenSourceStack editorial team.
     </p>
   </div>
 </Layout>
