@@ -1,7 +1,6 @@
 import { HeadContent, Outlet, Scripts, createRootRouteWithContext } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { MatrixRain } from "@/components/MatrixRain";
 import "../styles.css";
 
 export const Route = createRootRouteWithContext()({
@@ -31,7 +30,6 @@ function RootLayout() {
     <head><HeadContent /></head>
     <body>
       <div className="site-page">
-        <MatrixRain />
         <SiteHeader />
         <Outlet />
         <SiteFooter />
