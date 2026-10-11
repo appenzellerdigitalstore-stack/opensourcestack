@@ -1,6 +1,8 @@
 # build output
 dist/
 .astro/
+.wrangler/
+.verify/
 
 # dependencies
 node_modules/
