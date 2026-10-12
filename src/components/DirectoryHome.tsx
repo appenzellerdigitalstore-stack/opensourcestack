@@ -7,7 +7,6 @@ import {
   Activity,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { listings, categories, totalListings, totalCategories, type Listing } from "@/lib/directory";
 import { StackScene } from "./StackScene";
 
@@ -76,7 +75,6 @@ export function DirectoryHome() {
   const [sort, setSort] = useState("curated");
   const [limit, setLimit] = useState(9);
   const [active, setActive] = useState(0);
-  const [submitOpen, setSubmitOpen] = useState(false);
   const input = useRef<HTMLInputElement | null>(null);
 
   // 12 spotlight tools for the carousel, each with a tone
@@ -204,16 +202,5 @@ export function DirectoryHome() {
         <Button asChild variant="outline"><Link to="/about">Read our manifesto <ArrowUpRight /></Link></Button>
       </div>
     </section>
-
-    <Dialog open={submitOpen} onOpenChange={setSubmitOpen}>
-      <DialogContent>
-        <DialogTitle>Something worth sharing?</DialogTitle>
-        <DialogDescription>Help the open source ecosystem grow.</DialogDescription>
-        <div className="detail-content">
-          <p>Tool suggestions are reviewed independently before publication. Send your project through the directory's existing contact form.</p>
-          <Button asChild variant="glow" className="mt-5"><Link to="/contact">Suggest a tool <ArrowUpRight /></Link></Button>
-        </div>
-      </DialogContent>
-    </Dialog>
   </>;
 }
