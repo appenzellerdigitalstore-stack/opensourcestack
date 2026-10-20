@@ -43,9 +43,14 @@ const today = new Date().toISOString().split("T")[0];
 
 const urls = [
   { loc: SITE_CONFIG.base + "/", changefreq: SITE_CONFIG.changefreq.home, priority: SITE_CONFIG.priority.home, lastmod: today },
-  { loc: SITE_CONFIG.base + "/about", changefreq: SITE_CONFIG.changefreq.static, priority: SITE_CONFIG.priority.static },
-  { loc: SITE_CONFIG.base + "/methodology", changefreq: SITE_CONFIG.changefreq.static, priority: SITE_CONFIG.priority.static },
-  { loc: SITE_CONFIG.base + "/contact", changefreq: SITE_CONFIG.changefreq.static, priority: SITE_CONFIG.priority.static },
+  { loc: SITE_CONFIG.base + "/about", changefreq: SITE_CONFIG.changefreq.static, priority: SITE_CONFIG.priority.static, lastmod: today },
+  { loc: SITE_CONFIG.base + "/methodology", changefreq: SITE_CONFIG.changefreq.static, priority: SITE_CONFIG.priority.static, lastmod: today },
+  { loc: SITE_CONFIG.base + "/contact", changefreq: SITE_CONFIG.changefreq.static, priority: SITE_CONFIG.priority.static, lastmod: today },
+  { loc: SITE_CONFIG.base + "/privacy", changefreq: SITE_CONFIG.changefreq.static, priority: SITE_CONFIG.priority.static, lastmod: today },
+  { loc: SITE_CONFIG.base + "/terms", changefreq: SITE_CONFIG.changefreq.static, priority: SITE_CONFIG.priority.static, lastmod: today },
+  { loc: SITE_CONFIG.base + "/changelog", changefreq: SITE_CONFIG.changefreq.weekly, priority: SITE_CONFIG.priority.static, lastmod: today },
+  { loc: SITE_CONFIG.base + "/insights", changefreq: SITE_CONFIG.changefreq.weekly, priority: SITE_CONFIG.priority.static, lastmod: today },
+  { loc: SITE_CONFIG.base + "/insights/what-open-source-alternative-actually-means-in-2026", changefreq: SITE_CONFIG.changefreq.listing, priority: SITE_CONFIG.priority.static, lastmod: today },
   ...slugs.map(s => ({
     loc: `${SITE_CONFIG.base}/listings/${s}`,
     changefreq: SITE_CONFIG.changefreq.listing,
