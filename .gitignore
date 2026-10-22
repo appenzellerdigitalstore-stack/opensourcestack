@@ -35,3 +35,9 @@ Thumbs.db
 # temp / orphan files
 *.tmp
 *.disabled
+
+# Deploy logs. PowerShell single-quotes don't expand $(Get-Date ...), so an
+# unescaped redirect used to write a file literally named
+# "wrangler_deploy_$(Get-Date -Format yyyyMMdd_HHmmss).log" into the repo.
+*.log
+*.log.err
