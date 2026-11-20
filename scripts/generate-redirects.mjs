@@ -76,9 +76,11 @@ for (const slug of archivedSlugs.sort()) push(`/go/${slug}`, `/listings/${slug}`
 lines.push("", "# --- Archived comparison pages ---");
 push("/vs/*", "/");
 
-// 3. Categories were filter states on the old homepage, never standalone pages.
-lines.push("", "# --- Archived categories (filters now live on the homepage) ---");
-for (const slug of archivedCategories.sort()) push(`/category/${slug}`, "/");
+// 3. Categories used to be filter states on the old homepage, never standalone
+//    pages. They are now real editorial pages at /category/<slug>, so they must
+//    NOT be redirected - a 301 here would send every category guide back to the
+//    homepage and drop it out of the index.
+lines.push("", "# --- Archived categories: now standalone pages, no redirect ---");
 
 // 4. Retired top-level pages.
 lines.push("", "# --- Retired top-level pages ---");
@@ -92,6 +94,7 @@ for (const page of livePages) {
   push(`${page}/`, page);
 }
 push("/listings/*/", "/listings/*");
+for (const slug of archivedCategories.sort()) push(`/category/${slug}/`, `/category/${slug}`);
 
 lines.push("", "");
 
@@ -131,5 +134,5 @@ console.log(
   `OK: wrote ${count} redirect rules to ${out}\n` +
   `    and ${exact.size} exact + ${wildcards.length} wildcard rules to ${tsOut}\n` +
   `    ${archivedSlugs.length} lossless /go/ entries, ` +
-  `${archivedCategories.length} categories, ${livePages.length - 1} trailing-slash fixes`,
+  `${archivedCategories.length} category pages (no redirect), ${livePages.length - 1} trailing-slash fixes`,
 );

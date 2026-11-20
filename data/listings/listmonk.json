@@ -7,7 +7,7 @@
   "kind": "tool",
   "runtime": "go",
   "category": "email-marketing",
-  "publisher": "n8n",
+  "publisher": "listmonk",
   "externalUrl": "https://listmonk.app",
   "repoUrl": "https://github.com/knadh/listmonk",
   "installCommand": "docker run -d --name listmonk -p 9000:9000 -v listmonk_data:/listmonk listmonk/listmonk:latest",

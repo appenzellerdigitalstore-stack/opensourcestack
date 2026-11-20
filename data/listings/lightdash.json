@@ -7,7 +7,7 @@
   "kind": "platform",
   "runtime": "node",
   "category": "business-intelligence",
-  "publisher": "metabase",
+  "publisher": "lightdash",
   "externalUrl": "https://www.lightdash.com",
   "repoUrl": "https://github.com/lightdash/lightdash",
   "installCommand": "docker run -d --name lightdash -p 8080:8080 lightdash/lightdash:latest",

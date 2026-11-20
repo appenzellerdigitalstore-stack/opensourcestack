@@ -649,5 +649,54 @@
     "websiteUrl": "https://superset.apache.org",
     "githubHandle": "apache",
     "isVerified": true
+  },
+  {
+    "slug": "docmost",
+    "name": "Docmost",
+    "websiteUrl": "https://docmost.com",
+    "githubHandle": "docmost",
+    "isVerified": true
+  },
+  {
+    "slug": "listmonk",
+    "name": "listmonk",
+    "websiteUrl": "https://listmonk.org",
+    "githubHandle": "knadh",
+    "isVerified": true
+  },
+  {
+    "slug": "nocodb",
+    "name": "NocoDB",
+    "websiteUrl": "https://nocodb.com",
+    "githubHandle": "nocodb",
+    "isVerified": true
+  },
+  {
+    "slug": "lightdash",
+    "name": "Lightdash",
+    "websiteUrl": "https://lightdash.com",
+    "githubHandle": "lightdash",
+    "isVerified": true
+  },
+  {
+    "slug": "redash",
+    "name": "Redash",
+    "websiteUrl": "https://redash.io",
+    "githubHandle": "getredash",
+    "isVerified": true
+  },
+  {
+    "slug": "directus",
+    "name": "Directus",
+    "websiteUrl": "https://directus.io",
+    "githubHandle": "directus",
+    "isVerified": true
+  },
+  {
+    "slug": "sitetrace",
+    "name": "SiteTrace",
+    "websiteUrl": "https://sitetrace.it.com",
+    "githubHandle": "appenzellerdigitalstore-stack",
+    "isVerified": true
   }
 ]

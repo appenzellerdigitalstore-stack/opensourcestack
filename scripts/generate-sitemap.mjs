@@ -23,11 +23,13 @@ const SITE_CONFIG = {
     home: "weekly",
     listing: "monthly",
     static: "monthly",
+    category: "weekly",
   },
   priority: {
     home: "1.0",
     listing: "0.8",
     static: "0.5",
+    category: "0.9",
   },
 };
 // --------------------------------------------
@@ -38,6 +40,11 @@ const listingFiles = readdirSync(dataDir).filter(f => f.endsWith(".json"));
 const slugs = listingFiles
   .map(f => f.replace(/\.json$/, ""))
   .filter(s => s !== "listings-index"); // exclude index file if it exists
+
+// Load category guide pages (one per category, each with its own editorial)
+const categorySlugs = JSON.parse(
+  readFileSync(resolve(ROOT, "data", "categories.json"), "utf8"),
+).map(c => c.slug);
 
 const today = new Date().toISOString().split("T")[0];
 
@@ -51,6 +58,12 @@ const urls = [
   { loc: SITE_CONFIG.base + "/changelog", changefreq: SITE_CONFIG.changefreq.weekly, priority: SITE_CONFIG.priority.static, lastmod: today },
   { loc: SITE_CONFIG.base + "/insights", changefreq: SITE_CONFIG.changefreq.weekly, priority: SITE_CONFIG.priority.static, lastmod: today },
   { loc: SITE_CONFIG.base + "/insights/what-open-source-alternative-actually-means-in-2026", changefreq: SITE_CONFIG.changefreq.listing, priority: SITE_CONFIG.priority.static, lastmod: today },
+  ...categorySlugs.map(s => ({
+    loc: `${SITE_CONFIG.base}/category/${s}`,
+    changefreq: SITE_CONFIG.changefreq.category,
+    priority: SITE_CONFIG.priority.category,
+    lastmod: today,
+  })),
   ...slugs.map(s => ({
     loc: `${SITE_CONFIG.base}/listings/${s}`,
     changefreq: SITE_CONFIG.changefreq.listing,

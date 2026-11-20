@@ -1,0 +1,24 @@
+/* ==== Category guide pages (/category/<slug>) ==== */
+
+/* Editorial body copy: prose width, matching the reading measure used on the
+   static pages (720px) with a little more room. */
+.category-editorial { max-width: 760px; }
+.category-editorial h2 { font-family: var(--font-display); font-size: 22px; font-weight: 600; margin: 36px 0 12px; }
+.category-editorial p { color: var(--muted-foreground); font-size: 15px; line-height: 1.8; margin: 12px 0; }
+.category-editorial ul { color: var(--muted-foreground); font-size: 15px; line-height: 1.8; padding-left: 22px; margin: 12px 0; }
+.category-editorial li { margin: 6px 0; }
+
+/* Listings block */
+.category-section { padding-top: 30px; }
+.category-section > h2 { font-family: var(--font-display); font-size: 23px; font-weight: 500; margin: 0 0 16px; }
+.category-section .tools-grid { margin-top: 18px; }
+
+/* Sibling category links */
+.category-links { display: flex; flex-wrap: wrap; gap: 8px; }
+.category-link { display: inline-flex; align-items: center; gap: 7px; border: 1px solid var(--border); border-radius: 100px; padding: 7px 13px; font-size: 12px; color: var(--muted-foreground); text-decoration: none; background: var(--card); transition: border-color .2s, color .2s; }
+.category-link:hover { border-color: var(--primary); color: var(--foreground); }
+.category-link svg { width: 13px; height: 13px; }
+
+/* Homepage category grid */
+.category-guides { padding: 40px 0 60px; scroll-margin-top: 100px; }
+.category-guides .tools-grid { margin-top: 22px; }

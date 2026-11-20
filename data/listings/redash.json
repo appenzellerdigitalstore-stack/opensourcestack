@@ -7,7 +7,7 @@
   "kind": "platform",
   "runtime": "python",
   "category": "business-intelligence",
-  "publisher": "superset",
+  "publisher": "redash",
   "externalUrl": "https://redash.io",
   "repoUrl": "https://github.com/getredash/redash",
   "installCommand": "docker run -d --name redash -p 5000:5000 redash/redash:latest",

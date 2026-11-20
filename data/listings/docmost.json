@@ -7,7 +7,7 @@
   "kind": "platform",
   "runtime": "node",
   "category": "cms",
-  "publisher": "n8n",
+  "publisher": "docmost",
   "externalUrl": "https://docmost.com",
   "repoUrl": "https://github.com/docmost/docmost",
   "installCommand": "git clone https://github.com/docmost/docmost && cd docmost && cp .env.example .env && docker compose up -d",

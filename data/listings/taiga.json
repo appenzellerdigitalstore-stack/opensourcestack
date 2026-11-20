@@ -9,7 +9,7 @@
   "category": "project-management",
   "publisher": "taiga",
   "externalUrl": "https://www.taiga.io",
-  "repoUrl": "https://github.com/kaleidos-ventures/taiga-back",
+  "repoUrl": "https://github.com/taigaio/taiga",
   "installCommand": "git clone https://github.com/kaleidos-ventures/taiga-docker && cd taiga-docker && docker compose up -d",
   "installInstructions": "**Docker Compose:**\n```\ngit clone https://github.com/kaleidos-ventors/taiga-docker\ncd taiga-docker\ndocker compose up -d\n```\nUI at `http://localhost:9000`.\n\n**Cloud:** From $5/user/month. Free for open source projects.",
   "logoUrl": "/logos/taiga.svg",

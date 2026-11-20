@@ -231,6 +231,19 @@
 .listing-content ul { padding-left: 22px; color: var(--muted-foreground); }
 .listing-content li { margin: 6px 0; }
 .listing-content pre { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 14px; font: 12px var(--font-mono); color: var(--violet-soft); overflow-x: auto; }
+.listing-lede { color: var(--foreground); font-size: 17px; line-height: 1.75; margin: 0 0 8px; }
+.listing-lede + h2 { margin-top: 26px; }
+.install-block { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; margin: 14px 0; }
+.install-label { font: 10px var(--font-mono); text-transform: uppercase; letter-spacing: 0.05em; color: var(--violet-soft); margin-bottom: 10px; }
+.install-steps { margin: 0; padding-left: 20px; color: var(--muted-foreground); }
+.install-steps li { margin: 7px 0; line-height: 1.7; }
+.install-steps code { font: 12px var(--font-mono); background: var(--background); border: 1px solid var(--border); border-radius: 5px; padding: 1px 5px; color: var(--violet-soft); }
+.listing-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; margin: 16px 0 20px; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--card); }
+.listing-facts > div { padding: 12px 16px; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); }
+.listing-facts dt { font: 10px var(--font-mono); text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted-foreground); margin-bottom: 4px; }
+.listing-facts dd { margin: 0; font-size: 14px; line-height: 1.6; color: var(--foreground); }
+.listing-facts dd a { color: var(--violet-soft); }
+.listing-note { border-left: 2px solid var(--violet); padding: 4px 0 4px 16px; font-size: 14px; line-height: 1.75; }
 .listing-sidebar { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 100px; }
 .sidebar-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
 .sidebar-card h3 { font: 10px var(--font-mono); text-transform: uppercase; color: var(--muted-foreground); letter-spacing: 0.04em; margin: 0 0 10px; }

@@ -8,7 +8,7 @@ export function Brand() {
 export function SiteHeader() {
   return <header className="site-header site-width">
     <Brand />
-    <nav className="nav"><a href="#directory" className="text-foreground">Explore</a><a href="#directory">Categories</a><Link to="/about">Our manifesto <ArrowUpRight className="inline size-3" /></Link></nav>
+    <nav className="nav"><a href="/#directory" className="text-foreground">Explore</a><a href="/#category-guides">Categories</a><Link to="/about">Our manifesto <ArrowUpRight className="inline size-3" /></Link></nav>
     <div className="header-actions"><a href="https://github.com/topics/open-source" target="_blank" rel="noreferrer" aria-label="Explore open source on GitHub" className="text-muted-foreground"><Github size={19} /></a></div>
   </header>;
 }

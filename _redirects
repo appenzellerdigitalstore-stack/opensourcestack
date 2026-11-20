@@ -110,21 +110,7 @@
 # --- Archived comparison pages ---
 /vs/*                            /                      301
 
-# --- Archived categories (filters now live on the homepage) ---
-/category/analytics              /                      301
-/category/auth                   /                      301
-/category/automation             /                      301
-/category/business-intelligence  /                      301
-/category/cms                    /                      301
-/category/code-hosting           /                      301
-/category/communication          /                      301
-/category/crm                    /                      301
-/category/databases              /                      301
-/category/email-marketing        /                      301
-/category/monitoring             /                      301
-/category/project-management     /                      301
-/category/search                 /                      301
-/category/storage                /                      301
+# --- Archived categories: now standalone pages, no redirect ---
 
 # --- Retired top-level pages ---
 /support                         /contact               301
@@ -142,4 +128,18 @@
 /privacy/                        /privacy               301
 /terms/                          /terms                 301
 /listings/*/                     /listings/*            301
+/category/analytics/             /category/analytics    301
+/category/auth/                  /category/auth         301
+/category/automation/            /category/automation   301
+/category/business-intelligence/ /category/business-intelligence 301
+/category/cms/                   /category/cms          301
+/category/code-hosting/          /category/code-hosting 301
+/category/communication/         /category/communication 301
+/category/crm/                   /category/crm          301
+/category/databases/             /category/databases    301
+/category/email-marketing/       /category/email-marketing 301
+/category/monitoring/            /category/monitoring   301
+/category/project-management/    /category/project-management 301
+/category/search/                /category/search       301
+/category/storage/               /category/storage      301
 

@@ -7,6 +7,7 @@
 import { Activity, BarChart3, Blocks, ChartNoAxesCombined, Database, FileText, FolderGit2, HardDrive, KeyRound, Layers, Mail, MessageSquare, Search, Users, Workflow, type LucideIcon } from "lucide-react";
 import categoriesData from "../../data/categories.json" assert { type: "json" };
 import introsData from "../../data/category_intros.json" assert { type: "json" };
+import publishersData from "../../data/publishers.json" assert { type: "json" };
 
 // Vite glob import all 101 listing JSONs at build time
 const listingModules = import.meta.glob<{ default: Listing }>("../../data/listings/*.json", { eager: true });
@@ -63,7 +64,13 @@ export function listingsByCategory(categorySlug: string): Listing[] {
   return allListings.filter(l => l.category === categorySlug);
 }
 export function relatedListings(slug: string, category: string, limit = 3): Listing[] {
-  return allListings.filter(l => l.category === category && l.slug !== slug).slice(0, limit);
+  const pool = allListings.filter(l => l.category === category && l.slug !== slug);
+  if (pool.length <= limit) return pool;
+  // Rotate the window so every page in a category surfaces a different set of
+  // neighbours instead of the same three on every page of that category.
+  const offset = allListings.findIndex(l => l.slug === slug);
+  const start = offset % pool.length;
+  return Array.from({ length: limit }, (_, i) => pool[(start + i) % pool.length]);
 }
 
 export interface CategoryInfo {
@@ -101,6 +108,18 @@ export function getCategory(slug: string): CategoryInfo | undefined {
 }
 export function getCategoryIntro(slug: string): { intro: string; selectionNotes: string } | undefined {
   return (introsData as { slug: string; intro: string; selectionNotes: string }[]).find(c => c.slug === slug);
+}
+
+export interface Publisher {
+  slug: string;
+  name: string;
+  websiteUrl: string;
+  githubHandle: string;
+  isVerified: boolean;
+}
+const publisherMap = new Map((publishersData as Publisher[]).map(p => [p.slug, p]));
+export function getPublisher(slug?: string): Publisher | undefined {
+  return slug ? publisherMap.get(slug) : undefined;
 }
 
 // Spotlight = the 12 most-notable listings used in the home carousel
