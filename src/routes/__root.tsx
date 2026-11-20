@@ -3,6 +3,13 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import "../styles.css";
 
+// Google AdSense. The publisher id matches the one declared in /ads.txt.
+// The loader has to be on the site for the AdSense site review to verify ad
+// placement - without it the review panel only shows a generic "your site
+// isn't ready to show ads" message with no named reason. It renders nothing
+// until the account is approved.
+const ADSENSE_CLIENT = "ca-pub-8749554989768993";
+
 export const Route = createRootRouteWithContext()({
   head: () => ({
     meta: [
@@ -29,6 +36,13 @@ export const Route = createRootRouteWithContext()({
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" },
+    ],
+    scripts: [
+      {
+        src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`,
+        async: true,
+        crossOrigin: "anonymous",
+      },
     ],
   }),
   component: RootLayout,
